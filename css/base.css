@@ -1,0 +1,34 @@
+@import url('./tokens.css');
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--negro-asfalto); }
+body { margin: 0; min-width: 320px; color: var(--hueso); background: var(--negro-asfalto); font-family: var(--fuente-texto); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+button, input, select { font: inherit; }
+button, [role='button'] { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+:focus-visible { outline: 3px solid var(--oro-puma); outline-offset: 4px; }
+.skip-link { position: fixed; z-index: 100; top: .75rem; left: .75rem; padding: .7rem 1rem; transform: translateY(-180%); color: var(--negro-asfalto); background: var(--oro-puma); font-weight: 800; }
+.skip-link:focus { transform: translateY(0); }
+.contenedor { width: var(--ancho); margin: 0 auto; }
+.section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
+.section--carbon { background: var(--carbon); }
+.section--hueso { color: var(--negro-asfalto); background: var(--hueso); }
+.kicker { margin: 0 0 .55rem; color: var(--oro-puma); font: 700 .78rem/1 var(--fuente-datos); letter-spacing: .13em; text-transform: uppercase; }
+.titulo { max-width: 16ch; margin: 0; font-family: var(--fuente-display); font-size: clamp(2rem, 5vw, 4.65rem); line-height: .98; letter-spacing: -.055em; text-transform: uppercase; }
+.titulo--medio { font-size: clamp(1.75rem, 3.8vw, 3.25rem); }
+.texto-gris { color: var(--gris-polvo); }
+.dato { color: var(--cian-crono); font-family: var(--fuente-datos); font-variant-numeric: tabular-nums; }
+.division-huellas { height: 50px; background: url('../assets/img/huellas-divisor.svg') center / 220px 50px repeat-x; opacity: .75; }
+.revelar { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+.revelar.visible { opacity: 1; transform: none; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.solo-postevento { display: none; }
+body.postevento .solo-postevento { display: block; }
+body.postevento .solo-preevento { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .revelar { opacity: 1; transform: none; }
+}

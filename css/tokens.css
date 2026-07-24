@@ -1,0 +1,17 @@
+:root {
+  --negro-asfalto: #0E0E0F;
+  --carbon: #1B1C1E;
+  --oro-puma: #E9B949;
+  --oro-profundo: #B8862B;
+  --hueso: #F2EFE9;
+  --gris-polvo: #9A968E;
+  --cian-crono: #29A8E0;
+  --rojo-aviso: #e05d4f;
+  --fuente-display: 'Archivo Black', Impact, sans-serif;
+  --fuente-texto: Inter, Arial, sans-serif;
+  --fuente-datos: 'JetBrains Mono', Consolas, monospace;
+  --sombra: 0 18px 42px rgba(0, 0, 0, .28);
+  --borde: 1px solid rgba(242, 239, 233, .16);
+  --radio: 1rem;
+  --ancho: min(1120px, calc(100% - 2.5rem));
+}
