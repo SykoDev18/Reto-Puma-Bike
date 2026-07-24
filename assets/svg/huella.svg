@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Huella de puma">
+  <g fill="currentColor">
+    <!-- almohadilla central -->
+    <path d="M50 92c-14 0-25-8-25-19 0-10 11-16 25-16s25 6 25 16c0 11-11 19-25 19z"/>
+    <!-- cuatro dedos -->
+    <ellipse cx="21" cy="47" rx="8" ry="12"/>
+    <ellipse cx="39" cy="33" rx="8.5" ry="13.5"/>
+    <ellipse cx="61" cy="33" rx="8.5" ry="13.5"/>
+    <ellipse cx="79" cy="47" rx="8" ry="12"/>
+    <!-- marcas de garra -->
+    <path d="M18 30c-2-7 1-9 3-3z"/>
+    <path d="M37 14c-2-7 2-9 3-3z"/>
+    <path d="M60 14c1-7 5-5 3 1z"/>
+    <path d="M79 30c1-7 5-5 3 1z"/>
+  </g>
+</svg>

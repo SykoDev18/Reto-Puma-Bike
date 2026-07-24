@@ -1,36 +1,17 @@
 <!doctype html>
 <html lang="es-MX">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Reto Puma Bike: ciclismo de montaña, rutas, categorías, inscripciones y resultados en Actopan, Hidalgo.">
-  <meta property="og:title" content="Reto Puma Bike"><meta property="og:description" content="Atrévete a recorrer el territorio puma."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0E0E0F">
-  <link rel="icon" href="assets/img/logo-reto-puma-bike.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css">
-  <title>Reto Puma Bike | Cuarta Edición</title>
-</head>
-<body data-page="inicio">
-  <header class="site-header" data-site-header></header>
-  <main id="contenido">
-    <section class="hero" aria-labelledby="titulo-hero">
-      <div class="facade" data-facade data-kind="youtube" data-title="Reto Puma Bike" data-src="https://www.youtube-nocookie.com/embed/iGJ1h3ychoo?si=kwNl_QHIfnksbXQM&amp;controls=0"><button class="boton boton--blanco" type="button">▶ Reproducir video</button></div>
-      <div class="hero-contenido">
-        <p class="kicker"><span data-edicion></span> · <span data-anio-evento></span></p><h1 id="titulo-hero" data-hero-titulo>Reto <em>Puma Bike</em></h1>
-        <div class="hero-chips"><span class="chip" data-fecha></span><span class="chip" data-sede></span><span class="chip" data-hora></span></div>
-        <div class="placas" aria-label="Rutas disponibles"><span class="placa"><b>40 KM</b><small>ruta corta</small></span><span class="placa"><b>80 KM</b><small>ruta larga</small></span></div>
-        <div class="acciones solo-preevento"><a class="boton" href="inscripciones.html">Inscríbete</a><a class="boton boton--linea" data-whatsapp-inscripcion target="_blank" rel="noreferrer" href="#">Inscribirme por WhatsApp</a></div>
-        <div class="acciones solo-postevento"><a class="boton" href="resultados.html">Ver resultados</a></div>
-        <div class="contador" data-countdown aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section class="section"><div class="contenedor grid grid--2 revelar"><div><p class="kicker"><span data-edicion></span> · <span data-anio-evento></span></p><h2 class="titulo titulo--medio">Territorio para medir tu fuerza.</h2><p>Bienvenido a la Cuarta Edición del Reto Puma Bike. Somos una comunidad apasionada por el ciclismo, dedicada a promover la participación y el espíritu deportivo en todas las edades.</p><p class="texto-gris">Dos rutas desafiantes, caminos de Actopan y una sola meta: recorrer el territorio puma con respeto por la montaña y por cada competidor.</p></div><img src="src/assets/video.webp" width="1200" height="800" alt="Ciclistas del Reto Puma Bike reunidos antes de rodar" loading="lazy"></div></section>
-    <div class="division-huellas" aria-hidden="true"></div>
-
-    <section class="section section--carbon"><div class="contenedor"><div class="seccion-cabecera"><div><p class="kicker">Elige tu desafío</p><h2 class="titulo titulo--medio">Dos rutas. Una meta.</h2></div><a class="boton boton--linea" href="rutas.html">Ver rutas a detalle</a></div><div class="grid grid--2" data-rutas-destacadas></div></div></section>
-    <section class="section"><div class="contenedor"><div class="seccion-cabecera"><div><p class="kicker">Encuentra tu lugar</p><h2 class="titulo titulo--medio">Categorías con premiación</h2></div><p class="texto-gris">Las categorías se organizan por rama, edad nominal y tipo de bicicleta.</p></div><div class="grid grid--3" data-categorias-destacadas></div><p><a class="boton boton--linea" href="categorias.html"><span data-total-categorias></span> categorías con premiación</a></p></div></section>
-    <section class="section section--carbon"><div class="contenedor"><div class="seccion-cabecera"><div><p class="kicker">Aparta tu lugar</p><h2 class="titulo titulo--medio">Kit y registro</h2></div><a class="boton" href="inscripciones.html">Ir a inscripciones</a></div><div class="grid grid--2" data-kits></div></div></section>
-    <section class="section section--hueso"><div class="contenedor grid grid--2 revelar"><div><p class="kicker">Colección</p><h2 class="titulo titulo--medio">La rodada se queda contigo.</h2><p>Conoce el jersey de la edición y las piezas que han marcado el territorio puma.</p><a class="boton" href="coleccion.html">Ver colección</a></div><img src="src/assets/Anuncio/jersey.webp" width="600" height="720" alt="Jersey conmemorativo del Reto Puma Bike" loading="lazy"></div></section>
-    <section class="section section--hueso"><div class="contenedor"><div class="seccion-cabecera"><div><p class="kicker">Comunidad que rueda</p><h2 class="titulo titulo--medio">Patrocinadores</h2></div><p>Gracias a quienes hacen que la carrera llegue más lejos.</p></div><div class="patrocinadores" data-patrocinadores></div></div></section>
-    <section class="section"><div class="contenedor grid grid--2"><div><p class="kicker">Avisos</p><h2 class="titulo titulo--medio">Todo claro antes de arrancar.</h2><p class="texto-gris">Revisa los avisos oficiales; actualizaremos esta franja con el material del comité.</p></div><div class="carrusel" aria-label="Avisos del evento"><figure class="aviso-slide activo" data-aviso-slide><img src="src/assets/Anuncios%20generales/Aviso1.webp" alt="Flyer de aviso del Reto Puma Bike" loading="lazy"></figure><figure class="aviso-slide" data-aviso-slide><img src="src/assets/Anuncios%20generales/Aviso2.webp" alt="Segundo flyer de aviso del Reto Puma Bike" loading="lazy"></figure><figure class="aviso-slide" data-aviso-slide><img src="src/assets/Anuncios%20generales/Aviso3.webp" alt="Tercer flyer de aviso del Reto Puma Bike" loading="lazy"></figure><div class="carrusel-controles"><button class="punto" type="button" data-aviso-punto aria-label="Ver aviso 1" aria-current="true"></button><button class="punto" type="button" data-aviso-punto aria-label="Ver aviso 2" aria-current="false"></button><button class="punto" type="button" data-aviso-punto aria-label="Ver aviso 3" aria-current="false"></button></div></div></div></section>
-  </main>
-  <footer class="site-footer" data-site-footer></footer><script type="module" src="js/main.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roadbook del Reto Puma Bike: perfil de elevación, poblados hñähñu y abastecimientos de las rutas de 80 y 40 km en el Valle del Mezquital, Actopan." />
+    <meta name="theme-color" content="#12100D" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/anybody-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/source-serif-4-var.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Rutas · Reto Puma Bike</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

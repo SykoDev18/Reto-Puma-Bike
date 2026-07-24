@@ -1,4 +1,175 @@
 <!doctype html>
-<html lang="es-MX"><head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Conoce las rutas de 40 y 80 kilómetros del Reto Puma Bike."><meta property="og:title" content="Rutas | Reto Puma Bike"><meta name="theme-color" content="#0E0E0F"><link rel="icon" href="assets/img/logo-reto-puma-bike.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><title>Rutas | Reto Puma Bike</title>
-</head><body data-page="rutas"><header class="site-header" data-site-header></header><main id="contenido"><section class="pagina-hero"><div class="contenedor"><p class="kicker">Territorio puma</p><h1 class="titulo">El camino se gana pedaleando.</h1><p>Dos recorridos 100% por camino ancho y rodable, con el Valle del Mezquital como testigo. Elige bien, lleva agua y rueda a tu ritmo.</p></div></section><section class="section"><div class="contenedor" data-rutas-detalle></div></section><div class="division-huellas" aria-hidden="true"></div><section class="section section--carbon"><div class="contenedor grid grid--2"><article class="tarjeta"><p class="kicker">Abastecimientos</p><h2 class="titulo titulo--medio">Planea tu energía.</h2><ul><li>Habrá abastecimientos en puntos definidos por el comité.</li><li>Lleva agua suficiente entre cada punto; no dependas solo de la ruta.</li><li>Consulta la información oficial de entrega de kits y señalización.</li></ul></article><article class="tarjeta"><p class="kicker">Seguridad primero</p><h2 class="titulo titulo--medio">Casco puesto. Siempre.</h2><ul><li>Casco obligatorio durante todo el recorrido.</li><li>Incluye kit de reparación, cámara o mechas y bomba o CO₂.</li><li>Respeta las indicaciones del staff, comunidades y demás ciclistas.</li></ul></article></div></section></main><footer class="site-footer" data-site-footer></footer><script type="module" src="js/main.js"></script><script type="module" src="js/rutas.js"></script></body></html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roadbook del Reto Puma Bike: perfil de elevación, poblados hñähñu y puntos de abastecimiento de las rutas de 80 y 40 km en el Valle del Mezquital, Actopan.">
+  <meta property="og:title" content="Rutas · Reto Puma Bike">
+  <meta property="og:description" content="El perfil real de la ruta, kilómetro a kilómetro, con los poblados y abastecimientos del Valle del Mezquital.">
+  <meta name="theme-color" content="#12100D">
+  <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/sistema.css">
+  <title>Rutas · Reto Puma Bike</title>
+</head>
+<body data-page="rutas">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ====================================================================
+       RIEL DEL ROADBOOK (columna fija con el perfil de elevación real).
+       Su contenido lo dibuja js/ruta-app.js a partir de assets/data/perfil-*.json
+       ==================================================================== -->
+  <aside class="riel" data-riel aria-hidden="true">
+    <svg class="riel__svg" data-riel-svg preserveAspectRatio="none" viewBox="0 0 40 1000">
+      <path class="riel__perfil-base" data-riel-base d=""></path>
+      <path class="riel__perfil-hecho" data-riel-hecho d=""></path>
+    </svg>
+    <div class="riel__ticks" data-riel-ticks></div>
+    <div class="riel__huella" data-riel-huella>
+      <!-- huella de puma (currentColor) -->
+      <svg viewBox="0 0 100 100"><g fill="currentColor">
+        <path d="M50 92c-14 0-25-8-25-19 0-10 11-16 25-16s25 6 25 16c0 11-11 19-25 19z"/>
+        <ellipse cx="21" cy="47" rx="8" ry="12"/><ellipse cx="39" cy="33" rx="8.5" ry="13.5"/>
+        <ellipse cx="61" cy="33" rx="8.5" ry="13.5"/><ellipse cx="79" cy="47" rx="8" ry="12"/>
+      </g></svg>
+    </div>
+    <div class="riel__km-actual" data-riel-km>KM 0</div>
+  </aside>
+
+  <!-- Barra inferior persistente (móvil): kilometraje real que cambia al hacer scroll -->
+  <div class="barra-km" data-barra role="status" aria-live="off">
+    <span>KM <b data-barra-km>0</b></span>
+    <span class="sep">·</span>
+    <span><b data-barra-desnivel>+0</b> m</span>
+    <span class="sep">·</span>
+    <span>sig. <span class="prox" data-barra-prox>Dajiedhi</span></span>
+  </div>
+
+  <!-- ==================== ENCABEZADO ==================== -->
+  <header class="cabecera">
+    <div class="cabecera__fila">
+      <a class="marca" href="index.html" aria-label="Reto Puma Bike, inicio">
+        <span class="marca__placa"><img src="src/assets/logo_retopuma.webp" alt=""></span>
+        <span class="marca__nombre">Reto Puma Bike<small>Cuarta edición · Actopan</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-indice">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 1h20M0 7h20M0 13h20"/></svg>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+      <nav class="nav-indice" id="nav-indice" aria-label="Navegación principal">
+        <a href="index.html"><span class="n">Inicio</span></a>
+        <a href="rutas.html" aria-current="page"><span class="n">Ruta</span></a>
+        <a href="categorias.html"><span class="n">Categorías</span></a>
+        <a href="inscripciones.html"><span class="n">Inscripciones</span></a>
+        <a href="resultados.html"><span class="n">Resultados</span></a>
+        <a href="coleccion.html"><span class="n">Colección</span></a>
+        <a href="hoteles.html"><span class="n">Hoteles</span></a>
+      </nav>
+      <a class="boton boton--oro boton--chico" href="inscripciones.html">Inscríbete</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ==================== HERO ==================== -->
+    <section class="ruta-hero contenedor">
+      <p class="etiqueta">Territorio hñähñu · Valle del Mezquital</p>
+      <div class="ruta-hero__top">
+        <h1 class="display expandible ruta-hero__titulo" data-titulo>El camino<br>se gana<br>pedaleando</h1>
+        <span class="placa placa--grande" title="Cuarta edición" aria-label="Cuarta edición">
+          <b>04</b><small>edición</small>
+        </span>
+      </div>
+
+      <p class="ruta-hero__intro serif">
+        Dos recorridos por camino ancho y rodable, con el convento de Actopan a la espalda y
+        el tepetate blanco bajo la llanta. Elige tu distancia: el perfil de abajo es real,
+        kilómetro por kilómetro. <span class="medida">Salida 8:00 a. m. desde el Pabellón Gastronómico.</span>
+      </p>
+
+      <div class="selector" role="group" aria-label="Elegir ruta">
+        <button type="button" data-ruta-btn="larga" aria-pressed="true">80 km</button>
+        <button type="button" data-ruta-btn="corta" aria-pressed="false">40 km</button>
+      </div>
+
+      <div class="ruta-metricas" data-metricas>
+        <!-- lo rellena ruta-app.js -->
+      </div>
+    </section>
+
+    <!-- Banda a sangre: el territorio al amanecer (corte duro) -->
+    <figure class="banda">
+      <img src="src/assets/img/Paisaje del Mezquital.png" alt="Camino de terracería del Valle del Mezquital al amanecer, con mezquites y magueyes a contraluz." loading="lazy">
+      <figcaption class="banda__cap">Valle del Mezquital · terracería al amanecer</figcaption>
+    </figure>
+
+    <!-- ==================== ROADBOOK (notas ancladas a km) ==================== -->
+    <div class="contenedor" data-roadbook>
+      <!-- ruta-app.js dibuja aquí las notas del roadbook de la ruta elegida -->
+    </div>
+
+    <!-- Textura de transición: polvo de terracería -->
+    <figure class="divisor-polvo" aria-hidden="true">
+      <img src="src/assets/img/Detalle de llanta.png" alt="" loading="lazy">
+    </figure>
+
+    <!-- ==================== ANTES DE RODAR (independiente de ruta) ========== -->
+    <section class="seccion seccion--carbon">
+      <div class="contenedor">
+        <p class="etiqueta">Antes de rodar</p>
+        <div class="nota__cuerpo">
+          <div>
+            <h2 class="display display--medio">Casco puesto. Siempre.</h2>
+            <ul>
+              <li>Casco obligatorio durante todo el recorrido.</li>
+              <li>Lleva kit de reparación: cámara o mechas, y bomba o CO₂.</li>
+              <li>Respeta las indicaciones del staff, de las comunidades y del resto del pelotón.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Abastecimientos</h3>
+            <p class="medida">Habrá puntos de agua, fruta y electrolitos definidos por el comité. Los kilómetros exactos se confirman antes del evento; carga agua suficiente entre uno y otro y no dependas solo de la ruta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PIE ==================== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__grid">
+        <div>
+          <h2>Reto Puma Bike</h2>
+          <p>Más que una competencia: un desafío, una conexión y una celebración de cada kilómetro del Valle del Mezquital.</p>
+        </div>
+        <div>
+          <h3>Navega</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="rutas.html">Ruta</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="inscripciones.html">Inscripciones</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="coleccion.html">Colección</a></li>
+            <li><a href="hoteles.html">Hoteles</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:retopumabike@gmail.com">retopumabike@gmail.com</a></li>
+            <li class="medida">Libertad 1, Aviación, 42506 Actopan, Hgo.</li>
+            <li>
+              <a href="https://www.instagram.com/reto_puma_bike_/" target="_blank" rel="noreferrer">Instagram</a> ·
+              <a href="https://www.facebook.com/people/RETO-PUMA-BIKE/100092370199634/" target="_blank" rel="noreferrer">Facebook</a> ·
+              <a href="https://www.youtube.com/@RetoPumaBike-v8h" target="_blank" rel="noreferrer">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__final">© <span data-anio></span> Reto Puma Bike. Actopan, Hidalgo.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/ruta-app.js"></script>
+</body>
+</html>
