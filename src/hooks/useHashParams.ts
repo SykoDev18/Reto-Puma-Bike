@@ -5,6 +5,28 @@ export function rutaDelHash(hash: string): string {
   return hash.replace(/^#/, '').split('?')[0].replace(/\/$/, '') || '/'
 }
 
+/**
+ * La ruta del hash como estado de React, sincronizada.
+ *
+ * Hace falta porque el router de `App` solo cambia de VISTA: al pasar de
+ * '#/anuncios' a '#/anuncios/012' la vista sigue siendo la misma y no
+ * re-renderiza, así que la página necesita enterarse por su cuenta del enlace
+ * directo a un aviso.
+ */
+export function useRutaHash(): string {
+  const [ruta, setRuta] = useState(() => rutaDelHash(window.location.hash))
+  useEffect(() => {
+    const alCambiar = () => setRuta(rutaDelHash(window.location.hash))
+    window.addEventListener('hashchange', alCambiar)
+    window.addEventListener('popstate', alCambiar)
+    return () => {
+      window.removeEventListener('hashchange', alCambiar)
+      window.removeEventListener('popstate', alCambiar)
+    }
+  }, [])
+  return ruta
+}
+
 /** Query del hash: '#/categorias?rama=F' -> 'rama=F'. */
 function queryDelHash(hash: string): string {
   const i = hash.indexOf('?')

@@ -363,6 +363,8 @@ export function formatearGeneradoEn(iso: string): string {
     year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
+    // Reloj de 24 h: es una hora de corte de cronometraje, no una cita.
+    hour12: false,
     timeZone: 'America/Mexico_City',
   }).format(fecha)
 }

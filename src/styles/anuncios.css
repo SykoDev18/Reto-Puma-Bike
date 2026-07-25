@@ -1,0 +1,186 @@
+/* =========================================================================
+   RETO PUMA BIKE — Anuncios. El pizarrón de la meta: comunicados numerados,
+   fechados y firmados. Papel clavado, no tarjeta flotante.
+   Sin hex, radio máximo 2px, sin sombras difusas.
+   ========================================================================= */
+
+.seccion-anu { padding-block: clamp(2.5rem, 6vw, 4.5rem); position: relative; }
+.seccion-anu + .seccion-anu { border-top: var(--regla); }
+
+/* ---- Encabezado --------------------------------------------------------- */
+.titulo-anu { font-size: clamp(1.9rem, 5vw, 3.4rem); color: var(--cal); letter-spacing: .01em; }
+.intro-anu { max-width: 66ch; margin: 1rem 0 0; }
+.actualizado {
+  margin: 1rem 0 0;
+  font-family: var(--datos); font-size: .74rem; color: var(--tepetate);
+}
+.actualizado .dato { font-size: 1em; }
+
+.subtitulo-anu {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .8rem;
+  color: var(--tepetate); margin: 0 0 1.25rem;
+}
+
+/* ---- Esqueleto y error (mismo lenguaje que Resultados) ------------------ */
+.esqueleto { max-width: 34rem; }
+.esqueleto__rot {
+  margin: 0 0 .9rem;
+  font-family: var(--datos); font-size: .78rem; color: var(--tepetate);
+  text-transform: uppercase; letter-spacing: .12em;
+}
+.esqueleto__barra {
+  height: 3.2rem; border: var(--regla); border-radius: 2px;
+  background: color-mix(in srgb, var(--cal) 4%, var(--fondo));
+  margin-bottom: .5rem;
+}
+.esqueleto__barra--corta { width: 60%; height: 1.6rem; }
+.aviso--error { border-left-color: var(--oro-puma); max-width: 60ch; }
+.aviso--error .boton { margin-top: .8rem; }
+
+/* ======================================================================
+   FILTROS — atenúan, no ocultan (igual que en Categorías)
+   ====================================================================== */
+.filtros-anu { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip {
+  display: inline-flex; align-items: center; gap: .45rem;
+  min-height: 44px; padding: .5rem .8rem;
+  background: transparent;
+  border: 2px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo));
+  border-radius: 2px;
+  color: var(--texto-color);
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .1em; font-size: .68rem;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+.chip:hover { border-color: color-mix(in srgb, var(--texto-color) 55%, var(--fondo)); }
+.chip[aria-pressed='true'] {
+  border-color: var(--cal);
+  background: color-mix(in srgb, var(--cal) 9%, var(--fondo));
+}
+.chip .cifra { font-size: .72rem; color: var(--tepetate); }
+.chip[aria-pressed='true'] .cifra { color: var(--cal); }
+.filtros-anu__cuenta {
+  margin: .8rem 0 0;
+  font-family: var(--datos); font-size: .72rem; color: var(--tepetate);
+}
+
+/* ======================================================================
+   EL TABLERO
+   ====================================================================== */
+.tablero { display: grid; gap: clamp(1rem, 2.5vw, 1.5rem); }
+.mes + .mes { margin-top: clamp(2rem, 4vw, 3rem); }
+.mes__rotulo {
+  margin: 0 0 1rem; padding-bottom: .5rem;
+  border-bottom: var(--regla);
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .06em; font-size: .95rem;
+  color: var(--cal);
+}
+
+/* ---- El comunicado ------------------------------------------------------ */
+.aviso-card {
+  border: var(--regla);
+  border-top: 2px solid var(--borde);
+  border-radius: 2px;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: color-mix(in srgb, var(--cal) 2.5%, var(--fondo));
+  max-width: 62rem;
+  transition: opacity .2s ease;
+}
+.aviso-card__cabeza {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: .5rem 1rem;
+  padding-bottom: .7rem; margin-bottom: .9rem;
+  border-bottom: var(--regla);
+}
+.aviso-card__folio {
+  margin: 0; display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
+  font-size: .72rem;
+}
+.aviso-card__num { font-weight: 700; letter-spacing: .02em; }
+.aviso-card__folio .dato { font-size: .72rem; }
+.aviso-card__sep { color: var(--borde); }
+.aviso-card__marcas { margin: 0; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+
+.marca-tipo {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .58rem;
+  color: var(--tepetate);
+  border: 1px solid var(--borde); border-radius: 2px;
+  padding: .15rem .45rem;
+}
+/* FIJADO: el único elemento en oro pleno de la página, y solo lo lleva el
+   primer fijado (lo decide la página). El resto usa el marcador en cal. */
+.marca-fijado {
+  font-family: var(--display); font-stretch: 66%; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .58rem;
+  padding: .18rem .5rem; border-radius: 2px;
+  background: var(--cal); color: var(--noche);
+}
+.marca-fijado[data-oro='si'] { background: var(--oro-puma); color: var(--noche); }
+
+.aviso-card__titulo {
+  margin: 0 0 .7rem;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .01em;
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem); line-height: 1.15;
+  color: var(--cal);
+  overflow-wrap: anywhere;
+}
+.aviso-card__cuerpo { margin: 0; max-width: 68ch; color: var(--cal); }
+
+/* El flyer acompaña, con ancho MÁXIMO controlado: es cuadrado y a sangre se ve
+   mal, sobre todo en un celular. */
+.aviso-card__flyer { margin: 1.1rem 0 0; max-width: 22rem; }
+.aviso-card__lupa {
+  display: block; width: 100%; padding: 0;
+  background: transparent; border: var(--regla); border-radius: 2px;
+  cursor: zoom-in;
+}
+.aviso-card__lupa img { width: 100%; height: auto; }
+.aviso-card__lupa:hover { border-color: var(--tepetate); }
+
+.aviso-card__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1.2rem;
+  margin-top: 1.1rem; padding-top: .8rem;
+  border-top: var(--regla);
+}
+.aviso-card__pie .enlace-duro { font-size: .74rem; }
+.aviso-card__permalink {
+  margin-left: auto;
+  font-family: var(--datos); font-size: .68rem; color: var(--tepetate);
+  text-decoration: none;
+  padding: .35rem .5rem; min-height: 32px;
+  display: inline-flex; align-items: center;
+  border: 1px dashed var(--borde); border-radius: 2px;
+}
+.aviso-card__permalink:hover { color: var(--cal); border-color: var(--tepetate); }
+
+/* El filtro ATENÚA: la estructura completa sigue ahí, como en el eje de edad. */
+.aviso-card[data-atenuado='si'] { opacity: .28; }
+/* Llegó por enlace directo: se marca como la fila de Resultados. */
+.aviso-card[data-resaltado='si'] {
+  outline: 2px solid var(--cal);
+  outline-offset: -2px;
+  background: color-mix(in srgb, var(--cal) 8%, var(--fondo));
+  opacity: 1;
+}
+
+/* ---- Redes -------------------------------------------------------------- */
+.redes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+
+/* ======================================================================
+   RESPONSIVO. A 360px nada se desborda y el flyer se lee a ancho controlado.
+   ====================================================================== */
+@media (max-width: 520px) {
+  .aviso-card__cabeza { flex-direction: column; align-items: flex-start; }
+  .aviso-card__flyer { max-width: 100%; }
+  .aviso-card__pie { gap: .6rem; }
+  .aviso-card__permalink { margin-left: 0; }
+  .redes .boton { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip, .aviso-card { transition: none; }
+}

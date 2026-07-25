@@ -565,6 +565,49 @@
   vector-effect: non-scaling-stroke;
 }
 
+/* ======================================================================
+   VISOR DE AMPLIACIÓN (<VisorImagen>)
+   Va en la hoja COMPARTIDA, no en la de una página: lo usan Colección y
+   Anuncios. Si viviera en coleccion.css, entrar directo a #/anuncios cargaría
+   toda la hoja de Colección solo para poder ampliar un flyer.
+   ====================================================================== */
+.visor {
+  position: fixed; inset: 0; z-index: 200;
+  display: grid; place-items: center;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  /* Velo PLANO, sin blur ni degradado (lista negra §8). */
+  background: color-mix(in srgb, var(--noche) 92%, transparent);
+}
+.visor__caja {
+  position: relative;
+  max-width: min(64rem, 100%); max-height: 100%;
+  display: flex; flex-direction: column; gap: .6rem;
+}
+.visor__img {
+  max-width: 100%; max-height: 78vh;
+  width: auto; height: auto; margin-inline: auto;
+  background: var(--cal);
+  border: 2px solid var(--borde); border-radius: 2px;
+}
+.visor__pie {
+  margin: 0; text-align: center;
+  font-family: var(--datos); font-size: .7rem; color: var(--tepetate);
+}
+.visor__cerrar {
+  position: absolute; top: -.25rem; right: -.25rem; z-index: 1;
+  transform: translate(35%, -100%);
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  background: var(--noche); color: var(--cal);
+  border: 2px solid var(--borde); border-radius: 2px;
+}
+.visor__cerrar:hover { border-color: var(--cal); }
+
+@media (max-width: 640px) {
+  .visor__cerrar { transform: none; top: .25rem; right: .25rem; }
+  .visor__img { max-height: 68vh; }
+}
+
 /* ---- Sección todavía no publicada --------------------------------------- */
 .proximamente { min-height: 58vh; }
 .proximamente__titulo { font-size: clamp(2rem, 6vw, 3.6rem); color: var(--cal); margin: 1.2rem 0 .4rem; }

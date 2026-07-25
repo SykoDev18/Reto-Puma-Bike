@@ -1,0 +1,72 @@
+{
+  "actualizado": "2026-07-18",
+  "avisos": [
+    {
+      "id": "014",
+      "fecha": "2026-07-18",
+      "tipo": "resultados",
+      "titulo": "Resultados de la cuarta edición, publicados",
+      "cuerpo": "Ya están en línea los resultados de las 21 categorías que alcanzamos a cerrar, con tiempo oficial, posición y vueltas. Puedes buscarte por nombre o por número de dorsal y descargar tu tarjeta de finisher. Las categorías infantiles siguen pendientes: el cronometraje de esa jornada se llevó aparte y lo estamos capturando.",
+      "enlace": { "texto": "Buscar mi resultado", "url": "#/resultados" },
+      "fijado": true
+    },
+    {
+      "id": "013",
+      "fecha": "2026-07-16",
+      "tipo": "resultados",
+      "titulo": "Si tu tiempo no aparece o no cuadra",
+      "cuerpo": "Diecisiete corredores terminaron sin que el cronómetro registrara su tiempo y quince registros están marcados en revisión, casi todos por lecturas de chip cruzadas. Aparecen publicados y señalados, no escondidos. Si tu caso es uno de esos, escríbenos por WhatsApp con tu dorsal y la hora aproximada en que cruzaste la meta; el comité de cronometraje está corrigiendo por lotes.",
+      "fijado": true,
+      "vigenteHasta": "2026-08-15"
+    },
+    {
+      "id": "012",
+      "fecha": "2026-07-14",
+      "tipo": "patrocinadores",
+      "titulo": "Gracias a quienes hicieron posible la cuarta edición",
+      "cuerpo": "Treinta y cuatro negocios de Actopan y del Valle del Mezquital pusieron abastecimientos, premios, ambulancia, agua y manos. Sin ellos no hay carrera: esto no lo sostiene la inscripción, lo sostiene el pueblo. Si consumes con ellos, diles que vas de parte del Reto Puma."
+    },
+    {
+      "id": "011",
+      "fecha": "2026-07-10",
+      "tipo": "logistica",
+      "titulo": "Reconocimientos que quedaron sin entregar",
+      "cuerpo": "Varios podios no alcanzaron a pasar por su reconocimiento el día de la premiación. Los tenemos guardados y se pueden recoger en el taller Gordo Bike, de lunes a viernes de 10:00 a 19:00, presentando identificación. Si no puedes ir tú, manda a alguien con una foto de tu identificación y tu número de dorsal.",
+      "vigenteHasta": "2026-08-31"
+    },
+    {
+      "id": "010",
+      "fecha": "2026-07-02",
+      "tipo": "logistica",
+      "titulo": "Entrega de kits: segunda fecha",
+      "cuerpo": "Abrimos una segunda entrega el sábado 4 de julio en el Pabellón Gastronómico, de 9:00 a 14:00. Lleva identificación y el comprobante de tu pago. No hay entrega de kits el día de la carrera: quien no recoja el sábado, corre sin número.",
+      "fijado": true,
+      "vigenteHasta": "2026-07-04"
+    },
+    {
+      "id": "009",
+      "fecha": "2026-06-26",
+      "tipo": "convocatoria",
+      "titulo": "Cierre de inscripciones en línea",
+      "cuerpo": "El registro en línea cierra el miércoles 1 de julio a las 23:59. Después de esa hora solo quedan lugares en la entrega de kits, sujetos a disponibilidad de jersey y con precio de registro tardío. Somos un evento de cupo limitado por la logística de abastecimientos, no por marketing.",
+      "vigenteHasta": "2026-07-01"
+    },
+    {
+      "id": "008",
+      "fecha": "2026-06-18",
+      "tipo": "logistica",
+      "titulo": "Cambio en el abastecimiento del kilómetro 22",
+      "cuerpo": "El abastecimiento que estaba planeado en el crucero de La Estancia se recorre unos metros, a la entrada del poblado, porque el crucero quedó con maquinaria de obra. Sigue siendo el mismo kilómetro aproximado y habrá agua, electrolitos y fruta. Lo verás señalizado con lonas del evento."
+    },
+    {
+      "id": "007",
+      "fecha": "2026-06-05",
+      "tipo": "logistica",
+      "titulo": "Qué trae el kit de asociación",
+      "cuerpo": "Nos preguntan seguido qué incluye el kit. El de asociación trae número de competidor personalizado, buff y medalla de finisher; los kits Huellita y Puma de esta edición vienen listados en la página de inscripciones, y el Puma además incluye el jersey. La foto de abajo es el kit de la tercera edición, como referencia de lo que se entrega.",
+      "imagen": "/img/avisos/kit-tercera-edicion.webp",
+      "imagenAlt": "Flyer del kit de asociación de la tercera edición del Reto Puma Bike: número de competidor 0001, buff con el puma estampado y medalla de finisher, sobre fondo negro y amarillo.",
+      "enlace": { "texto": "Ver la colección", "url": "#/coleccion" }
+    }
+  ]
+}

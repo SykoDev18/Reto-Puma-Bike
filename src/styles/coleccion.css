@@ -1,0 +1,182 @@
+/* =========================================================================
+   RETO PUMA BIKE — Colección. Ficha de pieza, no tienda: sin carrito, sin
+   badges, sin existencias. Producto plano sobre papel (zona de luz), mucho aire
+   y una sola cosa que hacer.
+   Sin hex, radio máximo 2px, sin sombras difusas.
+   ========================================================================= */
+
+.coleccion { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.coleccion > .contenedor > * + * { margin-top: clamp(3rem, 7vw, 5.5rem); }
+
+/* ---- Encabezado --------------------------------------------------------- */
+.col-titulo {
+  font-size: clamp(1.9rem, 5.4vw, 3.6rem);
+  max-width: 18ch;
+  margin: 0 0 1rem;
+}
+.col-intro { max-width: 62ch; margin: 0; font-size: 1.05rem; }
+
+.subtitulo-col {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .78rem;
+  /* Sobre --cal, --tepetate no da contraste AA. Se oscurece contra el fondo. */
+  color: color-mix(in srgb, var(--texto-color) 62%, var(--fondo));
+  margin: 0 0 1.25rem;
+}
+
+/* ======================================================================
+   LA PIEZA — grande, sin sombra, sin mockup 3D
+   ====================================================================== */
+.pieza__fotos {
+  display: grid; gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+.pieza__figura { margin: 0; }
+/* El disparador es un <button> real: ampliar funciona con clic Y con teclado
+   sin listeners de tecla propios. */
+.pieza__lupa,
+.archivo__lupa {
+  display: block; width: 100%; padding: 0;
+  background: transparent; border: 0; cursor: zoom-in;
+}
+.pieza__lupa img {
+  /* Caja de proporción fija: las dos tomas vienen con recortes distintos (463 y
+     414 de ancho) y sin esto los pies de foto quedan a distinta altura. */
+  width: 100%; height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  /* Nada de sombra ni degradado: papel, no escaparate. `multiply` funde el
+     fondo blanco de la toma con el --cal de la franja; sin él se vería el
+     recuadro. Es el parche mientras no llegue el PNG transparente. */
+  mix-blend-mode: multiply;
+}
+.pieza__figura figcaption {
+  margin-top: .6rem; padding-top: .5rem;
+  border-top: 1px solid color-mix(in srgb, var(--texto-color) 22%, var(--fondo));
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .66rem;
+  color: color-mix(in srgb, var(--texto-color) 62%, var(--fondo));
+}
+.pieza__nota { max-width: 58ch; margin: 1.75rem 0 0; }
+
+/* ======================================================================
+   DETALLE — tallas y precio
+   ====================================================================== */
+.detalle {
+  display: grid; gap: clamp(2rem, 5vw, 3.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+}
+.detalle__texto { max-width: 46ch; margin: 0 0 .9rem; }
+.detalle__texto:last-child { margin-bottom: 0; }
+.detalle__duda { margin-top: 1.1rem; font-size: .76rem; }
+
+/* Etiquetas duras de talla. NO es un selector de compra: no hay estado
+   seleccionado, no hay hover de "elegir", no hay existencias. */
+.tallas { list-style: none; display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; }
+.talla {
+  font-family: var(--datos); font-variant-numeric: tabular-nums;
+  font-size: .78rem; font-weight: 500; letter-spacing: -.02em;
+  padding: .42rem .6rem; min-width: 3rem; text-align: center;
+  border: 1px solid color-mix(in srgb, var(--texto-color) 32%, var(--fondo));
+  border-radius: 2px;
+}
+
+/* ======================================================================
+   CÓMO APARTARLO
+   ====================================================================== */
+.pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(1.75rem, 4vw, 2.75rem); }
+.paso { display: flex; gap: 1rem; align-items: flex-start; }
+.paso__num {
+  flex: 0 0 auto;
+  display: grid; place-items: center;
+  width: 2.4rem; height: 2.4rem;
+  font-size: 1.05rem; font-weight: 700;
+  border: 2px solid var(--texto-color); border-radius: 2px;
+}
+.paso__cuerpo { min-width: 0; }
+.paso__titulo {
+  margin: .25rem 0 .5rem;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: 1rem;
+}
+.paso__cuerpo p { max-width: 52ch; margin: 0 0 1rem; }
+.paso__cuerpo .boton { margin-top: .2rem; }
+
+/* ---- Datos bancarios (texto, nunca imagen del flyer) -------------------- */
+.pago {
+  margin-top: .4rem;
+  border-top: 1px solid color-mix(in srgb, var(--texto-color) 22%, var(--fondo));
+  padding-top: 1rem;
+  max-width: 34rem;
+}
+.pago__lista { margin: 0; display: grid; gap: .7rem; }
+.pago__fila { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .9rem; }
+.pago__fila dt {
+  flex: 0 0 7rem;
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .62rem;
+  color: color-mix(in srgb, var(--texto-color) 62%, var(--fondo));
+}
+.pago__fila dd {
+  margin: 0; min-width: 0;
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .7rem;
+  font-family: var(--texto); font-size: .98rem;
+}
+.pago__numero { font-size: 1rem; font-weight: 700; letter-spacing: .01em; overflow-wrap: anywhere; }
+.pago__instruccion { margin: 1rem 0 0; max-width: 46ch; font-size: .92rem; }
+
+.copiar { display: inline-flex; align-items: center; }
+.copiar__boton {
+  min-height: 32px; padding: .25rem .6rem;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--texto-color) 32%, var(--fondo));
+  border-radius: 2px;
+  color: inherit;
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .1em; font-size: .58rem;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+.copiar__boton:hover { border-color: var(--texto-color); }
+/* La confirmación se VE (no solo cambia un ícono) y además se anuncia. */
+.copiar__boton[data-estado='copiado'] {
+  border-color: var(--texto-color);
+  background: color-mix(in srgb, var(--texto-color) 12%, var(--fondo));
+}
+.copiar__boton[data-estado='falla'] { border-style: dashed; }
+
+/* ======================================================================
+   ARCHIVO — ediciones anteriores. Sin precio y sin CTA: no es catálogo.
+   ====================================================================== */
+.archivo__intro { max-width: 56ch; margin: 0 0 1.5rem; font-size: .98rem; }
+.archivo__tira {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: clamp(1rem, 2.5vw, 1.75rem);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+}
+.archivo__tira figure { margin: 0; }
+.archivo__tira img {
+  width: 100%; height: auto;
+  /* Escala de grises: es archivo, no producto disponible. */
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: filter .25s ease;
+}
+.archivo__lupa:hover img, .archivo__lupa:focus-visible img { filter: grayscale(.25); }
+.archivo__tira figcaption {
+  margin-top: .4rem;
+  font-family: var(--datos); font-size: .62rem;
+  color: color-mix(in srgb, var(--texto-color) 62%, var(--fondo));
+}
+
+/* ======================================================================
+   RESPONSIVO
+   ====================================================================== */
+@media (max-width: 520px) {
+  .paso { gap: .75rem; }
+  .paso__num { width: 2rem; height: 2rem; font-size: .9rem; }
+  .pago__fila dt { flex-basis: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .archivo__tira img, .copiar__boton { transition: none; }
+}

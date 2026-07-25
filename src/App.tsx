@@ -16,6 +16,12 @@ const PaginaInscripciones = lazy(() =>
 const PaginaResultados = lazy(() =>
   import('./pages/PaginaResultados').then((m) => ({ default: m.PaginaResultados })),
 )
+const PaginaColeccion = lazy(() =>
+  import('./pages/PaginaColeccion').then((m) => ({ default: m.PaginaColeccion })),
+)
+const PaginaAnuncios = lazy(() =>
+  import('./pages/PaginaAnuncios').then((m) => ({ default: m.PaginaAnuncios })),
+)
 const PaginaProximamente = lazy(() =>
   import('./pages/PaginaProximamente').then((m) => ({ default: m.PaginaProximamente })),
 )
@@ -27,6 +33,7 @@ type Vista =
   | 'inscripciones'
   | 'resultados'
   | 'coleccion'
+  | 'anuncios'
   | 'hoteles'
 
 /**
@@ -34,7 +41,11 @@ type Vista =
  * ('#/categorias?rama=F') para que cambiar un filtro no cambie de vista.
  */
 function vistaDesdeHash(hash: string): Vista {
-  switch (rutaDelHash(hash)) {
+  const ruta = rutaDelHash(hash)
+  // '#/anuncios/012' es un enlace directo a un aviso: misma vista, subruta
+  // distinta. La página lo lee con `useRutaHash` y salta a ese comunicado.
+  if (ruta.startsWith('/anuncios')) return 'anuncios'
+  switch (ruta) {
     case '/ruta':
       return 'ruta'
     case '/categorias':
@@ -78,7 +89,11 @@ export default function App() {
         <PaginaInscripciones />
       ) : vista === 'resultados' ? (
         <PaginaResultados />
-      ) : vista === 'coleccion' || vista === 'hoteles' ? (
+      ) : vista === 'coleccion' ? (
+        <PaginaColeccion />
+      ) : vista === 'anuncios' ? (
+        <PaginaAnuncios />
+      ) : vista === 'hoteles' ? (
         <PaginaProximamente seccion={vista} />
       ) : (
         <PaginaInicio />

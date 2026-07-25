@@ -9,6 +9,7 @@ export type ClavePagina =
   | 'inscripciones'
   | 'resultados'
   | 'coleccion'
+  | 'anuncios'
   | 'hoteles'
 
 interface Pagina {
@@ -32,6 +33,7 @@ const PAGINAS: Pagina[] = [
   { clave: 'categorias', href: '#/categorias', nombre: 'Categorías', km: '22.1' },
   { clave: 'inscripciones', href: '#/inscripciones', nombre: 'Inscripciones', km: '48.9' },
   { clave: 'resultados', href: '#/resultados', nombre: 'Resultados', km: '74.5' },
+  { clave: 'anuncios', href: '#/anuncios', nombre: 'Avisos' },
   { clave: 'coleccion', href: '#/coleccion', nombre: 'Colección' },
   { clave: 'hoteles', href: '#/hoteles', nombre: 'Hoteles' },
 ]

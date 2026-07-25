@@ -1,4 +1,4 @@
-import { CONFIG } from '../data/config'
+import { CONFIG, urlWhatsApp } from '../data/config'
 
 const NAVEGA: Array<{ href: string; nombre: string }> = [
   { href: '#/', nombre: 'Inicio' },
@@ -6,6 +6,7 @@ const NAVEGA: Array<{ href: string; nombre: string }> = [
   { href: '#/categorias', nombre: 'Categorías' },
   { href: '#/inscripciones', nombre: 'Inscripciones' },
   { href: '#/resultados', nombre: 'Resultados' },
+  { href: '#/anuncios', nombre: 'Avisos' },
   { href: '#/coleccion', nombre: 'Colección' },
   { href: '#/hoteles', nombre: 'Hoteles' },
 ]
@@ -36,6 +37,15 @@ export function PieSitio() {
           <div>
             <h3>Contacto</h3>
             <ul>
+              <li>
+                <a
+                  href={urlWhatsApp(`Hola, quiero información del ${CONFIG.evento}.`)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  WhatsApp {CONFIG.contacto.whatsappVisible}
+                </a>
+              </li>
               <li>
                 <a href={`mailto:${CONFIG.contacto.email}`}>{CONFIG.contacto.email}</a>
               </li>

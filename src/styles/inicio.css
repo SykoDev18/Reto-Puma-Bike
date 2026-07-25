@@ -197,11 +197,43 @@
    KM 74.5 - META (carrusel de avisos, sin autoplay)
    ====================================================================== */
 .carrusel { display: grid; gap: .9rem; justify-items: start; }
+/* El carrusel ya no muestra flyers: muestra COMUNICADOS con texto real, los
+   mismos que la página de Avisos. Por eso el marco creció y dejó de ser una
+   ventana cuadrada de imagen. */
 .carrusel__marco {
-  border: var(--regla); border-radius: 2px; background: var(--carbon);
-  width: min(100%, 420px);
+  border: var(--regla); border-top: 2px solid var(--borde);
+  border-radius: 2px; background: var(--carbon);
+  width: min(100%, 46rem);
+  padding: clamp(1rem, 2.5vw, 1.4rem);
 }
-.carrusel__marco img { width: 100%; height: auto; }
+.carrusel__cargando {
+  margin: 0;
+  font-family: var(--datos); font-size: .74rem; color: var(--tepetate);
+  text-transform: uppercase; letter-spacing: .12em;
+}
+
+.lamina__folio {
+  margin: 0 0 .6rem;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem;
+  font-size: .72rem;
+}
+.lamina__folio .dato { font-size: .72rem; }
+.lamina__sep { color: var(--borde); }
+.lamina__tipo {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .58rem;
+  color: var(--tepetate);
+  border: 1px solid var(--borde); border-radius: 2px; padding: .15rem .45rem;
+}
+.lamina__titulo {
+  margin: 0 0 .6rem;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: clamp(1rem, 2.2vw, 1.25rem); line-height: 1.15;
+  color: var(--cal);
+}
+.lamina__cuerpo { margin: 0 0 1rem; max-width: 64ch; color: var(--cal); }
+.lamina__ir { font-size: .76rem; }
+.avisos__todos { margin-top: 1.25rem; font-size: .78rem; }
 .carrusel__mando { display: flex; align-items: center; gap: .8rem; }
 .carrusel__flecha {
   display: grid; place-items: center;

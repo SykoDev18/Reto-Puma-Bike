@@ -1,18 +1,55 @@
-import { useId, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
+import type { Aviso } from '../types/anuncios'
+import { ROTULO_TIPO } from '../types/anuncios'
+import { cargarAnuncios, fechaCorta, masRecientes } from '../lib/anuncios'
 
-export interface Aviso {
-  src: string
-  alt: string
+/** Hoy en ISO local: la vigencia se compara por día, sin hora ni zona. */
+function hoyIso(): string {
+  const d = new Date()
+  const mes = String(d.getMonth() + 1).padStart(2, '0')
+  const dia = String(d.getDate()).padStart(2, '0')
+  return `${d.getFullYear()}-${mes}-${dia}`
 }
 
 /**
- * Carrusel de avisos accesible: sin autoplay, navegable con teclado (flechas y
- * los propios botones), con la lámina anunciada por aria-live y el resto oculto
- * a la tecnología asistiva.
+ * Los tres avisos más recientes del Inicio.
+ *
+ * Antes esto eran tres imágenes sueltas con `alt` escritos a mano en la página
+ * — y los tres estaban mal: describían flyers de ediciones pasadas como si
+ * fueran de esta. Ahora consume EXACTAMENTE los mismos datos que la página de
+ * Anuncios (`/data/anuncios.json`), así que no hay dos fuentes que se
+ * contradigan y el texto es texto de verdad, no pixeles.
+ *
+ * Sin autoplay y navegable con teclado: la lámina activa se anuncia por
+ * aria-live y el resto queda oculto a la tecnología asistiva.
  */
-export function CarruselAvisos({ avisos }: { avisos: Aviso[] }) {
+export function CarruselAvisos() {
+  const [avisos, setAvisos] = useState<Aviso[] | null>(null)
   const [indice, setIndice] = useState(0)
   const idPanel = useId()
+
+  useEffect(() => {
+    let vivo = true
+    cargarAnuncios()
+      .then((datos) => {
+        if (vivo) setAvisos(masRecientes(datos.avisos, hoyIso(), 3))
+      })
+      // El Inicio no se rompe si los avisos fallan: simplemente no se pintan.
+      .catch(() => {
+        if (vivo) setAvisos([])
+      })
+    return () => {
+      vivo = false
+    }
+  }, [])
+
+  if (avisos === null) {
+    return (
+      <p className="carrusel__cargando" role="status">
+        Cargando avisos…
+      </p>
+    )
+  }
   if (avisos.length === 0) return null
 
   const ir = (siguiente: number) => {
@@ -25,7 +62,7 @@ export function CarruselAvisos({ avisos }: { avisos: Aviso[] }) {
       className="carrusel"
       role="group"
       aria-roledescription="carrusel"
-      aria-label="Avisos del evento"
+      aria-label="Avisos recientes del comité"
       onKeyDown={(e) => {
         if (e.key === 'ArrowRight') {
           e.preventDefault()
@@ -39,14 +76,23 @@ export function CarruselAvisos({ avisos }: { avisos: Aviso[] }) {
     >
       <div className="carrusel__marco" id={idPanel} aria-live="polite">
         {avisos.map((aviso, i) => (
-          <img
-            key={aviso.src}
-            src={aviso.src}
-            alt={aviso.alt}
-            hidden={i !== indice}
-            loading="lazy"
-            decoding="async"
-          />
+          <article className="lamina" key={aviso.id} hidden={i !== indice}>
+            <p className="lamina__folio">
+              <span className="dato">AVISO {aviso.id}</span>
+              <span className="lamina__sep" aria-hidden="true">
+                ·
+              </span>
+              <time className="dato" dateTime={aviso.fecha}>
+                {fechaCorta(aviso.fecha)}
+              </time>
+              <span className="lamina__tipo">{ROTULO_TIPO[aviso.tipo]}</span>
+            </p>
+            <h3 className="lamina__titulo">{aviso.titulo}</h3>
+            <p className="lamina__cuerpo serif">{aviso.cuerpo}</p>
+            <a className="enlace-duro lamina__ir" href={`#/anuncios/${aviso.id}`}>
+              Leer el aviso completo
+            </a>
+          </article>
         ))}
       </div>
 
@@ -66,7 +112,7 @@ export function CarruselAvisos({ avisos }: { avisos: Aviso[] }) {
         <span className="carrusel__puntos">
           {avisos.map((aviso, i) => (
             <button
-              key={aviso.src}
+              key={aviso.id}
               className={i === indice ? 'punto punto--activo' : 'punto'}
               type="button"
               aria-current={i === indice}

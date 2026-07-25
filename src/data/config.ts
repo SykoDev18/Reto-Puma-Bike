@@ -25,8 +25,32 @@ export interface Config {
   salidaMeta: string
   estado: EstadoEvento
   videoHeroId: string
-  contacto: { email: string; direccion: string; whatsapp: string }
-  redes: { facebook: string; instagram: string; whatsapp: string; youtube: string }
+  contacto: {
+    email: string
+    direccion: string
+    /** Formato internacional sin '+', tal como lo pide wa.me. */
+    whatsapp: string
+    /** El mismo número, formateado para leerse en pantalla. */
+    whatsappVisible: string
+  }
+  redes: { facebook: string; instagram: string; youtube: string }
+  /**
+   * Datos para recibir transferencias.
+   *
+   * SEGURIDAD — NO NEGOCIABLE: aquí NUNCA va un número de tarjeta, ni siquiera
+   * en un comentario. Para recibir un depósito basta la CLABE; una tarjeta
+   * publicada en una página indexable habilita cargos en comercios que solo
+   * piden número y vencimiento. Cuenta y CLABE solo sirven para RECIBIR.
+   * Por lo mismo, ninguna imagen del flyer bancario se publica: los datos van
+   * como texto, que además se puede copiar.
+   */
+  pago: {
+    banco: string
+    beneficiario: string
+    cuenta: string
+    clabe: string
+    instruccion: string
+  }
   kits: Kit[]
   /**
    * Cierre de la edición que YA se corrió, para el estado 'postevento'.
@@ -62,14 +86,20 @@ export const CONFIG: Config = {
   contacto: {
     email: 'retopumabike@gmail.com',
     direccion: 'Libertad 1, Aviación, 42506 Actopan, Hgo.',
-    // SUPUESTO: número vigente tomado del sitio anterior.
-    whatsapp: '527721199093',
+    whatsapp: '5217721199093',
+    whatsappVisible: '772 119 9093',
   },
   redes: {
-    facebook: 'https://www.facebook.com/people/RETO-PUMA-BIKE/100092370199634/',
-    instagram: 'https://www.instagram.com/reto_puma_bike_/',
-    whatsapp: 'https://wa.me/527721199093',
+    facebook: 'https://www.facebook.com/p/RETO-PUMA-BIKE-100092370199634/',
+    instagram: 'https://www.instagram.com/reto_puma_bike_',
     youtube: 'https://www.youtube.com/@RetoPumaBike-v8h',
+  },
+  pago: {
+    banco: 'BanCoppel',
+    beneficiario: 'Laura Delia Bastida González',
+    cuenta: '10046851116',
+    clabe: '137463100468511169',
+    instruccion: 'Manda tu comprobante por WhatsApp con tu nombre completo y categoría.',
   },
   kits: [
     {

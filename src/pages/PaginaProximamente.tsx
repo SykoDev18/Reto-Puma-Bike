@@ -9,13 +9,7 @@ interface Seccion {
   mensaje: string
 }
 
-const SECCIONES: Record<'coleccion' | 'hoteles', Seccion> = {
-  coleccion: {
-    titulo: 'Colección',
-    descripcion:
-      'El jersey, las medallas y los kits de las cuatro ediciones. Estamos fotografiando las piezas que faltan antes de publicarla.',
-    mensaje: `Hola, quiero información sobre la colección del ${CONFIG.evento}.`,
-  },
+const SECCIONES: Record<'hoteles', Seccion> = {
   hoteles: {
     titulo: 'Hoteles',
     descripcion:
@@ -30,7 +24,7 @@ const SECCIONES: Record<'coleccion' | 'hoteles', Seccion> = {
  * mostraban el Inicio como si fuera esa sección. Decir "todavía no" es mejor que
  * mostrar en silencio la página equivocada.
  */
-export function PaginaProximamente({ seccion }: { seccion: 'coleccion' | 'hoteles' }) {
+export function PaginaProximamente({ seccion }: { seccion: 'hoteles' }) {
   const { titulo, descripcion, mensaje } = SECCIONES[seccion]
 
   return (

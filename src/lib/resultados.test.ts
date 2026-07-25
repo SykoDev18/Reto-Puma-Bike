@@ -211,6 +211,17 @@ test('EBV-40 tiene DOS corredores en posición 2: el podio los muestra a ambos',
   assert.equal(p[2].estado, 'REVISION')
 })
 
+test('un podio SIN segundo lugar se publica con el hueco, sin ascender al 3º', () => {
+  // Y-80 no trae posición 2 en los datos del sistema. Cerrar el hueco sería
+  // inventar un resultado.
+  const p = podio(categoria('Y-80'))
+  assert.deepEqual(
+    p.map((c) => c.posicion),
+    [1, 3],
+  )
+  assert.equal(p[1].dorsal, 121)
+})
+
 test('una categoría de 3 corredoras tiene podio completo de 3', () => {
   assert.equal(categoria('EBF-40').corredores.length, 3)
   assert.equal(podio(categoria('EBF-40')).length, 3)

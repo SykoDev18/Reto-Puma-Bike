@@ -22,13 +22,9 @@ import { WidgetCategoria } from '../components/WidgetCategoria'
 import { GridPatrocinadores } from '../components/GridPatrocinadores'
 import { CarruselAvisos } from '../components/CarruselAvisos'
 import { PreRegistroQuinta } from '../components/PreRegistroQuinta'
-import type { Aviso } from '../components/CarruselAvisos'
 import portadaVideo from '../assets/img/img_1.webp'
 import jerseyFrente from '../assets/Anuncio/jersey3.webp'
 import jerseyEspalda from '../assets/Anuncio/jersey2.webp'
-import aviso1 from '../assets/Anuncios generales/Aviso1.webp'
-import aviso2 from '../assets/Anuncios generales/Aviso2.webp'
-import aviso3 from '../assets/Anuncios generales/Aviso3.webp'
 
 const nf = new Intl.NumberFormat('es-MX')
 
@@ -39,12 +35,6 @@ const RUTA_REFERENCIA = RUTAS.larga
 const KM_RECORRIDO = 8.4
 const KM_QUIEN_CORRE = 22.1
 const KM_INSCRIPCION = 48.9
-
-const AVISOS: Aviso[] = [
-  { src: aviso1, alt: 'Aviso oficial del Reto Puma Bike: convocatoria de la edición.' },
-  { src: aviso2, alt: 'Aviso oficial del Reto Puma Bike: detalles de entrega de kits.' },
-  { src: aviso3, alt: 'Aviso oficial del Reto Puma Bike: información de premiación.' },
-]
 
 const GRUPOS: Grupo[] = ['Infantiles', 'Grupo Menor', 'Grupo Mayor']
 const DESCRIPCION_GRUPO: Record<Grupo, string> = {
@@ -431,7 +421,13 @@ export function PaginaInicio() {
             <TituloAncho as="h2" className="display--medio titulo-seccion">
               Avisos del comité
             </TituloAncho>
-            <CarruselAvisos avisos={AVISOS} />
+            {/* Los 3 más recientes, leídos del MISMO `anuncios.json` que la
+                página de Anuncios. Una sola fuente: no hay dos listas que se
+                puedan contradecir. */}
+            <CarruselAvisos />
+            <a className="enlace-duro avisos__todos" href="#/anuncios">
+              Ver todos los avisos
+            </a>
           </div>
         </section>
       </main>
