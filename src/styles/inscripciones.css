@@ -1,0 +1,266 @@
+/* =========================================================================
+   RETO PUMA BIKE - Inscripciones. Inscribirse es RECORRER LA RUTA: cuatro
+   controles de paso sobre el perfil de elevación, y la placa se arma en vivo.
+   El formulario vive en zona de luz (§3 de la dirección).
+   Sin hex, radio máximo 2px, sin sombras difusas.
+   ========================================================================= */
+
+.seccion-insc { padding-block: clamp(2.5rem, 6vw, 4rem); }
+.titulo-insc {
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  color: var(--cal);
+  max-width: 20ch;
+}
+.subtitulo-insc {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .8rem;
+  color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo));
+  margin: 0 0 1.2rem;
+}
+
+/* ---- Los dos caminos: MISMO peso visual, ninguno es el secundario -------- */
+.caminos-insc {
+  display: grid; gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+}
+.camino-insc {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .7rem;
+  padding-top: 1rem; border-top: var(--regla); min-width: 0;
+}
+.camino-insc__titulo {
+  margin: 0;
+  font-family: var(--display); font-stretch: 118%; font-weight: 800;
+  text-transform: uppercase; font-size: clamp(1.15rem, 2.6vw, 1.55rem); color: var(--cal);
+}
+.camino-insc p { margin: 0; max-width: 34ch; }
+
+/* ---- Zona de luz: corte duro arriba y abajo ----------------------------- */
+.zona-formulario { padding-block: clamp(2.5rem, 6vw, 4.5rem); border-block: 2px solid var(--noche); }
+
+.registro {
+  display: grid; gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+  align-items: start;
+}
+.registro__form { min-width: 0; }
+.registro__placa { position: sticky; top: 5rem; min-width: 0; }
+
+/* ======================================================================
+   PROGRESO = el perfil de elevación del sitio. No es una barra.
+   ====================================================================== */
+.progreso { margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
+.progreso__perfil { position: relative; padding-bottom: .3rem; }
+.progreso__linea { height: clamp(40px, 7vw, 56px); }
+.progreso__linea .mini-perfil__linea { stroke: color-mix(in srgb, var(--texto-color) 45%, var(--fondo)); }
+.progreso__huella {
+  position: absolute; bottom: -2px; width: 22px; height: 22px;
+  transform: translateX(-50%);
+  color: var(--texto-color);
+  transition: left .35s cubic-bezier(.16, 1, .3, 1);
+}
+.progreso__huella svg { width: 100%; height: 100%; display: block; }
+
+.progreso__controles {
+  position: relative; list-style: none; margin: 0; padding: 0;
+  height: 4.6rem;
+  border-top: 1px solid color-mix(in srgb, var(--texto-color) 22%, var(--fondo));
+}
+.progreso__control { position: absolute; top: 0; transform: translateX(-50%); text-align: center; }
+.progreso__punto {
+  width: 44px; height: 44px; padding: 0; margin-top: -22px;   /* objetivo táctil */
+  display: grid; place-items: center;
+  background: transparent; border: 0; cursor: pointer;
+}
+.progreso__punto::before {
+  content: ""; width: 12px; height: 12px; border-radius: 2px;
+  border: 2px solid var(--texto-color); background: var(--fondo);
+}
+.progreso__punto:disabled { cursor: default; }
+.progreso__control[data-estado='sellado'] .progreso__punto::before { background: var(--texto-color); }
+.progreso__control[data-estado='actual'] .progreso__punto::before {
+  background: var(--oro-puma); border-color: var(--oro-puma);
+}
+.progreso__control[data-estado='pendiente'] .progreso__punto::before {
+  border-color: color-mix(in srgb, var(--texto-color) 35%, var(--fondo));
+}
+.progreso__rotulo { display: flex; flex-direction: column; gap: 1px; width: 6.5rem; margin-top: -.5rem; }
+.progreso__km { font-size: .58rem; }
+.progreso__titulo {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .1em; font-size: .6rem;
+  color: color-mix(in srgb, var(--texto-color) 70%, var(--fondo));
+}
+.progreso__control[data-estado='actual'] .progreso__titulo { color: var(--texto-color); }
+
+.modo-todo { margin: 0 0 1.25rem; }
+.modo-todo .enlace-duro { font-size: .74rem; }
+
+/* ======================================================================
+   CONTROL (fieldset con legend real)
+   ====================================================================== */
+.control {
+  border: 0; margin: 0 0 clamp(1.5rem, 3vw, 2rem); padding: 0; min-width: 0;
+  border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo));
+  padding-top: 1.1rem;
+}
+.control__leyenda { padding: 0; margin-bottom: 1.1rem; }
+.control__km { display: block; font-size: .62rem; margin-bottom: .2rem; }
+.control__titulo {
+  margin: 0;
+  font-family: var(--display); font-stretch: 118%; font-weight: 800;
+  text-transform: uppercase; font-size: clamp(1.3rem, 3.2vw, 2rem);
+  color: var(--texto-color); line-height: 1;
+}
+.control__titulo:focus-visible { outline: 3px solid var(--crono); outline-offset: 4px; }
+.control > * + * { margin-top: 1.25rem; }
+.control__acciones {
+  display: flex; flex-wrap: wrap; gap: .8rem; align-items: center;
+  margin-top: 1.75rem; padding-top: 1.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo));
+}
+
+.rejilla-campos { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; }
+.fecha { border: 0; margin: 0; padding: 0; min-width: 0; }
+.fecha__campos { display: flex; gap: .75rem; margin-top: .5rem; }
+.total {
+  display: flex; align-items: baseline; gap: .4rem; margin: 1.25rem 0 0;
+  padding-top: .9rem; border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo));
+}
+.total__rot {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .66rem;
+  color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo));
+  margin-right: auto;
+}
+.total__monto { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 700; }
+.total__moneda { font-family: var(--datos); font-size: .66rem; color: color-mix(in srgb, var(--texto-color) 60%, var(--fondo)); }
+
+.wa-parcial { display: flex; flex-direction: column; gap: .25rem; margin: 1.5rem 0 0; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo)); }
+.wa-parcial__nota { font-size: .88rem; color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo)); }
+
+/* ======================================================================
+   LA PLACA QUE SE ARMA EN VIVO (variante invertida sobre la franja clara)
+   ====================================================================== */
+.placa-viva { margin: 0; }
+.placa-viva__cuerpo {
+  position: relative;
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: 1.9rem 1rem 1.1rem;
+  background: var(--noche); color: var(--cal);
+  border: 3px solid var(--noche); border-radius: 2px;
+}
+.placa-viva__cuerpo .placa__hoyos { fill: var(--cal); width: 54px; height: 14px; top: 8px; }
+.placa-viva__numero { display: flex; flex-direction: column; align-items: center; gap: .1rem; }
+.placa-viva__numero b {
+  font-family: var(--datos); font-weight: 800; font-size: clamp(2.4rem, 7vw, 3.4rem);
+  letter-spacing: .08em; color: color-mix(in srgb, var(--cal) 55%, var(--noche));
+}
+.placa-viva__numero small {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .55rem;
+  color: color-mix(in srgb, var(--cal) 55%, var(--noche));
+}
+
+/* Cada ranura empieza punteada y se "llena" al capturar el dato. */
+.placa-viva__ranura {
+  display: block; min-height: 2.1rem; padding: .35rem .5rem;
+  border: 1px dashed color-mix(in srgb, var(--cal) 32%, var(--noche));
+  border-radius: 2px;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: .82rem; line-height: 1.25;
+  color: color-mix(in srgb, var(--cal) 42%, var(--noche));
+  overflow-wrap: anywhere;
+}
+.placa-viva__ranura[data-llena='si'] {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--cal) 55%, var(--noche));
+  color: var(--cal);
+}
+.placa-viva__ranura--datos { font-family: var(--datos); font-stretch: normal; font-weight: 500; font-size: .7rem; text-transform: none; }
+.placa-viva__clave {
+  display: inline-block; margin-right: .4rem; padding: 0 .3rem;
+  background: var(--cal); color: var(--noche);
+  font-family: var(--datos); font-weight: 800; font-size: .78rem; border-radius: 2px;
+}
+.placa-viva__precio { color: var(--crono); }
+.placa-viva__pie {
+  margin-top: .6rem;
+  font-family: var(--datos); font-size: .64rem; line-height: 1.5;
+  color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo));
+}
+
+/* ======================================================================
+   META (confirmación)
+   ====================================================================== */
+.meta__rot {
+  margin: 0 0 .3rem;
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .68rem;
+  color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo));
+}
+.meta__titulo {
+  margin: 0 0 1.25rem;
+  font-family: var(--display); font-stretch: 118%; font-weight: 800;
+  text-transform: uppercase; font-size: clamp(1.4rem, 3.6vw, 2.2rem); color: var(--texto-color);
+}
+.meta__folio { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.meta__folio p { max-width: 44ch; margin: 0; }
+.placa--folio { min-width: 10rem; }
+.placa--folio b { font-size: 1.1rem; letter-spacing: 0; }
+
+.resumen { display: grid; gap: 0; margin: 0 0 1.5rem; }
+.resumen > div {
+  display: flex; flex-wrap: wrap; gap: .3rem 1rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--texto-color) 16%, var(--fondo));
+}
+.resumen dt {
+  flex: 0 0 9rem;
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em; font-size: .62rem;
+  color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo));
+  padding-top: .15rem;
+}
+.resumen dd { margin: 0; min-width: 0; font-family: var(--texto); font-size: .95rem; }
+.meta__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+.meta__nota { margin: 1.25rem 0 0; font-size: .92rem; }
+
+/* ---- Kits como referencia (estado postevento) --------------------------- */
+.kits-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.kits-lista > li { padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo)); }
+.kits-lista h3 { margin: 0 0 .3rem; font-family: var(--display); font-stretch: 100%; font-weight: 800; text-transform: uppercase; font-size: 1.05rem; }
+.kit-ref__precio { margin: 0 0 .5rem; font-family: var(--datos); font-size: .8rem; }
+.kit-ref__precio .cifra { font-size: 1.3rem; font-weight: 700; }
+.kits-lista ul { margin: 0; padding-left: 1.1rem; font-size: .9rem; }
+
+/* ======================================================================
+   RESPONSIVO
+   ====================================================================== */
+@media (max-width: 900px) {
+  .registro { grid-template-columns: 1fr; }
+  /* En móvil la placa va ARRIBA y fija: es el objeto que se está construyendo. */
+  .registro__placa { order: -1; position: sticky; top: 4.2rem; z-index: 30; }
+  .placa-viva__cuerpo { flex-direction: row; flex-wrap: wrap; align-items: center; gap: .4rem .6rem; padding-top: 1.5rem; }
+  .placa-viva__numero { flex-direction: row; align-items: baseline; gap: .35rem; }
+  .placa-viva__numero b { font-size: 1.6rem; }
+  .placa-viva__ranura { flex: 1 1 8rem; min-height: 1.9rem; font-size: .74rem; }
+}
+
+@media (max-width: 680px) {
+  .caminos-insc { grid-template-columns: 1fr; }
+  /* El carril se mete por los dos lados (perfil Y puntos por igual, para no
+     desalinear el kilometraje) porque el punto de KM 74.5 se saldría de la
+     pantalla y provocaría scroll horizontal. */
+  .progreso__perfil, .progreso__controles { margin-inline: 24px; }
+  .progreso__controles { height: 3.9rem; }
+  .progreso__rotulo { width: 3.6rem; }
+  .progreso__titulo { display: none; }
+  .resumen dt { flex: 1 1 100%; }
+  .control__acciones .boton { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progreso__huella { transition: none; }
+  .opcion { transition: none; }
+}

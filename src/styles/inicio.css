@@ -1,0 +1,240 @@
+/* =========================================================================
+   RETO PUMA BIKE - Portada del roadbook (Inicio).
+   Sin hex: todo por var(--*) de tokens.css. Todo duro: radio máximo 2px,
+   separaciones por regla de 1px o cambio de fondo, nunca por sombra.
+   ========================================================================= */
+
+.seccion-inicio { padding-block: clamp(2.5rem, 6vw, 5rem); position: relative; }
+.seccion-inicio + .seccion-inicio { border-top: var(--regla); }
+
+.titulo-seccion { color: var(--texto-color); margin: 0 0 clamp(1.5rem, 3vw, 2.25rem); max-width: 22ch; }
+
+/* ======================================================================
+   KM 0.0 - PORTADA. Composición asimétrica anclada a la izquierda:
+   texto a la izquierda, ventana de video a la derecha. El texto NUNCA
+   va encima del video y nada está centrado (§2 del prompt).
+   ====================================================================== */
+.portada {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .85fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+.portada__texto { min-width: 0; }
+.portada__marca { display: flex; align-items: flex-start; gap: clamp(.75rem, 2vw, 1.25rem); }
+/* El título más ancho del proyecto: nada después lo supera. */
+.portada__titulo {
+  font-size: clamp(1.9rem, 5.6vw, 4.2rem);
+  color: var(--cal);
+  max-width: 13ch;
+}
+
+/* Ficha de datos duros sobre una regla de 1px */
+.ficha {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem;
+  margin: clamp(1.25rem, 3vw, 1.75rem) 0 0;
+  padding-top: .7rem;
+  border-top: var(--regla);
+  font-family: var(--datos); font-size: .74rem; line-height: 1.5;
+}
+.ficha__lugar { color: var(--tepetate); text-transform: uppercase; letter-spacing: .04em; }
+.ficha__sep { color: var(--borde); }
+
+.portada__distancias { margin-top: clamp(1.25rem, 3vw, 1.75rem); gap: 1.25rem; }
+.distancia { display: flex; align-items: center; gap: .55rem; }
+.distancia__desnivel { font-size: .78rem; white-space: nowrap; }
+
+.portada__acciones {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem;
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* Ventana del video: bordes duros, alineada a la retícula, con su pie. */
+.portada__ventana { min-width: 0; }
+.ventana { margin: 0; }
+.ventana__pie {
+  margin-top: .5rem;
+  font-family: var(--datos); font-size: .66rem; color: var(--tepetate);
+  text-transform: uppercase; letter-spacing: .1em;
+}
+
+/* ---- Estado del evento: lectura de instrumento en una línea ------------- */
+.estado {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem;
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+  padding-top: 1rem;
+  border-top: var(--regla);
+}
+.lectura {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem;
+  margin: 0;
+  font-family: var(--datos); font-size: clamp(.82rem, 2vw, 1rem);
+}
+.lectura .dato { font-weight: 700; font-size: 1.15em; }
+.lectura__rot {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .68rem; color: var(--tepetate);
+}
+.lectura__sep { color: var(--borde); }
+
+/* ======================================================================
+   KM 8.4 - EL RECORRIDO (dos bloques horizontales, uno por ruta)
+   ====================================================================== */
+.rutas-doble { display: grid; gap: clamp(1.25rem, 3vw, 2rem); }
+.ruta-bloque {
+  display: grid;
+  grid-template-columns: minmax(0, .42fr) minmax(0, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+  padding-block: clamp(1.25rem, 3vw, 1.75rem);
+  border-top: var(--regla);
+}
+.ruta-bloque__cabeza { display: flex; flex-direction: column; gap: .9rem; min-width: 0; }
+.ruta-bloque__titulo { font-size: clamp(1.6rem, 4vw, 2.6rem); color: var(--cal); }
+.ruta-bloque__cuerpo { min-width: 0; }
+
+
+.ruta-bloque__poblados {
+  margin: .8rem 0 .35rem;
+  font-family: var(--datos); font-size: .7rem; line-height: 1.7;
+  color: var(--tepetate); text-transform: uppercase; letter-spacing: .04em;
+}
+.ruta-bloque__meta { margin: 0 0 .9rem; font-size: .95rem; }
+
+/* ======================================================================
+   KM 22.1 - QUIÉN CORRE
+   ====================================================================== */
+.grupos { display: grid; gap: clamp(1rem, 2.5vw, 1.75rem); grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grupo { padding-top: 1rem; border-top: var(--regla); min-width: 0; }
+.grupo__cuenta { display: flex; align-items: baseline; gap: .45rem; margin: 0 0 .3rem; }
+.grupo__cuenta .cifra { font-weight: 700; font-size: clamp(1.5rem, 3.5vw, 2.1rem); }
+.grupo__rot {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; color: var(--tepetate);
+}
+.grupo__nombre {
+  font-family: var(--display); font-stretch: 100%; font-weight: 800;
+  text-transform: uppercase; font-size: 1.05rem; color: var(--cal); margin: 0 0 .45rem;
+}
+
+/* ======================================================================
+   KM 48.9 - INSCRIPCIÓN (sin oro: el oro se gastó en el hero)
+   ====================================================================== */
+.kits { display: grid; gap: clamp(1rem, 2.5vw, 2rem); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kit { padding-top: 1rem; border-top: var(--regla); min-width: 0; }
+.kit__nombre {
+  margin: 0 0 .5rem;
+  font-family: var(--display); font-stretch: 118%; font-weight: 800;
+  text-transform: uppercase; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: var(--cal);
+}
+.kit__precio { display: flex; align-items: baseline; gap: .4rem; margin: 0 0 .8rem; }
+.kit__precio .cifra { font-weight: 700; font-size: clamp(1.4rem, 3vw, 1.9rem); }
+.kit__moneda { font-family: var(--datos); font-size: .68rem; color: var(--tepetate); letter-spacing: .06em; }
+.kit__lista { margin: 0; padding-left: 1.1rem; }
+.kit__lista li { margin-bottom: .35rem; font-size: .95rem; }
+.kit__lista li::marker { color: var(--tepetate); }
+
+.caminos {
+  display: grid; gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+.camino { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: .7rem; }
+.camino__titulo {
+  margin: 0;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: 1.05rem; color: var(--cal);
+}
+.camino p { margin: 0; max-width: 42ch; }
+
+/* ======================================================================
+   ZONA DE LUZ: Colección + Patrocinadores en UNA franja, a sangre,
+   con corte duro al entrar y al salir (§3.1 del prompt).
+   ====================================================================== */
+.zona-luz { padding-block: clamp(3rem, 7vw, 5.5rem); border-block: 2px solid var(--noche); }
+.zona-luz .titulo-seccion,
+.zona-luz .kit__nombre,
+.zona-luz .grupo__nombre { color: var(--noche); }
+/* Sobre cal, el gris de metadatos necesita más contraste que --tepetate. */
+.zona-luz .etiqueta { color: color-mix(in srgb, var(--noche) 62%, var(--cal)); }
+.zona-luz .medida { color: color-mix(in srgb, var(--noche) 74%, var(--cal)); }
+.corte-luz {
+  border: 0; border-top: 1px solid color-mix(in srgb, var(--noche) 22%, var(--cal));
+  margin: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.coleccion__cuerpo {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr);
+  gap: clamp(1.5rem, 4vw, 3rem); align-items: center;
+}
+.coleccion__fotos { display: flex; gap: clamp(.75rem, 2vw, 1.5rem); align-items: flex-end; min-width: 0; }
+.coleccion__fotos img { width: 50%; height: auto; object-fit: contain; }
+.coleccion__texto { min-width: 0; }
+.coleccion__texto p { margin: 0 0 1rem; max-width: 40ch; }
+
+/* Patrocinadores: solo logos, sin tarjetas ni sombras. Gris al 60% en reposo. */
+.patrocinadores {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: clamp(1rem, 2.5vw, 2rem);
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  align-items: center;
+}
+.patrocinador { display: grid; place-items: center; min-width: 0; }
+.patrocinador img {
+  width: 100%; height: clamp(46px, 7vw, 62px);
+  object-fit: contain;
+  /* Escala de grises al 60% en reposo, color completo al hover/foco. Sin bajar
+     la opacidad: estos logos tienen que quedar legibles. */
+  filter: grayscale(.6);
+  transition: filter .25s ease;
+}
+.patrocinador--principal { grid-column: span 2; }
+.patrocinador--principal img { height: clamp(64px, 10vw, 92px); }
+.patrocinador img:hover,
+.patrocinador:focus-within img { filter: grayscale(0); }
+
+/* ======================================================================
+   KM 74.5 - META (carrusel de avisos, sin autoplay)
+   ====================================================================== */
+.carrusel { display: grid; gap: .9rem; justify-items: start; }
+.carrusel__marco {
+  border: var(--regla); border-radius: 2px; background: var(--carbon);
+  width: min(100%, 420px);
+}
+.carrusel__marco img { width: 100%; height: auto; }
+.carrusel__mando { display: flex; align-items: center; gap: .8rem; }
+.carrusel__flecha {
+  display: grid; place-items: center;
+  width: 40px; height: 40px; padding: 0;
+  background: transparent; border: 2px solid var(--borde); border-radius: 2px;
+  color: var(--texto-color);
+}
+.carrusel__flecha:hover { border-color: var(--tepetate); }
+.carrusel__puntos { display: flex; align-items: center; gap: .4rem; }
+.punto {
+  width: 10px; height: 10px; padding: 0;
+  background: transparent; border: 2px solid var(--borde); border-radius: 2px;
+}
+.punto--activo { background: var(--tepetate); border-color: var(--tepetate); }
+
+/* ======================================================================
+   RESPONSIVO
+   ====================================================================== */
+@media (max-width: 900px) {
+  .portada { grid-template-columns: 1fr; }
+  .ruta-bloque { grid-template-columns: 1fr; align-items: start; }
+  .coleccion__cuerpo { grid-template-columns: 1fr; }
+  .grupos { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  .kits { grid-template-columns: 1fr; }
+  .caminos { grid-template-columns: 1fr; }
+  .portada__marca { flex-direction: column; }
+  .patrocinadores { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); }
+  .patrocinador--principal { grid-column: span 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .patrocinador img { transition: none; }
+}

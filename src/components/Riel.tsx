@@ -1,6 +1,7 @@
 import type { RefObject } from 'react'
 import type { Ruta } from '../types/roadbook'
 import { Perfil } from './Perfil'
+import { HuellaPuma } from './HuellaPuma'
 
 /**
  * Riel fijo del roadbook: perfil de elevación, marcas de kilometraje y la
@@ -23,15 +24,7 @@ export function Riel({ ruta, kmRef }: { ruta: Ruta; kmRef: RefObject<HTMLDivElem
         ))}
       </div>
       <div className="riel__huella">
-        <svg viewBox="0 0 100 100">
-          <g fill="currentColor">
-            <path d="M50 92c-14 0-25-8-25-19 0-10 11-16 25-16s25 6 25 16c0 11-11 19-25 19z" />
-            <ellipse cx="21" cy="47" rx="8" ry="12" />
-            <ellipse cx="39" cy="33" rx="8.5" ry="13.5" />
-            <ellipse cx="61" cy="33" rx="8.5" ry="13.5" />
-            <ellipse cx="79" cy="47" rx="8" ry="12" />
-          </g>
-        </svg>
+        <HuellaPuma />
       </div>
       <div className="riel__km-actual" ref={kmRef}>KM 0</div>
     </aside>

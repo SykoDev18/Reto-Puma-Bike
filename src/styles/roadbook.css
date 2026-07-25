@@ -14,6 +14,9 @@
 }
 .display--ancho { font-stretch: 150%; }
 .display--medio { font-stretch: 125%; }
+/* Condensada: etiquetas técnicas y páginas de datos (Categorías). El eje de
+   ANCHO codifica información, así que lo técnico va estrecho. */
+.display--condensado { font-stretch: 66%; font-weight: 700; letter-spacing: .04em; }
 .serif { font-family: var(--texto); }
 
 .dato {
@@ -109,10 +112,11 @@
 /* ======================================================================
    ENCABEZADO — índice del roadbook
    ====================================================================== */
+/* Fondo OPACO a propósito: la lista negra (§8) prohíbe glassmorphism y
+   backdrop-filter. La cabecera se separa con una regla de 1px, no con blur. */
 .cabecera {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--noche) 88%, transparent);
-  backdrop-filter: blur(6px);
+  background: var(--noche);
   border-bottom: var(--regla);
 }
 .cabecera__fila { display: flex; align-items: center; gap: 1rem; padding: .6rem var(--gutter); min-height: 64px; }
@@ -129,8 +133,18 @@
 }
 .marca__nombre small { display: block; font-stretch: 66%; font-weight: 700; font-size: .62rem; color: var(--tepetate); letter-spacing: .16em; }
 
-.nav-indice { display: flex; align-items: center; gap: .2rem; margin-left: auto; }
-.nav-indice a { position: relative; text-decoration: none; padding: .5rem .7rem; }
+/* align-items: stretch + justify-content: flex-end alinea los NOMBRES en una
+   misma línea de base aunque solo algunas entradas lleven kilómetro. */
+.nav-indice { display: flex; align-items: stretch; gap: .2rem; margin-left: auto; }
+.nav-indice a {
+  position: relative; text-decoration: none; padding: .5rem .7rem;
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 1px;
+}
+/* Kilómetro real de la parada; solo lo llevan las entradas ancladas a un km. */
+.nav-indice a .km {
+  font-family: var(--datos); font-size: .55rem; font-weight: 500;
+  color: var(--tepetate); letter-spacing: -.02em; line-height: 1;
+}
 .nav-indice a .n {
   font-family: var(--display); font-stretch: 66%; font-weight: 700;
   text-transform: uppercase; letter-spacing: .1em; font-size: .82rem; color: var(--cal);
@@ -139,6 +153,11 @@
   content: ""; position: absolute; left: .7rem; right: .7rem; bottom: 2px; height: 2px; background: var(--tepetate);
 }
 .nav-indice a:hover .n { color: var(--tepetate); }
+/* Postevento: Resultados es lo que la gente viene a buscar. Se destaca con una
+   marca de 2px en --cal, no en oro: el oro de esta pantalla es el CTA. */
+.nav-indice a[data-destacado='si'] { border-left: 2px solid var(--cal); }
+.nav-indice a[data-destacado='si'] .n { color: var(--cal); }
+.nav-indice a[data-destacado='si'] .km { color: var(--cal); }
 
 .nav-toggle {
   display: none; margin-left: auto; width: 44px; height: 44px; padding: 0;
@@ -149,6 +168,7 @@
 /* ---- Botones (el CTA es el único elemento en oro por pantalla) ---------- */
 .boton {
   display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 44px;
   font-family: var(--display); font-stretch: 82%; font-weight: 800;
   text-transform: uppercase; letter-spacing: .04em; font-size: .9rem;
   padding: .72rem 1.15rem; border-radius: 2px; border: 2px solid transparent;
@@ -158,9 +178,15 @@
 .boton:active { transform: translateY(1px); }
 .boton--oro { background: var(--oro-puma); color: var(--noche); }
 .boton--oro:hover { background: color-mix(in srgb, var(--oro-puma) 88%, var(--cal)); }
-.boton--linea { background: transparent; border-color: var(--tepetate); color: var(--cal); }
-.boton--linea:hover { border-color: var(--cal); }
-.boton--chico { padding: .5rem .85rem; font-size: .8rem; }
+/* Atado a la SUPERFICIE: en la franja clara el texto --cal sobre fondo --cal
+   sería invisible. Así el mismo botón sirve en ambos contextos. */
+.boton--linea {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--texto-color) 45%, var(--fondo));
+  color: var(--texto-color);
+}
+.boton--linea:hover { border-color: var(--texto-color); }
+.boton--chico { padding: .5rem .85rem; font-size: .8rem; min-height: 44px; }
 
 /* ======================================================================
    PLACA DE DORSAL (§6): fondo cal, número Martian Mono, borde noche grueso,
@@ -239,7 +265,8 @@
 .foto figcaption { font-family: var(--datos); font-size: .68rem; color: var(--tepetate); padding: .5rem .7rem; border-top: var(--regla); }
 
 .facade { position: relative; border: var(--regla); border-radius: 2px; overflow: hidden; background: var(--mezquite) center / cover no-repeat; min-height: 320px; display: grid; place-items: center; }
-.facade::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--noche) 15%, transparent), color-mix(in srgb, var(--noche) 72%, transparent)); }
+/* Velo PLANO sobre la portada del embed: sin degradados (§8). */
+.facade::after { content: ""; position: absolute; inset: 0; background: color-mix(in srgb, var(--noche) 62%, transparent); }
 .facade > * { position: relative; z-index: 1; }
 .facade .facade__nota { position: absolute; top: .6rem; left: .7rem; font-family: var(--datos); font-size: .66rem; color: var(--cal); }
 .facade iframe { position: relative; z-index: 2; width: 100%; height: 460px; border: 0; display: block; }
@@ -309,6 +336,268 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* §7: el perfil aparece dibujado, los títulos nacen expandidos y la huella se
+     queda en su sitio. No se pierde información: el kilometraje del riel y de la
+     barra inferior siguen actualizándose en texto. */
   .expandible { font-stretch: 135%; }
   .riel__perfil-hecho { stroke-dashoffset: 0 !important; }
+  .riel__perfil-base { stroke: var(--tepetate); }
+  .riel__huella { top: 0 !important; }
+}
+
+/* Fallback de Suspense mientras llega el chunk de la página. */
+.cargando {
+  display: grid; place-items: center; min-height: 60vh; padding: var(--gutter);
+  font-family: var(--datos); font-size: .8rem; color: var(--tepetate);
+  text-transform: uppercase; letter-spacing: .12em;
+}
+
+/* Cifra NO medida: misma monoespaciada tabular, pero SIN --crono.
+   Precios, conteos de categorías y edades no salen de un cronómetro ni de un
+   GPS, así que heredan el color del texto (§2: el frío es solo medición). */
+.cifra {
+  font-family: var(--datos);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+  color: inherit;
+}
+
+
+/* ======================================================================
+   PRIMITIVAS COMPARTIDAS DE FORMULARIO Y DATOS
+   Viven en la hoja COMPARTIDA (no en un chunk por página) porque las usan
+   componentes compartidos: WidgetCategoria, HitoPagina y los campos. Si
+   estuvieran en el CSS de una página, entrar directo a otra ruta las dejaría
+   sin estilos.
+   ====================================================================== */
+
+/* Enlace secundario: texto subrayado, nunca un botón compitiendo con el CTA. */
+.enlace-duro {
+  display: inline-block;
+  font-family: var(--display); font-stretch: 82%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em; font-size: .82rem;
+  color: var(--texto-color);
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .28em;
+}
+.enlace-duro:hover { color: var(--tepetate); }
+
+/* ---- Marcador de kilómetro de sección ----------------------------------- */
+.hito { display: flex; align-items: center; gap: .8rem; margin-bottom: clamp(1.25rem, 3vw, 2rem); }
+.hito__rotulo { display: flex; flex-direction: column; }
+.hito__tipo {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; font-size: .68rem; color: var(--tepetate);
+}
+.hito__desnivel { font-size: .72rem; }
+
+.widget-marco { margin-top: clamp(2rem, 4vw, 3rem); padding-top: 1.25rem; border-top: var(--regla); }
+.widget { display: grid; gap: clamp(1.25rem, 3vw, 2rem); grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); align-items: start; }
+.widget__campos { display: grid; gap: 1rem; min-width: 0; }
+.campo { display: flex; flex-direction: column; gap: .45rem; }
+.campo__rot {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .66rem; color: var(--tepetate);
+}
+/* Atado a los tokens de SUPERFICIE: el mismo input funciona sobre fondo
+   oscuro y dentro de una franja clara, sin condicionales ni props de tema. */
+.campo__input {
+  background: var(--fondo);
+  color: var(--texto-color);
+  border: 2px solid color-mix(in srgb, var(--texto-color) 28%, var(--fondo));
+  border-radius: 2px;
+  padding: .62rem .7rem;
+  min-height: 44px;               /* objetivo táctil */
+  font-family: var(--datos); font-size: .85rem;
+  width: 100%;
+}
+.campo__input:hover { border-color: color-mix(in srgb, var(--texto-color) 55%, var(--fondo)); }
+.campo__input[aria-invalid='true'] { border-color: var(--oro-puma); }
+.campo__input::placeholder { color: color-mix(in srgb, var(--texto-color) 45%, var(--fondo)); }
+
+.widget__salida { display: flex; gap: 1rem; align-items: flex-start; min-width: 0; }
+.widget__pista { margin: 0; max-width: 46ch; }
+.widget__detalle { min-width: 0; }
+.widget__nombre {
+  margin: 0 0 .3rem;
+  font-family: var(--display); font-stretch: 100%; font-weight: 800;
+  text-transform: uppercase; font-size: 1.1rem; color: var(--cal);
+}
+.widget__detalle p { margin: 0 0 .6rem; }
+
+/* ---- Widget en variante completa ---------------------------------------- */
+.widget--completo { grid-template-columns: minmax(0, .75fr) minmax(0, 1fr); }
+.widget__meta { margin-top: -.2rem; font-size: .92rem; }
+.widget__detalle--hueco { border-left: 2px solid var(--tepetate); padding-left: 1rem; }
+.widget__alternativas { list-style: none; margin: .8rem 0 1rem; padding: 0; display: grid; gap: .7rem; }
+.widget__alternativas li {
+  display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+  padding-bottom: .7rem; border-bottom: var(--regla);
+}
+.widget__alternativas li:last-child { border-bottom: 0; padding-bottom: 0; }
+.widget__alternativas b { font-family: var(--display); font-stretch: 82%; text-transform: uppercase; font-size: .92rem; }
+.widget__alternativas .enlace-duro { margin-left: auto; font-size: .74rem; }
+
+/* Responsivo de las primitivas compartidas de formulario. */
+@media (max-width: 900px) {
+  .widget, .widget--completo { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .widget__salida { flex-direction: column; }
+}
+
+/* ======================================================================
+   PRIMITIVAS DE FORMULARIO (compartidas: van en la hoja común a propósito)
+   Todas heredan --fondo/--texto-color, así sirven en secciones oscuras y
+   dentro de las franjas claras sin una sola condicional.
+   ====================================================================== */
+.campo__opcional { color: color-mix(in srgb, var(--texto-color) 55%, var(--fondo)); font-weight: 400; }
+.campo__ayuda {
+  margin: 0; font-family: var(--texto); font-size: .88rem;
+  color: color-mix(in srgb, var(--texto-color) 68%, var(--fondo));
+}
+.campo__error {
+  margin: 0; display: block;
+  font-family: var(--datos); font-size: .72rem; line-height: 1.5;
+  color: var(--oro-puma);
+}
+.campo--corto { max-width: 7rem; }
+.campo--medio { max-width: 16rem; }
+.campo--largo { max-width: 26rem; }
+
+/* Placa invertida: para que la placa exista DENTRO de una franja clara. */
+.placa--oscura { background: var(--noche); color: var(--cal); border-color: var(--cal); }
+.placa--oscura .placa__hoyos { fill: var(--cal); }
+.placa--oscura b { color: var(--cal); }
+.placa--oscura small { color: color-mix(in srgb, var(--cal) 70%, transparent); }
+
+/* ---- Radios reales (nativos: flechas y anuncio los da el navegador) ----- */
+.radios { border: 0; margin: 0; padding: 0; min-width: 0; }
+.radios__lista { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .5rem; }
+.radios--tarjeta .radios__lista { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+
+.opcion {
+  display: flex; align-items: flex-start; gap: .6rem;
+  min-height: 44px; padding: .7rem .8rem;
+  border: 2px solid color-mix(in srgb, var(--texto-color) 22%, var(--fondo));
+  border-radius: 2px;
+  cursor: pointer; min-width: 0;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+.opcion:hover { border-color: color-mix(in srgb, var(--texto-color) 50%, var(--fondo)); }
+.opcion:has(.opcion__radio:focus-visible) { outline: 3px solid var(--crono); outline-offset: 2px; }
+.opcion[data-elegida='si'] {
+  border-color: var(--texto-color);
+  background: color-mix(in srgb, var(--texto-color) 8%, var(--fondo));
+}
+.opcion[data-deshabilitada='si'] { opacity: .45; cursor: not-allowed; }
+.opcion__radio { flex: 0 0 auto; width: 20px; height: 20px; margin-top: .1rem; accent-color: var(--oro-puma); }
+.opcion__cuerpo { display: flex; flex-direction: column; gap: .25rem; min-width: 0; }
+.opcion__etiqueta {
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: .86rem; line-height: 1.2;
+}
+.opcion__insignia {
+  align-self: flex-start;
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em; font-size: .58rem;
+  padding: .15rem .4rem; border-radius: 2px;
+  background: var(--texto-color); color: var(--fondo);
+}
+.opcion__extra { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
+.opcion__porque, .opcion__meta {
+  font-family: var(--texto); font-size: .88rem; line-height: 1.5;
+  color: color-mix(in srgb, var(--texto-color) 72%, var(--fondo));
+}
+.opcion__meta { font-family: var(--datos); font-size: .68rem; }
+.opcion__precio { display: flex; align-items: baseline; gap: .3rem; }
+.opcion__precio .cifra { font-size: 1.5rem; font-weight: 700; }
+.opcion__moneda { font-family: var(--datos); font-size: .62rem; color: color-mix(in srgb, var(--texto-color) 60%, var(--fondo)); }
+.opcion__incluye { margin: .2rem 0 0; padding-left: 1.1rem; font-family: var(--texto); font-size: .86rem; }
+.opcion__incluye li { margin-bottom: .15rem; }
+
+/* ---- Casilla ------------------------------------------------------------ */
+.checkbox { display: flex; align-items: flex-start; gap: .6rem; min-height: 44px; padding: .5rem 0; cursor: pointer; }
+.checkbox input { flex: 0 0 auto; width: 20px; height: 20px; margin-top: .15rem; accent-color: var(--oro-puma); }
+.checkbox > span { display: flex; flex-direction: column; gap: .2rem; font-family: var(--texto); font-size: .95rem; }
+.checkbox__nota { font-size: .85rem; color: color-mix(in srgb, var(--texto-color) 65%, var(--fondo)); }
+
+/* ---- Avisos ------------------------------------------------------------- */
+.aviso {
+  margin: 1rem 0 0; padding: .85rem 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--texto-color) 35%, var(--fondo));
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--texto-color) 5%, var(--fondo));
+}
+.aviso p { margin: 0; }
+.aviso p + p, .aviso p + a, .aviso p + div { margin-top: .5rem; }
+.aviso__titulo {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em; font-size: .68rem;
+  color: color-mix(in srgb, var(--texto-color) 75%, var(--fondo));
+}
+.aviso__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+.aviso--edad { display: flex; align-items: center; gap: .9rem; }
+.aviso--edad p { max-width: 52ch; }
+.aviso--hueco, .aviso--recalculo, .aviso--ojo { border-left-color: var(--oro-puma); }
+.aviso--pista { border-left-color: color-mix(in srgb, var(--texto-color) 22%, var(--fondo)); }
+
+/* ---- Detalles legales --------------------------------------------------- */
+.legal { margin-top: 1.25rem; border-top: 1px solid color-mix(in srgb, var(--texto-color) 20%, var(--fondo)); padding-top: .9rem; }
+.legal__titulo {
+  cursor: pointer; list-style: none;
+  font-family: var(--display); font-stretch: 82%; font-weight: 800;
+  text-transform: uppercase; font-size: .8rem;
+}
+.legal__titulo::-webkit-details-marker { display: none; }
+.legal__titulo::before { content: "+ "; font-family: var(--datos); }
+.legal[open] .legal__titulo::before { content: "− "; }
+.legal__texto { margin-top: .7rem; max-width: 70ch; font-size: .92rem; }
+.legal__texto p { margin: 0 0 .7rem; }
+
+/* Mini-perfil: lo usa <Perfil orientacion="horizontal"> desde varias páginas,
+   así que vive en la hoja compartida. Sin `fill: none` el path se rellena de
+   NEGRO PURO, que además está prohibido por la dirección. */
+.mini-perfil { display: block; width: 100%; height: clamp(52px, 8vw, 68px); overflow: visible; }
+.mini-perfil__linea {
+  fill: none;
+  stroke: var(--tepetate);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ---- Sección todavía no publicada --------------------------------------- */
+.proximamente { min-height: 58vh; }
+.proximamente__titulo { font-size: clamp(2rem, 6vw, 3.6rem); color: var(--cal); margin: 1.2rem 0 .4rem; }
+.proximamente__estado { margin: 0 0 1rem; }
+.proximamente__texto { max-width: 54ch; margin: 0 0 1.6rem; }
+.proximamente__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; }
+
+/* ======================================================================
+   PRE-REGISTRO A LA 5ª EDICIÓN
+   Compartido por Inicio y Resultados, así que vive en la hoja común. Hereda
+   --fondo/--texto-color: sirve igual dentro de una franja clara.
+   ====================================================================== */
+.quinta {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1.25rem;
+  border-top: var(--regla);
+  max-width: 42rem;
+}
+.quinta__linea { display: flex; align-items: baseline; gap: .5rem; margin: 0 0 .3rem; }
+.quinta__linea .cifra { font-size: 1.35rem; font-weight: 700; }
+.quinta__sep { color: var(--borde); }
+.quinta__rot {
+  font-family: var(--display); font-stretch: 66%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .68rem;
+  color: var(--tepetate);
+}
+.quinta__texto { margin: 0 0 1rem; max-width: 46ch; font-size: .95rem; }
+
+/* Un <button> con .enlace-duro debe verse como enlace, no como botón del SO. */
+button.enlace-duro {
+  background: none; border: 0; cursor: pointer;
+  /* Es una acción, no texto corrido: necesita área táctil. */
+  padding: .6rem 0; min-height: 44px;
+  font-family: var(--display); font-stretch: 82%; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em; font-size: .82rem;
 }

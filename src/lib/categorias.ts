@@ -7,42 +7,30 @@ import type {
   ResultadoElegibilidad,
   Rama,
 } from '../types/roadbook'
+// Extensión explícita: así el runner de `node --test` resuelve el módulo igual
+// que Vite (tsconfig tiene allowImportingTsExtensions).
+import { CATEGORIAS } from '../data/categorias.ts'
 
-export const CATEGORIAS: Categoria[] = [
-  { id: 1, nombre: 'Infantil Pañales Varonil', clave: 'Pv', grupo: 'Infantiles', rama: 'V', edadMin: null, edadMax: 4, descripcionEdad: '4 años y menos', vueltas: 1, rodadas: '12', abierta: false },
-  { id: 2, nombre: 'Infantil Pañales Femenil', clave: 'Pf', grupo: 'Infantiles', rama: 'F', edadMin: null, edadMax: 4, descripcionEdad: '4 años y menos', vueltas: 1, rodadas: '12', abierta: false },
-  { id: 3, nombre: 'Infantil AA Varonil', clave: 'AA', grupo: 'Infantiles', rama: 'V', edadMin: 5, edadMax: 6, descripcionEdad: '5 y 6 años', vueltas: 2, rodadas: '16', abierta: false },
-  { id: 4, nombre: 'Infantil AA Femenil', clave: 'AA', grupo: 'Infantiles', rama: 'F', edadMin: 5, edadMax: 6, descripcionEdad: '5 y 6 años', vueltas: 2, rodadas: '16', abierta: false },
-  { id: 5, nombre: 'Infantil A Varonil', clave: 'AV', grupo: 'Infantiles', rama: 'V', edadMin: 7, edadMax: 8, descripcionEdad: '7 y 8 años', vueltas: 2, rodadas: '20', abierta: false },
-  { id: 6, nombre: 'Infantil A Femenil', clave: 'AF', grupo: 'Infantiles', rama: 'F', edadMin: 7, edadMax: 8, descripcionEdad: '7 y 8 años', vueltas: 2, rodadas: '20', abierta: false },
-  { id: 7, nombre: 'Infantil B Varonil', clave: 'BV', grupo: 'Infantiles', rama: 'V', edadMin: 9, edadMax: 10, descripcionEdad: '9 y 10 años', vueltas: 3, rodadas: 'Libre', abierta: false },
-  { id: 8, nombre: 'Infantil B Femenil', clave: 'BF', grupo: 'Infantiles', rama: 'F', edadMin: 9, edadMax: 10, descripcionEdad: '9 y 10 años', vueltas: 3, rodadas: 'Libre', abierta: false },
-  { id: 9, nombre: 'Infantil C Varonil', clave: 'CV', grupo: 'Infantiles', rama: 'V', edadMin: 11, edadMax: 12, descripcionEdad: '11 y 12 años', vueltas: 3, rodadas: 'Libre', abierta: false },
-  { id: 10, nombre: 'Infantil C Femenil', clave: 'CF', grupo: 'Infantiles', rama: 'F', edadMin: 11, edadMax: 12, descripcionEdad: '11 y 12 años', vueltas: 3, rodadas: 'Libre', abierta: false },
-  { id: 11, nombre: 'Juvenil Menor Varonil', clave: 'O', grupo: 'Grupo Menor', rama: 'V', edadMin: 13, edadMax: 15, descripcionEdad: '13 a 15 años', vueltas: 2, abierta: false },
-  { id: 12, nombre: "Mamut's Varonil", clave: 'M', grupo: 'Grupo Menor', rama: 'V', edadMin: null, edadMax: null, descripcionEdad: '90 kg y más', vueltas: 2, abierta: true, requierePeso: 90 },
-  { id: 13, nombre: 'Juvenil Femenil', clave: 'F', grupo: 'Grupo Menor', rama: 'F', edadMin: 13, edadMax: 15, descripcionEdad: '13 a 15 años', vueltas: 2, abierta: false },
-  { id: 14, nombre: 'Máster 50 Varonil', clave: 'Z', grupo: 'Grupo Menor', rama: 'V', edadMin: 50, edadMax: 59, descripcionEdad: '50 a 59 años', vueltas: 2, abierta: false },
-  { id: 15, nombre: 'Máster 60 Varonil', clave: 'U', grupo: 'Grupo Menor', rama: 'V', edadMin: 60, edadMax: null, descripcionEdad: '60 años y más', vueltas: 2, abierta: false },
-  { id: 16, nombre: 'Máster 20 Femenil', clave: 'D', grupo: 'Grupo Menor', rama: 'F', edadMin: 19, edadMax: 29, descripcionEdad: '19 a 29 años', vueltas: 2, abierta: false },
-  { id: 17, nombre: 'Máster 30 Femenil', clave: 'H', grupo: 'Grupo Menor', rama: 'F', edadMin: 30, edadMax: 39, descripcionEdad: '30 a 39 años', vueltas: 3, abierta: false },
-  { id: 18, nombre: 'Máster 40 Femenil', clave: 'E', grupo: 'Grupo Menor', rama: 'F', edadMin: 40, edadMax: null, descripcionEdad: '40 años y más', vueltas: 3, abierta: false },
-  { id: 19, nombre: 'Rodadores Varonil', clave: 'RV', grupo: 'Grupo Menor', rama: 'V', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 1, abierta: true },
-  { id: 20, nombre: 'Rodadores Femenil', clave: 'RF', grupo: 'Grupo Menor', rama: 'F', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 1, abierta: true },
-  { id: 21, nombre: 'E-Bike Varonil', clave: 'EBV', grupo: 'Grupo Menor', rama: 'V', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 3, abierta: true, requiereEbike: true },
-  { id: 22, nombre: 'E-Bike Femenil', clave: 'EBF', grupo: 'Grupo Menor', rama: 'F', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 3, abierta: true, requiereEbike: true },
-  { id: 23, nombre: 'Elite Varonil', clave: 'X', grupo: 'Grupo Mayor', rama: 'V', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 5, abierta: true },
-  { id: 24, nombre: 'Juvenil Mayor Varonil', clave: 'J', grupo: 'Grupo Mayor', rama: 'V', edadMin: 16, edadMax: 18, descripcionEdad: '16 a 18 años', vueltas: 4, abierta: false },
-  { id: 25, nombre: 'Máster 20 Varonil', clave: 'L', grupo: 'Grupo Mayor', rama: 'V', edadMin: 19, edadMax: 29, descripcionEdad: '19 a 29 años', vueltas: 3, abierta: false },
-  { id: 26, nombre: 'Máster 30 Varonil', clave: 'N', grupo: 'Grupo Mayor', rama: 'V', edadMin: 30, edadMax: 39, descripcionEdad: '30 a 39 años', vueltas: 4, abierta: false },
-  { id: 27, nombre: 'Máster 40 Varonil', clave: 'W', grupo: 'Grupo Mayor', rama: 'V', edadMin: 40, edadMax: 49, descripcionEdad: '40 a 49 años', vueltas: 3, abierta: false },
-  { id: 28, nombre: 'Elite Femenil', clave: 'Y', grupo: 'Grupo Mayor', rama: 'F', edadMin: null, edadMax: null, descripcionEdad: 'Libre', vueltas: 4, abierta: true },
-]
 
 const ramaDesdeSexo = (sexo: string): Rama | '' =>
   sexo === 'M' ? 'V' : sexo === 'F' ? 'F' : ''
 const limiteInferior = (categoria: Categoria): number => categoria.edadMin ?? -Infinity
 const limiteSuperior = (categoria: Categoria): number => categoria.edadMax ?? Infinity
+
+/**
+ * Edad NOMINAL: año del evento menos año de nacimiento (no es la edad real por
+ * cumpleaños). Es la regla que usa el comité para asignar categoría.
+ * Devuelve null si la fecha no es un ISO YYYY-MM-DD válido.
+ */
+export function edadNominal(fechaNacimiento: string, anioEvento: number): number | null {
+  const coincidencia = /^(\d{4})-(\d{2})-(\d{2})$/.exec(fechaNacimiento)
+  if (!coincidencia) return null
+  const anio = Number(coincidencia[1])
+  const mes = Number(coincidencia[2])
+  const dia = Number(coincidencia[3])
+  if (mes < 1 || mes > 12 || dia < 1 || dia > 31) return null
+  return anioEvento - anio
+}
 
 export function categoriasElegibles(entrada: EntradaElegibilidad): ResultadoElegibilidad {
   const { edadNominal: edad, sexo, tipoBicicleta = 'MTB', peso90mas = false } = entrada

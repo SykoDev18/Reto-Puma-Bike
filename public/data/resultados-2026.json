@@ -1,0 +1,8063 @@
+{
+ "evento": "Reto Puma Bike",
+ "edicion": "Cuarta Edición",
+ "anio": 2026,
+ "generado_en": "2026-07-05T18:40:00-06:00",
+ "version": 1,
+ "parcial": true,
+ "nota_parcial": "Faltan las categorías infantiles. Grupo Uno = ruta 40 km, Grupo Dos = ruta 80 km.",
+ "categorias": [
+  {
+   "id": "EBF-40",
+   "clave": "EBF",
+   "clave_provisional": false,
+   "nombre": "E-BIKE FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 241,
+     "nombre": "Katia aleria Cruz villeda",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:03:56.90",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 839,
+     "nombre": "IRMA SERRANO PEREZ",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:03:00.31",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 565,
+     "nombre": "Areli Sánchez Méndez",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:30:56.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    }
+   ]
+  },
+  {
+   "id": "EBV-40",
+   "clave": "EBV",
+   "clave_provisional": false,
+   "nombre": "E-BIKE VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 679,
+     "nombre": "BRUNO ZAHIR MENDOZA MARIN",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "01:45:25.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 84,
+     "nombre": "Elias Ruiz Hernandez",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "01:45:38.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "La posición 2 está asignada a más de un corredor."
+    },
+    {
+     "dorsal": 680,
+     "nombre": "JOSÉ LUIS MENDOZA SUÁREZ",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:01:21.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "La posición 2 está asignada a más de un corredor."
+    },
+    {
+     "dorsal": 564,
+     "nombre": "Jesús Omar Huerta Jiménez",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:04:33.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 470,
+     "nombre": "AXEL GARCIA MARTINEZ",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:04:36.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 627,
+     "nombre": "Jonathan Ghinis Castillo",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:25:21.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 633,
+     "nombre": "Jesús Rui",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:37:11.91",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 124,
+     "nombre": "José Alfredo Uribe Benitez",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "04:33:31.37",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 509,
+     "nombre": "Miguel Ugalde Bautista",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:38:44.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 428,
+     "nombre": "Carlos Gabriel Dothe Flores",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:45:32.67",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 219,
+     "nombre": "Miguel Ángel Moreno Zamora",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 220,
+     "nombre": "Jensen Benony Oropeza Pérez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": "04:50:45.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 233,
+     "nombre": "VICTOR ANTONIO GÓMEZ MARTÍNEZ",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 266,
+     "nombre": "Guillermo Uribe Ortiz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 496,
+     "nombre": "Óscar Pérez Vargas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "Y-80",
+   "clave": "Y",
+   "clave_provisional": false,
+   "nombre": "ELITE FEMENIL",
+   "ruta": "80",
+   "grupo": "Grupo Dos",
+   "corredores": [
+    {
+     "dorsal": 707,
+     "nombre": "Nadia Rojas Chávez",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "04:07:13.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 121,
+     "nombre": "Grisell Perea Santos",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "04:07:19.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 622,
+     "nombre": "Monserrat Lugo",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "04:09:10.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 516,
+     "nombre": "Laura Serrano López",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "04:15:54.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 606,
+     "nombre": "Renata Danae González González",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "04:25:23.08",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 570,
+     "nombre": "Arantxa G",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "04:25:31.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 629,
+     "nombre": "Nerida Axali Gonzalez Javier",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:28:11.89",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 617,
+     "nombre": "Karen Jocelyn Pérez Ceron",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:29:12.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 533,
+     "nombre": "Ana Gutiérrez",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:30:44.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 365,
+     "nombre": "Monserrath Muñoz Sarmiento",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:55:37.33",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 177,
+     "nombre": "Amaranta Aguilar Escalona",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "05:01:03.31",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 26,
+     "nombre": "Ofelia Quezada Francisco",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "05:06:38.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 375,
+     "nombre": "Erika Adriana Vargas",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:30:22.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Su tiempo es menor al del primer lugar. Posible ruta o lectura de chip cruzada."
+    },
+    {
+     "dorsal": 638,
+     "nombre": "Ximena Zurita Martínez",
+     "equipo": null,
+     "posicion": 72,
+     "tiempo": "04:07:14.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Posición 72 fuera de rango: la categoría tiene 14 clasificados."
+    },
+    {
+     "dorsal": 215,
+     "nombre": "Dafne Noemi Granados Latorre",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 374,
+     "nombre": "Bibiana Romero",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 473,
+     "nombre": "Karina Martinez Bárcena",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "X-80",
+   "clave": "X",
+   "clave_provisional": false,
+   "nombre": "ELITE VARONIL",
+   "ruta": "80",
+   "grupo": "Grupo Dos",
+   "corredores": [
+    {
+     "dorsal": 780,
+     "nombre": "ENRIQUE RUIZ JUAREZ",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:01:42.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 623,
+     "nombre": "Jorge Chavez Alamilla",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:01:46.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 67,
+     "nombre": "Adrián Guevara Soto",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:08:56.60",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 720,
+     "nombre": "Santiago García Pelaez",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:09:03.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 781,
+     "nombre": "ADALBERTO RAMIREZ",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:12:53.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 529,
+     "nombre": "Jose Luis Olguín Martínez",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:16:23.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 240,
+     "nombre": "Carlos Eduardo Talonia González",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:22:56.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 798,
+     "nombre": "CARIN CRISTO",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:23:00.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 785,
+     "nombre": "DAVID PALMA D",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:26:35.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 448,
+     "nombre": "Brayan Ponce Hernández",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:02:09.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 793,
+     "nombre": "JORGE HERMIN GALINDO",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:03:04.66",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 613,
+     "nombre": "JOSÉ VICENTE BARRERA SANCHEZ",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:07:22.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 112,
+     "nombre": "Carlos Alberto Cortés Fernández",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "04:13:24.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 5,
+     "nombre": "Enrique Pérez Martín",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "04:39:54.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 164,
+     "nombre": "Apolonio de los Santos Alvarado",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "04:55:16.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 64,
+     "nombre": "Saúl García Rodríguez",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "05:01:39.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 65,
+     "nombre": "Alejandro Bautista González",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "05:05:49.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 559,
+     "nombre": "Eduardo Yosef Hinojosa Hernández",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "05:05:58.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 11,
+     "nombre": "Luis Antonio Pineda Salas.",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 150,
+     "nombre": "Efren Santos Moreno",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 153,
+     "nombre": "Juan Esteban Nolasco Paredes",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 165,
+     "nombre": "Carlos Abarca Mendoza",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 199,
+     "nombre": "Emiliano Zenil Soberanes",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 216,
+     "nombre": "Guillermo Guardian Beltran",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 782,
+     "nombre": "JEREMI TREJ BACILIO",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "JLF-40",
+   "clave": "JLF",
+   "clave_provisional": true,
+   "nombre": "JUVENIL LIBRE FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 729,
+     "nombre": "Danna Fernanda Tapia Navarro",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:45:18.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 70,
+     "nombre": "Ariadna Lilly Cruz Villeda",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:46:05.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 886,
+     "nombre": "SAYURI ELENA RODRIGUES",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:46:56.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 700,
+     "nombre": "Diana Navarro Martínez",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:03:49.67",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 493,
+     "nombre": "Sahira Regina Ponce Rodriguez",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:18:49.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 248,
+     "nombre": "Mía Esmeralda Montufar Ramirez",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:22:13.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 297,
+     "nombre": "Abigail Romero Loera",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "04:04:39.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 296,
+     "nombre": "Valeria Romero Loera",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:05:36.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 449,
+     "nombre": "Silvana Chávez sanchez",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:59:49.09",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 921,
+     "nombre": "ILET ANDREA SANCHES",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "05:15:35.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 27,
+     "nombre": "KARLA YAZMIN ZAPATA LÓPEZ",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "JLV-40",
+   "clave": "JLV",
+   "clave_provisional": true,
+   "nombre": "JUVENIL LIBRE VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 293,
+     "nombre": "Diego Rafael Percastegui Moreno",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "01:59:29.49",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 709,
+     "nombre": "Héctor Peláez Ramírez",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:06:03.08",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 350,
+     "nombre": "Jesús Cruz Mendoza",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:07:05.51",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 238,
+     "nombre": "jeancarlo Lopez Pedraza",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:07:38.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 275,
+     "nombre": "Santiago Hernández Martínez",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:08:46.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 878,
+     "nombre": "LENIN JONATAN",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:14:51.31",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 834,
+     "nombre": "CRISTIAN MARTINEZ",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:15:25.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 721,
+     "nombre": "Miguel Ángel Oropeza Ortiz",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "02:15:31.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 574,
+     "nombre": "Juan Jesus Chavez Montoya",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "02:22:04.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 852,
+     "nombre": "(sin nombre)",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "02:23:45.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Registro sin nombre en el padrón."
+    },
+    {
+     "dorsal": 531,
+     "nombre": "Juan Alberto Ramirez Olguin",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "02:24:11.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 869,
+     "nombre": "DAVID MONROY",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "02:27:20.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 569,
+     "nombre": "Juan Carlos Escobar Sanchez",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "02:31:07.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 43,
+     "nombre": "Sebastián Juarez Estrada",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "02:31:13.08",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 554,
+     "nombre": "Kevin Yair Hernández Utrera",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "02:31:16.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 717,
+     "nombre": "Iker Aymar Barrera Bernal",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "02:31:19.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 197,
+     "nombre": "Jonathan Abisai Rodríguez Rodríguez",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "02:34:47.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 457,
+     "nombre": "Juan Isaías Loyola Saavedra",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "02:37:03.05",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 507,
+     "nombre": "Maximiliano Bautista Rodríguez",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "02:37:13.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 877,
+     "nombre": "JOSE DE LA LUZ",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "02:39:22.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 308,
+     "nombre": "Alex Daniel Camargo Arteaga",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "02:40:34.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 578,
+     "nombre": "Cesar Larios Orgaz",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "02:41:06.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 553,
+     "nombre": "Antonio Muñoz Padilla",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "02:41:18.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 481,
+     "nombre": "Jonathan Guzmán Alamilla",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "02:44:41.66",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 870,
+     "nombre": "LUIS ANGEL PEREZ",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "02:45:50.67",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 628,
+     "nombre": "Ian Osmar Luna Pérez",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "02:55:01.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 582,
+     "nombre": "Emmanuel González Reyes",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "02:57:38.31",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 592,
+     "nombre": "Andres Perez Acosta",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "03:15:26.66",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 585,
+     "nombre": "Isidro Cordero García",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "03:15:52.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 513,
+     "nombre": "Jonthan Javier Pineda Cruz",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "03:28:59.10",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 610,
+     "nombre": "Robbin Herrera Rodriguez",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "03:29:53.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 557,
+     "nombre": "Alan Javier Trejo Moran",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "03:30:33.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 417,
+     "nombre": "Emmanuel Mejorada",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "03:36:41.73",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 676,
+     "nombre": "Donnovan Oswaldo Andrade Cervantes",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "03:46:16.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 190,
+     "nombre": "Axel Eduardo Mendoza Cruz",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "03:56:22.38",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 528,
+     "nombre": "Andres Hernández Arteaga",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "04:00:57.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 140,
+     "nombre": "Ian Frias rea",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "04:07:00.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 269,
+     "nombre": "Emmanuel Rivera Cortes",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "04:13:44.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 288,
+     "nombre": "Victor Vega martinez",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "04:14:46.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 362,
+     "nombre": "José Mateo Cerón Perez",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "04:22:04.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 659,
+     "nombre": "Alex Gael Cuevas Herrera",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "04:22:51.54",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 370,
+     "nombre": "Juan Adalberto",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "04:36:48.32",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 382,
+     "nombre": "Diego García Eduardo",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "04:49:01.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 849,
+     "nombre": "EDUARDO ADAIR CORTES",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "04:49:56.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 861,
+     "nombre": "FAUSTINO SOTO HERNANDEZ",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "04:50:45.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 45,
+     "nombre": "MARTN MARTINEZ",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": "04:58:52.81",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 521,
+     "nombre": "Jonathan Martínez Ramírez",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": "05:02:39.89",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 850,
+     "nombre": "MAXIMILIANO GUSMAN",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": "05:19:58.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 146,
+     "nombre": "Cristian Kaleb Serrano",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": "04:38:20.47",
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Registra 0/1 vueltas pero tiene tiempo."
+    },
+    {
+     "dorsal": 413,
+     "nombre": "Elbert Santiago Pérez Montiel",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 783,
+     "nombre": "CARLOS NAIM",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 847,
+     "nombre": "MIGUEL ANGEL BADILLA",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "M-40",
+   "clave": "M",
+   "clave_provisional": false,
+   "nombre": "MAMUT'S VARONIL 90KG Y MÁS",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 69,
+     "nombre": "Aarón Cruz Gonzalez",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:48:30.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 118,
+     "nombre": "Othón Navarrete",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:03:46.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 867,
+     "nombre": "EDGAR ULISES",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:07:10.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 217,
+     "nombre": "César Gutiérrez Chávez",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:11:13.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 614,
+     "nombre": "Yasset Hernadez Mercado",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:11:51.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 649,
+     "nombre": "Tomas Vargas",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:13:50.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 280,
+     "nombre": "Rogelio Luna Reyes",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:15:22.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 640,
+     "nombre": "ARTURO HERNANDEZ CRUZ",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:18:25.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 55,
+     "nombre": "Salvador Olmedo Pérez",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:22:46.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 442,
+     "nombre": "Adrian Mendoza",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "03:24:56.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 407,
+     "nombre": "Julio Cesar Cruz Pérez",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:25:42.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 195,
+     "nombre": "Iván Monroy Morales",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "03:27:43.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 611,
+     "nombre": "Jose Martin Moreno Cano",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:29:29.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 464,
+     "nombre": "Carlos Eduardo Rodríguez Flores",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:31:04.09",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 603,
+     "nombre": "Luis Cossio",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:31:32.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 711,
+     "nombre": "Brallan Mosso Hernandez",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:32:58.67",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 194,
+     "nombre": "Luis Antonio Reyes Pérez",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:39:39.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 168,
+     "nombre": "Antonio Trejo Osorio",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:43:57.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 242,
+     "nombre": "José Juan Mendoza Martínez",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "04:05:00.44",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 191,
+     "nombre": "Gerardo Santiago Chávez",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "04:20:37.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 631,
+     "nombre": "Oscar Hernández Hernández",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "04:21:52.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 361,
+     "nombre": "José Eduardo Cerón Albarrán",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "04:22:53.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 672,
+     "nombre": "Juan de Dios Calva Serrano",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "04:40:00.54",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 501,
+     "nombre": "Hugo Ediberto Trejo Mota",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "04:52:10.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 511,
+     "nombre": "Edher Jireh Hernández Herrera",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "04:53:55.72",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 836,
+     "nombre": "HERNESTO OLGUIN HERNANDEZ",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "04:58:36.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 249,
+     "nombre": "Ernesto Rivera Lugo",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "05:01:05.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 378,
+     "nombre": "Leonardo Martinez Antonio",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "05:03:39.49",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 129,
+     "nombre": "JUAN CARLOS MARTINEZ",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "05:21:21.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 497,
+     "nombre": "Isaac López Reséndiz",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "05:25:34.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 98,
+     "nombre": "Edgar Carlos Ortiz Saenz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 299,
+     "nombre": "Luis Fernando Lugo Pazarán",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 562,
+     "nombre": "Francisco Trejo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "D-40",
+   "clave": "D",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 20 FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 48,
+     "nombre": "Verónica Martínez Morales",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:59:53.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 333,
+     "nombre": "Sara Hernández Guillen",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:24:58.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 517,
+     "nombre": "Jaqueline Chavarin Guerrero",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:31:30.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 111,
+     "nombre": "Janis Diane Badillo Lagos",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:35:04.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 514,
+     "nombre": "Laura Vargas",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:36:02.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 453,
+     "nombre": "Leilany Hernández Tapia",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:39:45.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 523,
+     "nombre": "Nancy Nayelli Hernández Hernández",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:56:40.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 327,
+     "nombre": "Berenice Vega Ghines",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:02:49.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 62,
+     "nombre": "Ghysslane García Domínguez",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:05:51.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 180,
+     "nombre": "Nadia Mirafuentes Fernadez",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:49:07.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 385,
+     "nombre": "VANESSA HÉRNANDEZ ORDOÑEZ",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "05:20:18.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 21,
+     "nombre": "Anel Poceros Muñoz",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "05:35:45.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 639,
+     "nombre": "ARI JAIR CRUZ ANGELES",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "05:45:25.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 656,
+     "nombre": "Dayna Mendoza islas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "L-40",
+   "clave": "L",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 20 VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 369,
+     "nombre": "Luis Angel ortuño",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:12:16.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 239,
+     "nombre": "Said Lopez Pedraza",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:22:02.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 78,
+     "nombre": "Jesus Israel Martinez gaona",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:22:10.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 832,
+     "nombre": "ELVER VIVAS .",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:22:48.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 579,
+     "nombre": "Emmanuel Orgaz Hernandez",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:27:46.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 904,
+     "nombre": "LUIS ALFREDO",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:33:45.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 462,
+     "nombre": "Ian Padilla Garay",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:40:55.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 491,
+     "nombre": "Heberson Luna Alegria",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "02:43:31.84",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 367,
+     "nombre": "Octavio San Juan",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "02:49:03.79",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 357,
+     "nombre": "JUAN LUIS HERNÁNDEZ ZUÑIGA",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "02:50:03.00",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 544,
+     "nombre": "Aris Santiago Hidalgo Cruz",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "02:55:39.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 334,
+     "nombre": "Gustavo Cortez Ávila",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "02:58:52.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 666,
+     "nombre": "Ramiro Rodriguez Garfias",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:02:15.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 218,
+     "nombre": "Cesar Esau Gutierrez Ugalde",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:03:04.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 545,
+     "nombre": "Oliver Yarib Angeles Hidalgo",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:07:15.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 94,
+     "nombre": "abraham rios rivera",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:08:34.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 498,
+     "nombre": "Sergio Flores Islas",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:10:50.39",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 907,
+     "nombre": "GABRIEL CABALLERO",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:18:35.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 726,
+     "nombre": "Diódoro Garcia Baltazar",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "03:21:48.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 842,
+     "nombre": "LUIS ENRIQUE FALCON",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:23:16.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 543,
+     "nombre": "Axel Hernandez Hidalgo",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "03:25:38.81",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 103,
+     "nombre": "Alex Yosimar Monroy Sánchez",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "03:25:47.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 214,
+     "nombre": "LUIS ALBERTO MARTÍNEZ SANTILLÁN",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "03:26:12.47",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 371,
+     "nombre": "Ivan Licona González",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "03:27:13.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 446,
+     "nombre": "Diego Hernández Zamora",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "03:34:08.08",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 372,
+     "nombre": "Benjamín Adolfo Villedas Oropeza",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "03:34:18.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 166,
+     "nombre": "Cristian W",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "03:34:27.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 673,
+     "nombre": "Misael Hernadez Perez",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "03:35:01.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 698,
+     "nombre": "Cipriano Martínez Olvera",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "03:47:30.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 134,
+     "nombre": "Juan Rivera Copado",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "03:49:42.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 97,
+     "nombre": "Mariano Pérez García",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "03:51:00.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 123,
+     "nombre": "Carlos Alfredo Orizaga Chavez",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "03:55:35.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 873,
+     "nombre": "MICHEL CORTES",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "04:00:05.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 882,
+     "nombre": "EDUARDO CAMARGO",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "04:05:54.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 645,
+     "nombre": "Gerardo Rodrigo Martínez Tovar",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "04:17:53.00",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 246,
+     "nombre": "Luis Fernando urbano Calva",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "04:23:28.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 527,
+     "nombre": "Brandon Martínez Martínez",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "04:24:37.10",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 864,
+     "nombre": "JUAN ANTONIO VERA",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "04:30:45.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 169,
+     "nombre": "Roberto Hernández Santiago",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "04:49:11.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 234,
+     "nombre": "Juan Bladimir Lira Moreno",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "05:03:19.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 175,
+     "nombre": "Fernando Alejandro Salinas",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "05:03:41.59",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 290,
+     "nombre": "Jovani Martínez Hernández",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "05:08:23.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 386,
+     "nombre": "CRHISTOPHER SERRANO GONZALEZ",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "05:20:20.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 326,
+     "nombre": "Bryan Eduardo Angeles",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "05:21:34.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 476,
+     "nombre": "Diego Vazquez Zuñiga",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "05:22:11.90",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 699,
+     "nombre": "Jano Esau Olvera Castillo",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 93,
+     "nombre": "AARON TOMAS HERNANDEZ",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 440,
+     "nombre": "Ricardo Escamilla Santiago",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 701,
+     "nombre": "JOSE LUIS GOMEZ OLVERA",
+     "equipo": null,
+     "posicion": 49,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    }
+   ]
+  },
+  {
+   "id": "L-80",
+   "clave": "L",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 20 VARONIL",
+   "ruta": "80",
+   "grupo": "Grupo Dos",
+   "corredores": [
+    {
+     "dorsal": 636,
+     "nombre": "Miguel Bautista Leon",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:26:46.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 712,
+     "nombre": "Edgar Martínez martin",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:26:57.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 797,
+     "nombre": "KEVIN OSMAR GARCIA",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:28:44.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 609,
+     "nombre": "Anthony Naim Bautista Vargas",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:36:25.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 338,
+     "nombre": "Fernando ponce camacho",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:41:52.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 787,
+     "nombre": "OSVADO OROSCO",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:43:31.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 708,
+     "nombre": "Rodolfo Sanchez Amador",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:51:24.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 722,
+     "nombre": "Adiel Martínez Ordoñez",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:54:35.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 321,
+     "nombre": "Gerardo Herrera Huerta",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:58:57.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 319,
+     "nombre": "César cruz Cervantes",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:07:09.44",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 563,
+     "nombre": "Oziel Sánchez Pérez",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:09:05.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 657,
+     "nombre": "Gerardo Santiago Hernandez",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:10:27.05",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 788,
+     "nombre": "CARLOS MICHELLE HERNANDEZ C",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "04:11:51.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 620,
+     "nombre": "Oscar eduardo mendoza morelos",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "04:15:57.39",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 58,
+     "nombre": "B. Arturo Pérez M. Martinez",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "04:18:24.52",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 437,
+     "nombre": "ALONSO GÓMEZ ROSALES",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "04:20:01.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 107,
+     "nombre": "Alan Yair Cuevas Herrera",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "04:28:56.11",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 796,
+     "nombre": "SEBASTIAN EMMANUEL BRAZO",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "04:34:15.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 618,
+     "nombre": "Jorge Luis Zenón Contreras",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "04:34:16.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 32,
+     "nombre": "Allan Ricardo Rangel Lara",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "04:49:43.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 257,
+     "nombre": "José Manuel Chilapa Morales",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "04:50:17.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 63,
+     "nombre": "Ismael Hernández Pérez",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "04:53:49.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 681,
+     "nombre": "Pedro Eduardo Angeles Rosas",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "04:53:54.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 235,
+     "nombre": "Mauricio Zamora Juárez",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "05:01:14.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 422,
+     "nombre": "Edgar Uriel Manrique Sánchez",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "05:19:13.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 525,
+     "nombre": "Freddie Ángel García de Jesus",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "05:21:25.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 479,
+     "nombre": "Carlos Eduardo Garcia de Jesús",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "05:23:15.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 276,
+     "nombre": "Emmanuel Sánchez Cerón",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "05:26:55.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 51,
+     "nombre": "Saúl Almaraz Tellez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 227,
+     "nombre": "Roberto García García",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 306,
+     "nombre": "Angel Jesús Cipriano Guillermo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 376,
+     "nombre": "Alejandro Prado Rojas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 534,
+     "nombre": "Héctor García López",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "H-40",
+   "clave": "H",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 30 FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 68,
+     "nombre": "Regina Rexa González",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:55:36.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 678,
+     "nombre": "Elisa Zempoalteca Añorve",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:02:11.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 279,
+     "nombre": "Elizabeth Cruz Tapia",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:08:34.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 438,
+     "nombre": "Yuliana Angeles Santana",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:14:49.52",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 469,
+     "nombre": "Saira Dimas Facio",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:16:12.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 56,
+     "nombre": "Susana Chávez Aguilar",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:32:45.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 661,
+     "nombre": "Estrella Piña",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:45:32.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 868,
+     "nombre": "MARIA DEL ROSARIO GARCIA",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:48:28.08",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 119,
+     "nombre": "YESICA MANRIQUE PEREZ",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:13:31.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 250,
+     "nombre": "Karina Chavez Valencia",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:18:21.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 122,
+     "nombre": "Diana Laura Orizaga Chávez",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:29:10.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 347,
+     "nombre": "Mariana Hernández Santiago",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:49:13.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 188,
+     "nombre": "Dulce Vargas Rojas",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "04:49:13.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 304,
+     "nombre": "María Inés Ramírez Ramirez",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "04:59:56.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 728,
+     "nombre": "Amalia Zúñiga",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "05:03:37.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 412,
+     "nombre": "Alma Michelle Olvera Olvera",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "05:15:35.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 90,
+     "nombre": "Julieta Cano Martinez",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "05:20:54.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 131,
+     "nombre": "Jessica Belen",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "05:35:48.72",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 682,
+     "nombre": "Marleen Cuevas Garnica",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "05:35:55.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 8,
+     "nombre": "Liliana Isabel Guzmán Lara",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 46,
+     "nombre": "Abril Estephania Badillo Cruz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 76,
+     "nombre": "Sandra Rojo Martinez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 466,
+     "nombre": "Ricardo Hernández Mendoza",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 863,
+     "nombre": "GUADALUPE ROMERO",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "N-40",
+   "clave": "N",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 30 VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 890,
+     "nombre": "Alejandro Lopez Gonzalez",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:24:08.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 487,
+     "nombre": "Emmanuel Flores cruz",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:24:15.39",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 409,
+     "nombre": "Adán Herrera Santillán",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:25:48.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 311,
+     "nombre": "Yagel Jaside Lopez Martinez",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:27:45.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 1,
+     "nombre": "Jonathan Ordóñez García",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:31:04.61",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 881,
+     "nombre": "JESUS SERRANO",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:37:05.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 408,
+     "nombre": "Zuriel Cuéllar Ángeles",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:37:16.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 887,
+     "nombre": "ALDO CORONA",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "02:39:03.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 13,
+     "nombre": "Irving Sinuhe Galicia Jimenez",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "02:40:37.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 875,
+     "nombre": "ARTURO BADILLO",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "02:41:13.51",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 508,
+     "nombre": "German Martínez Hernández",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "02:42:08.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 198,
+     "nombre": "Ernesto sosa",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "02:45:09.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 879,
+     "nombre": "JOSE HERNANDEZ",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "02:48:59.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 471,
+     "nombre": "JOSE JUAN MIRANDA",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "02:49:51.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 908,
+     "nombre": "ERIK ROSAS",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "02:53:03.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 77,
+     "nombre": "Manuel Mendoza Manzano",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "02:54:00.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 92,
+     "nombre": "Luis Adrián Fernández Cabrera",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "02:54:06.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 17,
+     "nombre": "Diego jacobo ruvalcaba",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "02:57:02.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 538,
+     "nombre": "Franco Aguirre Olvera",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "02:59:35.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 621,
+     "nombre": "Benjamin Barrera",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:01:44.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 902,
+     "nombre": "HUGO TREJO",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "03:02:36.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 262,
+     "nombre": "Alberto Ávalos Ortega",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "03:03:57.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 159,
+     "nombre": "César Martinez leonel",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "03:05:21.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 550,
+     "nombre": "Luis angel Guzmán Vazquez",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "03:05:22.84",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 876,
+     "nombre": "OMAR ARMENTA",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "03:06:57.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 40,
+     "nombre": "Marco Antonio Marquez Mendoza",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "03:11:55.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 607,
+     "nombre": "Yambari Christopher Bautista González",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "03:12:47.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 584,
+     "nombre": "Andrés García Oropeza",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "03:16:05.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 452,
+     "nombre": "Aarón moreno torres",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "03:18:58.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 572,
+     "nombre": "Ramón barrera",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "03:19:39.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 328,
+     "nombre": "Javier .",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "03:29:54.54",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 381,
+     "nombre": "Cristhian Gómez Diaz",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "03:34:40.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 256,
+     "nombre": "Jared Larios",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "03:35:55.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 255,
+     "nombre": "Victor Pagola Jimenez",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "03:35:58.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 416,
+     "nombre": "Emmanuel Peña",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "03:36:38.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 831,
+     "nombre": "JESUS AGUIRRE MARQUEZ",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "03:47:25.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 441,
+     "nombre": "ROBERTO ORDOÑEZ GARCIA",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "03:50:22.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 298,
+     "nombre": "David Pablo González Cruz",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "03:52:38.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 906,
+     "nombre": "LUIS ANGEL",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "03:54:44.00",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 89,
+     "nombre": "Roberto Emmanuel Hernández Ceron",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "03:55:55.90",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 705,
+     "nombre": "Ruben Azpeitia Jimenez",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "03:57:45.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 95,
+     "nombre": "uriel rios rivera",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "04:00:09.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 147,
+     "nombre": "José Daniel Paredes Angeles",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "04:01:26.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 231,
+     "nombre": "Luis alviter vazquez",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "04:03:40.04",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 421,
+     "nombre": "Manuel Martinez",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": "04:12:01.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 157,
+     "nombre": "Eder Cruz Jimenez",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": "04:16:29.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 845,
+     "nombre": "ALEJANDRO PAREDEZ",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": "04:18:56.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 710,
+     "nombre": "José Luis Jimenez Alegria",
+     "equipo": null,
+     "posicion": 49,
+     "tiempo": "04:21:25.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 344,
+     "nombre": "Francisco Javier Baños Aguirre",
+     "equipo": null,
+     "posicion": 50,
+     "tiempo": "04:22:58.04",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 245,
+     "nombre": "Josué Jahzeel Ruiz Serrano",
+     "equipo": null,
+     "posicion": 51,
+     "tiempo": "04:23:13.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 148,
+     "nombre": "juan andrés corona álvarez",
+     "equipo": null,
+     "posicion": 52,
+     "tiempo": "04:23:51.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 591,
+     "nombre": "Jhovany Adrián Andrade Hernández",
+     "equipo": null,
+     "posicion": 53,
+     "tiempo": "04:25:08.37",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 891,
+     "nombre": "DIONISIO NERIA",
+     "equipo": null,
+     "posicion": 54,
+     "tiempo": "04:28:59.73",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 383,
+     "nombre": "Noe Delgado Huerta",
+     "equipo": null,
+     "posicion": 55,
+     "tiempo": "04:31:45.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 380,
+     "nombre": "Ricardo Flores Morales",
+     "equipo": null,
+     "posicion": 56,
+     "tiempo": "04:38:08.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 173,
+     "nombre": "Carlos Alberto Segovia Salazar",
+     "equipo": null,
+     "posicion": 57,
+     "tiempo": "04:41:55.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 363,
+     "nombre": "Julio Enrique Baños Aguirre",
+     "equipo": null,
+     "posicion": 58,
+     "tiempo": "04:49:52.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 590,
+     "nombre": "Carlos López",
+     "equipo": null,
+     "posicion": 59,
+     "tiempo": "04:55:26.87",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 37,
+     "nombre": "Leonel Paz Martínez",
+     "equipo": null,
+     "posicion": 60,
+     "tiempo": "04:57:01.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 519,
+     "nombre": "Felipe Ramírez Ramírez",
+     "equipo": null,
+     "posicion": 61,
+     "tiempo": "05:02:48.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 303,
+     "nombre": "Eder Beltrán Acosta",
+     "equipo": null,
+     "posicion": 62,
+     "tiempo": "05:03:06.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 895,
+     "nombre": "DAVID ISRAEL TORRES",
+     "equipo": null,
+     "posicion": 63,
+     "tiempo": "05:05:17.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 126,
+     "nombre": "Juan Salas Lagunas",
+     "equipo": null,
+     "posicion": 64,
+     "tiempo": "05:05:42.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 846,
+     "nombre": "MIGUEL ANGEL VADILLO",
+     "equipo": null,
+     "posicion": 65,
+     "tiempo": "05:19:10.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 149,
+     "nombre": "juan pablo juárez garcía",
+     "equipo": null,
+     "posicion": 66,
+     "tiempo": "05:20:35.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 226,
+     "nombre": "Alejandro Hernandez gomez",
+     "equipo": null,
+     "posicion": 67,
+     "tiempo": "05:21:19.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 652,
+     "nombre": "Mario Alfredo Daniel Leonardo",
+     "equipo": null,
+     "posicion": 68,
+     "tiempo": "05:21:30.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 411,
+     "nombre": "Antonio García Villegas",
+     "equipo": null,
+     "posicion": 69,
+     "tiempo": "05:25:34.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 170,
+     "nombre": "Alejandro Hernández Santiago",
+     "equipo": null,
+     "posicion": 70,
+     "tiempo": "05:27:46.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 713,
+     "nombre": "Renato Romo Gordo",
+     "equipo": null,
+     "posicion": 71,
+     "tiempo": "05:29:45.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 130,
+     "nombre": "URIEL IVAN",
+     "equipo": null,
+     "posicion": 72,
+     "tiempo": "05:32:58.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 683,
+     "nombre": "Erik Avila Sanchez",
+     "equipo": null,
+     "posicion": 73,
+     "tiempo": "05:36:46.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 488,
+     "nombre": "Juan Carlos",
+     "equipo": null,
+     "posicion": 74,
+     "tiempo": "05:40:46.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 36,
+     "nombre": "Alejandro Paredes Villedas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 72,
+     "nombre": "HUGO EFREN MUÑOZ ROJAS",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 182,
+     "nombre": "Javier Zenil Chavez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 210,
+     "nombre": "Ramón Portillo Germán",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 650,
+     "nombre": "Carlos Alberto Pineda Castro",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 684,
+     "nombre": "Adolfo Avila Sanchez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 687,
+     "nombre": "Eden Julian Peña Contreras",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 695,
+     "nombre": "Renato Romo Gordo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "N-80",
+   "clave": "N",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 30 VARONIL",
+   "ruta": "80",
+   "grupo": "Grupo Dos",
+   "corredores": [
+    {
+     "dorsal": 647,
+     "nombre": "Mizraim Rosales Rodríguez",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:21:08.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 468,
+     "nombre": "Zet Ravel Garcia Campos",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:26:23.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 688,
+     "nombre": "Ramiro Maldonado Montiel",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:27:31.37",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 176,
+     "nombre": "Bruno Arana",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:28:04.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 264,
+     "nombre": "Omar Samuel Lugo caballero",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:39:22.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 172,
+     "nombre": "José Antonio Mendoza Márquez",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:39:36.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 391,
+     "nombre": "Benjamin martinez leyva",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:51:57.09",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 518,
+     "nombre": "ROMAN MARTINEZ M",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:55:46.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 791,
+     "nombre": "ERICK SAUL HINOJOSA P",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:55:50.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 359,
+     "nombre": "Rainier Pardo Vidal",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "03:55:53.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 786,
+     "nombre": "JESUS ESPARZA GOMEZ",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:56:16.32",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 155,
+     "nombre": "Gabo dávila lopez",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:00:01.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 278,
+     "nombre": "Emmanuel Jiménez Carmona",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "04:02:29.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 624,
+     "nombre": "Jorge Alejandro Torres Pérez",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "04:04:10.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 206,
+     "nombre": "José Luis Chávez Valencia",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "04:05:48.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 435,
+     "nombre": "Julio Felipe Hernández Méndez",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "04:14:03.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 101,
+     "nombre": "Enrique Mejía Lira",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "04:15:02.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 600,
+     "nombre": "Alejandro Mendoza Leon",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "04:16:02.49",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 96,
+     "nombre": "Israel Melchor Lozano",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "04:17:13.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 120,
+     "nombre": "Jorge Hernandez Cruz",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "04:18:00.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 586,
+     "nombre": "Gerardo Eduardo Villafaña Saldivar",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "04:23:26.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 697,
+     "nombre": "Hector Zuñiga Trejo",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "04:27:47.10",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 25,
+     "nombre": "Victor Ávila Galvan",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "04:29:54.80",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "El dorsal 25 aparece en más de un registro."
+    },
+    {
+     "dorsal": 789,
+     "nombre": "ULISES TORRES ZAMORA",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "04:39:53.09",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 200,
+     "nombre": "Ricardo Avilés",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "04:41:00.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 504,
+     "nombre": "Hugo Martínez Zenil",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "04:52:59.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 100,
+     "nombre": "Sergio Bautista Calva",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "04:53:48.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 316,
+     "nombre": "Fernando Rojas Galvan",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "04:55:11.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 228,
+     "nombre": "Eduardo Galván García",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "05:03:07.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 540,
+     "nombre": "Luis Amador Aldana Aldana",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "05:19:56.99",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 444,
+     "nombre": "Oscar Olivares Santos",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "05:20:16.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 114,
+     "nombre": "Jair Emmanuel Monroy Jiménez",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "05:20:22.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 331,
+     "nombre": "Birzavit Jediael Escamilla Martin",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "05:20:24.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 662,
+     "nombre": "Pedro Jesús Chávez Trejo",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "05:22:40.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 343,
+     "nombre": "Nahúm Galo Juarez",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "05:25:30.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 185,
+     "nombre": "Jaime Tlanepantla Rosquero.",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "05:26:55.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 439,
+     "nombre": "Antonio Hernández Monroy",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "05:28:25.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 615,
+     "nombre": "Néstor Mateo Ramírez",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "05:32:26.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 451,
+     "nombre": "Jonathan Julio Ramirez Duran",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 41,
+     "nombre": "Raúl Santillán Gutierrez",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 560,
+     "nombre": "Edgar Hinojosa Sánchez",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 561,
+     "nombre": "Alfredo monroy Hernández",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 541,
+     "nombre": "Luis Amador Aldana Aldana",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 25,
+     "nombre": "Victor Ávila Galvan",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "El dorsal 25 aparece en más de un registro."
+    },
+    {
+     "dorsal": 79,
+     "nombre": "Erasmo González Ortega",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 86,
+     "nombre": "Daniel Flores Calva",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 139,
+     "nombre": "Oscar Alejandro Aldana",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 158,
+     "nombre": "Lemuel Trejo Beltran",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 348,
+     "nombre": "Francisco Javier Esquivel Céspedes",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 351,
+     "nombre": "Isaías Marxhat Sánchez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 373,
+     "nombre": "Juan Carlos alcantara perez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 474,
+     "nombre": "Juan Diego Navarrete Rojas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 475,
+     "nombre": "Oscar Emmanuel Angeles Guadalupe",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 477,
+     "nombre": "Ubaldo Romero",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 490,
+     "nombre": "Heber Vazquez Jiménez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 536,
+     "nombre": "José de Jesús Olvera Arellano",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 542,
+     "nombre": "Emmanuel romero Hernández",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 677,
+     "nombre": "Geovanni Mendoza Bautista",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 715,
+     "nombre": "Cesar Migel Montufar Telles",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 790,
+     "nombre": "JESUS OLGUIN LOZANO",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 794,
+     "nombre": "BRIAN CARBALLO LUNA",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "E-40",
+   "clave": "E",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 40 FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 354,
+     "nombre": "Lucia García Salvador",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:04:24.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 221,
+     "nombre": "Mayra Mendoza Angeles",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:09:28.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 643,
+     "nombre": "Yuridia Tapia Hernández",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:14:36.35",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 301,
+     "nombre": "Viky Esquivel",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:31:16.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 115,
+     "nombre": "AGLAHÉ RAMIREZ MARQUEZ",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:48:14.09",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 80,
+     "nombre": "Diana Najera Cabañas",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:58:06.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 287,
+     "nombre": "Angelica Martinez Covarrubias",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "04:00:58.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 315,
+     "nombre": "Janet Rojas Galván",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:13:40.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 50,
+     "nombre": "Lidia TÉLLEZ",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:25:47.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 669,
+     "nombre": "DAMARIS HINOJOSA BUCIO",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:29:37.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 252,
+     "nombre": "Adriana olvera",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:30:39.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 667,
+     "nombre": "Erika Aldaz",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:48:30.18",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 209,
+     "nombre": "Selene López Moctezuma",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "05:08:02.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 719,
+     "nombre": "Norma Iliana Quintanar bolado",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "05:20:56.18",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 450,
+     "nombre": "Arlen Bautista Vargas",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "05:21:39.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 325,
+     "nombre": "NADIA JAQUELINE SANCHEZ ZAVALA",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "05:35:45.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 74,
+     "nombre": "Emaille siqueiros baca",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 163,
+     "nombre": "Perla Lorena Pérez del Castillo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "W-40",
+   "clave": "W",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 40 VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 9,
+     "nombre": "Gregorio Isaac Tapia Septimo",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:18:12.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 568,
+     "nombre": "Giovanni Cruz Duran",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:24:13.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 81,
+     "nombre": "Luis Maldonado Sanchez",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:39:15.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 60,
+     "nombre": "Felipe Ramírez Romo",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:49:49.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 265,
+     "nombre": "Rubén lugo caballero",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:51:09.71",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 270,
+     "nombre": "Erick Carlos Catillo Teran",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:51:19.61",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 443,
+     "nombre": "Jaziel Orozco Rocha",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:58:05.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 583,
+     "nombre": "Román Gonzales Mera",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:04:05.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 394,
+     "nombre": "ANGEL ANDRES ZUÑIGA SANCHEZ",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:08:36.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 99,
+     "nombre": "César Badillo Ríos",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "03:09:05.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 512,
+     "nombre": "Javier Pineda Pérez",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:13:25.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 686,
+     "nombre": "Adan Garcia Hernandez",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "03:18:11.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 251,
+     "nombre": "LAURENS PEREZ",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:20:02.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 558,
+     "nombre": "Sergio Valerio Flores",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:22:51.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 716,
+     "nombre": "Victor Alfonso Heredia Hernandez",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:24:53.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 510,
+     "nombre": "Manuel Hernandez Catalan",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:27:36.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 388,
+     "nombre": "David Eduardo Montiel Barrios",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:29:49.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 665,
+     "nombre": "Rolando Rodriguez Hernadez",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:29:51.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 267,
+     "nombre": "Aldo Jonathan Benítez",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "03:34:38.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 332,
+     "nombre": "Lucio Daniel Aguirre Pérez",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:35:11.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 495,
+     "nombre": "Jose luis ángeles cruz",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "03:42:53.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 181,
+     "nombre": "Jorge Flores Gutierrez",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "03:43:42.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 893,
+     "nombre": "OMAR BLANCO",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "03:44:52.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 597,
+     "nombre": "Sandro Sánchez Mejía",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "03:53:11.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 345,
+     "nombre": "Albert Trejo Cerón",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "03:53:51.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 892,
+     "nombre": "JULIO ADRAIN MERA",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "03:55:03.44",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 551,
+     "nombre": "Gerardo Olvera Corona",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "04:01:16.47",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 727,
+     "nombre": "Francisco Javier Bautista Cardoza",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "04:01:21.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 704,
+     "nombre": "MIGUEL ANGEL URIBE SALAZAR",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "04:05:40.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 384,
+     "nombre": "Fernando Rey Badillo Roque",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "04:11:57.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 571,
+     "nombre": "Cesar Sánchez Barrientos",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "04:13:03.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 53,
+     "nombre": "Francisco Luna Castelán",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "04:17:46.11",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 106,
+     "nombre": "Adalberto Mera",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "04:22:15.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 663,
+     "nombre": "Aurelio Mejia Valencia",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "04:22:48.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 52,
+     "nombre": "Demetrio Téllez Cuenca",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "04:23:22.90",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 105,
+     "nombre": "Arturo Quezada Almaraz",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "04:25:05.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 664,
+     "nombre": "Jose Luis Morales Galindo",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "04:27:31.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 186,
+     "nombre": "Daniel Martínez Delgado",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "04:27:36.81",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 556,
+     "nombre": "José Luis Ordóñez Ortiz",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "04:27:42.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 414,
+     "nombre": "Israel González vilchis",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "04:31:30.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 137,
+     "nombre": "Hector chavez Lugo",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "04:31:37.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 116,
+     "nombre": "José Elias Cruz Ríos",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "04:37:51.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 145,
+     "nombre": "Abraham Serrano Galarza",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "04:39:57.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 848,
+     "nombre": "JOSE ALFONSO JIMENEZ",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "04:55:24.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 355,
+     "nombre": "Cesar Mendoza Martin",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "04:57:22.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 903,
+     "nombre": "PABLO CORONA",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": "04:57:57.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 714,
+     "nombre": "Manuel Contreras erreguin",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": "05:03:35.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 91,
+     "nombre": "Rogelio Cano Martinez",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": "05:04:49.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 34,
+     "nombre": "Alberto Geovani Herber Marquez",
+     "equipo": null,
+     "posicion": 49,
+     "tiempo": "05:19:14.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 905,
+     "nombre": "FERNANDO NOEGGECAT",
+     "equipo": null,
+     "posicion": 50,
+     "tiempo": "05:20:11.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 851,
+     "nombre": "MARCO ANTONIO ANGELES",
+     "equipo": null,
+     "posicion": 51,
+     "tiempo": "05:20:43.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 576,
+     "nombre": "Abraham Albarrán Celis",
+     "equipo": null,
+     "posicion": 52,
+     "tiempo": "05:20:59.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 454,
+     "nombre": "Abraham Hernández Rojas",
+     "equipo": null,
+     "posicion": 53,
+     "tiempo": "05:21:37.60",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 398,
+     "nombre": "Uriel Hernández Bautista",
+     "equipo": null,
+     "posicion": 54,
+     "tiempo": "05:21:54.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 399,
+     "nombre": "Eblen Hernandez Bautista",
+     "equipo": null,
+     "posicion": 55,
+     "tiempo": "05:21:56.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 389,
+     "nombre": "Francisco Gutiérrez Montufar",
+     "equipo": null,
+     "posicion": 56,
+     "tiempo": "05:21:59.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 156,
+     "nombre": "Felipe Jorge Tovar cerrillo",
+     "equipo": null,
+     "posicion": 57,
+     "tiempo": "05:22:01.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 387,
+     "nombre": "Erick Joao Fuentes González",
+     "equipo": null,
+     "posicion": 58,
+     "tiempo": "05:22:05.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 178,
+     "nombre": "Luis Alberto Escamilla Martin",
+     "equipo": null,
+     "posicion": 59,
+     "tiempo": "05:25:45.39",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 162,
+     "nombre": "Roberto Elias polo otero",
+     "equipo": null,
+     "posicion": 60,
+     "tiempo": "05:35:25.10",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 244,
+     "nombre": "MAURICIO BRAIHIAN FLORES FACIO",
+     "equipo": null,
+     "posicion": 61,
+     "tiempo": "05:38:45.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 390,
+     "nombre": "DANIEL ANGELES ANGELES",
+     "equipo": null,
+     "posicion": 62,
+     "tiempo": "05:41:28.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 702,
+     "nombre": "ALEJANDRO MARROQUIN CERVANTES",
+     "equipo": null,
+     "posicion": 63,
+     "tiempo": "05:45:36.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 400,
+     "nombre": "José Martín De La Cruz Martínez",
+     "equipo": null,
+     "posicion": 64,
+     "tiempo": "05:47:45.21",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 22,
+     "nombre": "Gerardo Torres Pelcastre",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 24,
+     "nombre": "Israel Eslava Jacobo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 75,
+     "nombre": "Juan Alejandro Armand Pilon",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 109,
+     "nombre": "José Luis Cano García",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 193,
+     "nombre": "Carlos Fierro Rojas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 274,
+     "nombre": "Luis Nahum Samperio Rodriguez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 346,
+     "nombre": "Saul Grijalva Lora",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 352,
+     "nombre": "David Aguilar Díaz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 489,
+     "nombre": "Emanuel Gutierrez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "W-80",
+   "clave": "W",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 40 VARONIL",
+   "ruta": "80",
+   "grupo": "Grupo Dos",
+   "corredores": [
+    {
+     "dorsal": 567,
+     "nombre": "DANIEL MUÑOZ MENDOZA",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:21:35.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 12,
+     "nombre": "Ulises Herrera Esquivel",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:39:25.05",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 605,
+     "nombre": "Juan pablo ortiz barrera",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "03:43:36.67",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 353,
+     "nombre": "Rubén Hernández Cervantes",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "03:44:42.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 532,
+     "nombre": "Oscar López López",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "03:48:07.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 7,
+     "nombre": "Luís Iván Hernández calderón",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:51:49.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 630,
+     "nombre": "Miguel Montufar Tellez",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:57:47.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 494,
+     "nombre": "MOISES VEGA PEREZ",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "04:02:56.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 539,
+     "nombre": "Adan Alberto Seijas Zambrano",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "04:06:58.32",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 499,
+     "nombre": "ANTONIO BAUTISTA LÓPEZ",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "04:10:29.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 59,
+     "nombre": "Hugo Santiago Pérez",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "04:11:15.41",
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Registra 0/1 vueltas pero tiene posición y tiempo."
+    },
+    {
+     "dorsal": 82,
+     "nombre": "Jorge Alejandro Correa Navarrete",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "04:11:47.54",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 223,
+     "nombre": "Samuel Zamora Barrera",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "04:14:26.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 406,
+     "nombre": "iker maiz urtiaga",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "04:18:11.99",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 503,
+     "nombre": "Eric Alcaraz",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "04:21:58.72",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 492,
+     "nombre": "Jaime Crisostomo Vázquez",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "04:22:00.61",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 552,
+     "nombre": "Osbaldo Reyes Sánchez",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "04:22:02.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 784,
+     "nombre": "EMMANUEL MONZALBO",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "04:23:07.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 341,
+     "nombre": "Rene Martinez Herrera",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "04:27:08.81",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 213,
+     "nombre": "Juan Alberto Arrazola Barrera",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "04:28:34.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 57,
+     "nombre": "Daniel Bautista Rodríguez",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "04:35:57.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 506,
+     "nombre": "Marcelo Perez Guerrero",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "04:36:57.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 589,
+     "nombre": "Ramón Omar Rodriguez Mera",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "04:42:03.10",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 108,
+     "nombre": "Jonathan Ordinola Samano",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "04:48:16.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 104,
+     "nombre": "Victor Cuevas Galicia",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "04:48:26.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 307,
+     "nombre": "Martín Baltazar Contreras",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "04:49:04.48",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 330,
+     "nombre": "José Luis leal palacios",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "04:51:30.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 405,
+     "nombre": "Alejandro Téllez Torres",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "04:53:45.73",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 285,
+     "nombre": "Rodolfo Zamorano Quintanar",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "04:56:44.61",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 318,
+     "nombre": "Juan Carlos Trejo Ramírez",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "05:19:49.80",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 581,
+     "nombre": "Jonathan Oswaldo Meneses Hernández",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "05:19:55.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 329,
+     "nombre": "Leonel Toledo Sesma",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "05:21:02.49",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 261,
+     "nombre": "Juan Francisco Dorantes Montoya",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 696,
+     "nombre": "Oscar Hugo Zacarias Romero",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 323,
+     "nombre": "Hugo Mendoza Hernandez",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 795,
+     "nombre": "FILOGONIO RAMIREZ",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 703,
+     "nombre": "EDUARDO AHUACTZI MARTINEZ",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 566,
+     "nombre": "Luis fernando almaraz villeda",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 31,
+     "nombre": "José Gustavo Rangel Roque",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 143,
+     "nombre": "José Alfredo Valderrama reyes",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "02:57:06.13",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Su tiempo es menor al del primer lugar. Posible ruta o lectura de chip cruzada."
+    },
+    {
+     "dorsal": 835,
+     "nombre": "JOSE RENE GARCIA",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "02:58:27.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Su tiempo es menor al del primer lugar. Posible ruta o lectura de chip cruzada."
+    },
+    {
+     "dorsal": 792,
+     "nombre": "JULIAN PEREZ HINOJOSA",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "03:07:01.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Su tiempo es menor al del primer lugar. Posible ruta o lectura de chip cruzada."
+    },
+    {
+     "dorsal": 110,
+     "nombre": "Elver olguin Reséndiz",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "03:32:17.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 18,
+     "nombre": "Erwin Islas Camargo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 19,
+     "nombre": "David Amado Zaragoza Norberto",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 85,
+     "nombre": "Antonio Gamboa Márquez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 535,
+     "nombre": "Luis Alberto Reséndiz Reséndiz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 718,
+     "nombre": "Carlos Serrano Lopez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "ZF-40",
+   "clave": "ZF",
+   "clave_provisional": true,
+   "nombre": "MÁSTER 50 FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 61,
+     "nombre": "Cecilia Acosta Falcón",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "03:44:48.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 284,
+     "nombre": "Lizbeth Zamorano Quintanar",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "05:19:48.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 15,
+     "nombre": "Rosario Sánchez Avidal",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "05:20:49.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 458,
+     "nombre": "Marcela Vargas Acosta",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "05:20:53.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 10,
+     "nombre": "Norma Solis Nájera",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "Z-40",
+   "clave": "Z",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 50 VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 577,
+     "nombre": "Guillermo Orgaz Morales",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": null,
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "SIN_TIEMPO",
+     "nota": "Completó el recorrido; el cronómetro no registró tiempo."
+    },
+    {
+     "dorsal": 337,
+     "nombre": "Abigael ceron herrera",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:37:07.47",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 281,
+     "nombre": "Ramiro Hernández Gomes",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:39:19.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 393,
+     "nombre": "Rigoberto Aguilar Hernández",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:44:31.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 286,
+     "nombre": "Hazael Zamorano Quintanar",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:46:48.33",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 594,
+     "nombre": "Marcelino Flores López",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:48:57.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 320,
+     "nombre": "Juan Librado Herrera Dionicio",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:50:07.28",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 549,
+     "nombre": "José Luis Olvera Maya",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "02:53:47.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 136,
+     "nombre": "Plutarco Arturo Moctezuma Terrazas",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "02:56:06.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 253,
+     "nombre": "Germán López Carmona",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "02:59:11.52",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 3,
+     "nombre": "Zerafin Cortes Canales",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:02:06.28",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 641,
+     "nombre": "RUBEN GRANILLO FLORES",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "03:08:55.79",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 379,
+     "nombre": "TOMAS GARCIA BAUTISTA",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:10:40.59",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 14,
+     "nombre": "Jaime Fernández Pulido",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:18:14.33",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 23,
+     "nombre": "Ricardo Torres Flores",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:20:59.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 212,
+     "nombre": "Jose Luis Zúñiga",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:23:10.05",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 160,
+     "nombre": "Hilario Vazquez Martinez",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:36:45.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 282,
+     "nombre": "Alberto salinas lima",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:38:48.95",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 573,
+     "nombre": "Carlo Magno Resendiz Palmas",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "03:40:22.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 4,
+     "nombre": "MARCOS NOLASCO MIGUEL",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:40:24.04",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 33,
+     "nombre": "Israel Lambarry Perez",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "03:45:05.51",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 360,
+     "nombre": "santiago Ramirez Hernández",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "03:46:11.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 230,
+     "nombre": "Federico Cruz Santiago",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "03:49:34.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 273,
+     "nombre": "Joselo cuellar Lazcano",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "03:53:07.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 883,
+     "nombre": "JESUS LOZANO",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "03:55:58.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 102,
+     "nombre": "GUILLERMO SANCHEZ LOPEZ",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "03:56:23.60",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 844,
+     "nombre": "ANTONIO FALCON OMAÑA",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "03:57:50.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 546,
+     "nombre": "Cesar Manuel Urbano Avilés",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "03:58:16.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 604,
+     "nombre": "Juan Manuel Saldivar",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "03:59:57.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 874,
+     "nombre": "JUAN GABRIEL HERNANDEZ",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "04:00:07.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 404,
+     "nombre": "Sergio Aguilar Ortiz",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "04:03:57.17",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 691,
+     "nombre": "Jose Roberto Cuevas",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "04:14:06.57",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 843,
+     "nombre": "JOSE LUIS FALCON",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "04:14:29.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 30,
+     "nombre": "Victor Nolasco",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "04:26:00.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 127,
+     "nombre": "Ricardo Paredes Mendoza",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "04:33:50.95",
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Registra 0/1 vueltas pero tiene posición y tiempo."
+    },
+    {
+     "dorsal": 161,
+     "nombre": "Sagrario Lugo",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "04:48:28.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 28,
+     "nombre": "CARLOS ZAPATA BADILLO",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "04:48:32.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 530,
+     "nombre": "Jose Luis Olguín Ugalde",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "04:48:34.39",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 658,
+     "nombre": "Alfonso Santiago Sanchez",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "04:55:18.80",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 865,
+     "nombre": "MARCO ANTONIO VERA",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "04:55:44.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 192,
+     "nombre": "Leonardo Rosas Moreno",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "04:56:22.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 693,
+     "nombre": "Juan Carlos Sacarias",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "05:07:20.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 128,
+     "nombre": "GERMAN VALDES",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "05:19:51.59",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 208,
+     "nombre": "Marco Antonio Cano",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "05:21:05.36",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 675,
+     "nombre": "Hugo Darinel Sánchez Padilla",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "05:21:11.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 397,
+     "nombre": "Jose Arturo Ocaña Jimenez",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": "05:25:41.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 305,
+     "nombre": "Cesar Monzalvo",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": "05:27:36.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 20,
+     "nombre": "Sebastián German Poceros Hernández",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": "05:29:45.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 690,
+     "nombre": "Ramiro Galvan Delgado",
+     "equipo": null,
+     "posicion": 49,
+     "tiempo": "05:32:54.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 694,
+     "nombre": "Guillermo Flores Gomez",
+     "equipo": null,
+     "posicion": 50,
+     "tiempo": "05:35:36.62",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 692,
+     "nombre": "Jose Guadalupe Olvera",
+     "equipo": null,
+     "posicion": 51,
+     "tiempo": "05:37:26.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 35,
+     "nombre": "Arturo Acuña Chavez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 73,
+     "nombre": "JOEL LÓPEZ LÓPEZ",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 117,
+     "nombre": "Saul arenas rincon",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 127,
+     "nombre": "Ricardo Paredes Mendoza",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "El dorsal 127 aparece en más de un registro."
+    },
+    {
+     "dorsal": 144,
+     "nombre": "Juan Lauro Aguirre",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 524,
+     "nombre": "servando porras cornejo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 537,
+     "nombre": "Gilberto Lugo Islas",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 651,
+     "nombre": "Juan Manuel Perez Sanchez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 866,
+     "nombre": "JUIO SANCHEZ",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "U-40",
+   "clave": "U",
+   "clave_provisional": false,
+   "nombre": "MÁSTER 60 VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 44,
+     "nombre": "Marcelino Alamilla García",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:31:44.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 646,
+     "nombre": "José Bernardo",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:33:33.73",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 302,
+     "nombre": "Alejandro Guardián Reynoso",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:44:38.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 141,
+     "nombre": "Daniel Hernández Pelcastre",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:55:24.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 66,
+     "nombre": "EDUARDO GUTIERREZ LOZANO",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:59:24.15",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 88,
+     "nombre": "Erasmo Venegas Jacobo",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "03:00:18.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 138,
+     "nombre": "Ruben Lugo Vizzuett",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "03:06:28.92",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 596,
+     "nombre": "Antonio Sánchez Robledo",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "03:07:22.37",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 595,
+     "nombre": "Juan Pedro Sánchez Robledo",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:14:13.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 548,
+     "nombre": "Ángel Guzmán cortez",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "03:19:35.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 838,
+     "nombre": "JULIO CESAR",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:21:45.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 174,
+     "nombre": "Rigoberto Carrillo Sánchez",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "03:23:59.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 135,
+     "nombre": "Felipe Romero Moctezuma",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:32:50.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 16,
+     "nombre": "Gregorio Rodríguez Espejel",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:36:22.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 38,
+     "nombre": "Marco Antonio Marquez Vega",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:41:51.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 125,
+     "nombre": "OLIVIER HERNÁNDEZ PÉREZ",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:41:56.73",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 434,
+     "nombre": "Ernesto Montiel Contreras",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:44:20.20",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 317,
+     "nombre": "Fernando Efrén Rojas Talonia",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:48:11.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 268,
+     "nombre": "Luis Ceron Garcia",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "03:51:47.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 520,
+     "nombre": "Enrique Beltrán cantera",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:54:47.47",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 837,
+     "nombre": "RUBEN VAZQUE",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "04:01:00.79",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 685,
+     "nombre": "Jose Alejandro Reyes Ramirez",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "04:02:31.22",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 601,
+     "nombre": "Elias Crescencio Peña Mendoza",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "04:07:04.01",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 300,
+     "nombre": "Salvador Monroy",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "04:09:20.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 283,
+     "nombre": "Esteban Martinez Salvador",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "04:16:00.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 632,
+     "nombre": "Eliododo Escalante Aguilar",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "04:22:07.63",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 54,
+     "nombre": "Miguel Ugalde Ortiz",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "04:37:40.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 29,
+     "nombre": "Carlos Perez Ortiz",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "04:40:19.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 237,
+     "nombre": "Rodolfo Jacobo Cruz",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "04:48:59.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 171,
+     "nombre": "Alejandro Hernández Sevilla",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "04:55:21.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 642,
+     "nombre": "Elias Angeles Primitivo",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "05:00:16.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 377,
+     "nombre": "Juan Leo Castillo Callejas",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "05:21:17.26",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 833,
+     "nombre": "BALTAZAR PENIA G",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "05:21:24.91",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 888,
+     "nombre": "VICTOR F",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "05:25:44.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 289,
+     "nombre": "Ismael Daniel Medina",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "05:35:56.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 236,
+     "nombre": "Carlos Houghton Zamudio",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "RF-40",
+   "clave": "RF",
+   "clave_provisional": false,
+   "nombre": "RODADORAS FEMENIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 889,
+     "nombre": "GABRIELA VARGAS",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:58:43.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 271,
+     "nombre": "Susan Zuñiga Chávez",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "03:25:31.00",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 484,
+     "nombre": "María Concepción Domínguez Valladares",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "04:02:02.99",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 689,
+     "nombre": "Grabiela Cano Medina",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "04:22:46.28",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 152,
+     "nombre": "Fabiola Jazmín Castañeda García",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "04:47:28.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 204,
+     "nombre": "Mariana Pérez Guzman",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "04:55:35.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 445,
+     "nombre": "Evelin Ramirez González",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "05:21:50.84",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 918,
+     "nombre": "ITZEL MARTINES",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "05:35:24.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 917,
+     "nombre": "YARELY DE JESUS",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "05:42:34.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 167,
+     "nombre": "Esmeralda Monserrat Morales Santos",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    }
+   ]
+  },
+  {
+   "id": "RV-40",
+   "clave": "RV",
+   "clave_provisional": false,
+   "nombre": "RODADORES VARONIL",
+   "ruta": "40",
+   "grupo": "Grupo Uno",
+   "corredores": [
+    {
+     "dorsal": 862,
+     "nombre": "BESNABE CERON",
+     "equipo": null,
+     "posicion": 1,
+     "tiempo": "02:30:50.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 616,
+     "nombre": "Kevin Sanchez Garcia",
+     "equipo": null,
+     "posicion": 2,
+     "tiempo": "02:37:18.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 292,
+     "nombre": "YAEL MILDRAY ACOSTA MEJIA",
+     "equipo": null,
+     "posicion": 3,
+     "tiempo": "02:46:27.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 314,
+     "nombre": "Jose Miguel Gómez Peréz",
+     "equipo": null,
+     "posicion": 4,
+     "tiempo": "02:49:09.28",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 207,
+     "nombre": "Axel Daen Ángeles Alameda",
+     "equipo": null,
+     "posicion": 5,
+     "tiempo": "02:51:39.02",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 593,
+     "nombre": "José Alejandro abadía Ramírez",
+     "equipo": null,
+     "posicion": 6,
+     "tiempo": "02:53:05.16",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 840,
+     "nombre": "JOHAN EMIR HERNÁNDEZ CEVEDEO",
+     "equipo": null,
+     "posicion": 7,
+     "tiempo": "02:55:45.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 356,
+     "nombre": "Emanuel Cruz Mendoza",
+     "equipo": null,
+     "posicion": 8,
+     "tiempo": "02:58:30.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 635,
+     "nombre": "Santiago Hernadez Jimenez",
+     "equipo": null,
+     "posicion": 9,
+     "tiempo": "03:11:24.57",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 339,
+     "nombre": "Luis Enrique Islas Martinez",
+     "equipo": null,
+     "posicion": 10,
+     "tiempo": "03:11:46.49",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 899,
+     "nombre": "OSCAR ISLAS",
+     "equipo": null,
+     "posicion": 11,
+     "tiempo": "03:13:38.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 900,
+     "nombre": "CESAR FERNANDO",
+     "equipo": null,
+     "posicion": 12,
+     "tiempo": "03:16:19.69",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 880,
+     "nombre": "JESHUA YERDIM RODRIGUES",
+     "equipo": null,
+     "posicion": 13,
+     "tiempo": "03:17:58.58",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 87,
+     "nombre": "David Godinez Hernandez",
+     "equipo": null,
+     "posicion": 14,
+     "tiempo": "03:21:02.43",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 901,
+     "nombre": "DAVID RAVELO",
+     "equipo": null,
+     "posicion": 15,
+     "tiempo": "03:25:17.80",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 598,
+     "nombre": "Mario Rivera Herrea",
+     "equipo": null,
+     "posicion": 16,
+     "tiempo": "03:26:07.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 885,
+     "nombre": "ESAU ROMERO",
+     "equipo": null,
+     "posicion": 17,
+     "tiempo": "03:29:26.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 480,
+     "nombre": "Ivan Alamilla Mendoza",
+     "equipo": null,
+     "posicion": 18,
+     "tiempo": "03:30:14.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 920,
+     "nombre": "JOSE ALFREDO ALFREDO",
+     "equipo": null,
+     "posicion": 19,
+     "tiempo": "03:32:13.46",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 670,
+     "nombre": "Ángel Sebastián Ávila herrera",
+     "equipo": null,
+     "posicion": 20,
+     "tiempo": "03:33:35.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 310,
+     "nombre": "Víctor Manuel Tapia Cruz",
+     "equipo": null,
+     "posicion": 21,
+     "tiempo": "03:34:35.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 263,
+     "nombre": "Evan Román frías Pérez",
+     "equipo": null,
+     "posicion": 22,
+     "tiempo": "03:35:07.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 608,
+     "nombre": "Cristóbal Iktan Bautista Vargas",
+     "equipo": null,
+     "posicion": 23,
+     "tiempo": "03:35:09.64",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 894,
+     "nombre": "RUBEN MEJIA",
+     "equipo": null,
+     "posicion": 24,
+     "tiempo": "03:35:40.38",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 897,
+     "nombre": "JOSE LUIS MORENO",
+     "equipo": null,
+     "posicion": 25,
+     "tiempo": "03:37:55.76",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 841,
+     "nombre": "JORGE JUAREZ",
+     "equipo": null,
+     "posicion": 26,
+     "tiempo": "03:38:09.06",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 459,
+     "nombre": "Gerardo conde najera",
+     "equipo": null,
+     "posicion": 27,
+     "tiempo": "03:38:34.94",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 723,
+     "nombre": "Margarito Azpeitia Gaspar",
+     "equipo": null,
+     "posicion": 28,
+     "tiempo": "03:38:51.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 291,
+     "nombre": "GERMAN PERCASTEGUI REYES",
+     "equipo": null,
+     "posicion": 29,
+     "tiempo": "03:39:17.30",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 515,
+     "nombre": "Emanuel Torres Barron",
+     "equipo": null,
+     "posicion": 30,
+     "tiempo": "03:44:55.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 396,
+     "nombre": "ALDO HERNANDEZ LOPEZ",
+     "equipo": null,
+     "posicion": 31,
+     "tiempo": "03:45:23.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 919,
+     "nombre": "HIGNACIO SANCHES",
+     "equipo": null,
+     "posicion": 32,
+     "tiempo": "03:49:57.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 203,
+     "nombre": "Eddi Perez Galicia",
+     "equipo": null,
+     "posicion": 33,
+     "tiempo": "03:54:52.96",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 189,
+     "nombre": "Eduardo Mendoza Hernández",
+     "equipo": null,
+     "posicion": 34,
+     "tiempo": "03:56:18.51",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 39,
+     "nombre": "Oskar Gudiño Hernández",
+     "equipo": null,
+     "posicion": 35,
+     "tiempo": "03:56:51.97",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 424,
+     "nombre": "Emiliano Huerta Martínez",
+     "equipo": null,
+     "posicion": 36,
+     "tiempo": "03:58:59.72",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 486,
+     "nombre": "Mario Alberto Hernandez",
+     "equipo": null,
+     "posicion": 37,
+     "tiempo": "04:00:50.61",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 478,
+     "nombre": "Juventino Garnica Paz",
+     "equipo": null,
+     "posicion": 38,
+     "tiempo": "04:01:25.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 612,
+     "nombre": "Jorge Pagola Jimenez",
+     "equipo": null,
+     "posicion": 39,
+     "tiempo": "04:02:52.00",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 243,
+     "nombre": "ANGEL ZAHID FLORES ESQUIVEL",
+     "equipo": null,
+     "posicion": 40,
+     "tiempo": "04:03:53.74",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 272,
+     "nombre": "Tomas Hernández flores",
+     "equipo": null,
+     "posicion": 41,
+     "tiempo": "04:03:54.83",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 637,
+     "nombre": "Ivan Bernal Serrano",
+     "equipo": null,
+     "posicion": 42,
+     "tiempo": "04:04:25.23",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 295,
+     "nombre": "Luis Enrique Paredes Paredes",
+     "equipo": null,
+     "posicion": 43,
+     "tiempo": "04:04:37.88",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 395,
+     "nombre": "FRANCISCO JAVIER GONZALEZ ESPARZA",
+     "equipo": null,
+     "posicion": 44,
+     "tiempo": "04:05:34.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 884,
+     "nombre": "ADRIAN JUSMAN",
+     "equipo": null,
+     "posicion": 45,
+     "tiempo": "04:06:26.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 671,
+     "nombre": "Omar Hernadez Antonio",
+     "equipo": null,
+     "posicion": 46,
+     "tiempo": "04:07:39.78",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 626,
+     "nombre": "FERNANDO PÉREZ HERRERA",
+     "equipo": null,
+     "posicion": 47,
+     "tiempo": "04:09:02.60",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 587,
+     "nombre": "Omar González Marín",
+     "equipo": null,
+     "posicion": 48,
+     "tiempo": "04:10:42.29",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 205,
+     "nombre": "José Roman Romero Pardo",
+     "equipo": null,
+     "posicion": 49,
+     "tiempo": "04:10:44.27",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 196,
+     "nombre": "Pepito Cansino",
+     "equipo": null,
+     "posicion": 50,
+     "tiempo": "04:10:56.82",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 392,
+     "nombre": "Juan Carlos Olvera Trejo",
+     "equipo": null,
+     "posicion": 51,
+     "tiempo": "04:12:10.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 49,
+     "nombre": "Neftalí Nicolás Cruz Pérez",
+     "equipo": null,
+     "posicion": 52,
+     "tiempo": "04:13:28.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 674,
+     "nombre": "Sergio de la peña escobar",
+     "equipo": null,
+     "posicion": 53,
+     "tiempo": "04:16:16.24",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 644,
+     "nombre": "Eduardo Reyes Martinez",
+     "equipo": null,
+     "posicion": 54,
+     "tiempo": "04:17:49.84",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 472,
+     "nombre": "Efraín Orozco Olvera",
+     "equipo": null,
+     "posicion": 55,
+     "tiempo": "04:17:55.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 911,
+     "nombre": "GUSTAVO NUÑEZ",
+     "equipo": null,
+     "posicion": 56,
+     "tiempo": "04:17:57.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 588,
+     "nombre": "Jerónimo López Pérez",
+     "equipo": null,
+     "posicion": 57,
+     "tiempo": "04:21:55.51",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 340,
+     "nombre": "Hermelindo Jimenez Pardo",
+     "equipo": null,
+     "posicion": 58,
+     "tiempo": "04:23:11.55",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 522,
+     "nombre": "Adrian Martinez Ramos",
+     "equipo": null,
+     "posicion": 59,
+     "tiempo": "04:24:39.19",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 896,
+     "nombre": "JUAN ANTONIO",
+     "equipo": null,
+     "posicion": 60,
+     "tiempo": "04:26:04.86",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 909,
+     "nombre": "JUAN MANUEL",
+     "equipo": null,
+     "posicion": 61,
+     "tiempo": "04:29:53.33",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 432,
+     "nombre": "David castillo nuñes",
+     "equipo": null,
+     "posicion": 62,
+     "tiempo": "04:32:59.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 232,
+     "nombre": "JOSE ALBERTO ROMERO PARDO",
+     "equipo": null,
+     "posicion": 63,
+     "tiempo": "04:39:34.41",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 202,
+     "nombre": "Esteban Perez Guzman",
+     "equipo": null,
+     "posicion": 64,
+     "tiempo": "04:41:07.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 467,
+     "nombre": "Erik Hernández González",
+     "equipo": null,
+     "posicion": 65,
+     "tiempo": "04:47:22.93",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 151,
+     "nombre": "Israel Hernández Hernández",
+     "equipo": null,
+     "posicion": 66,
+     "tiempo": "04:47:27.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 410,
+     "nombre": "José Raúl Martin Lopez",
+     "equipo": null,
+     "posicion": 67,
+     "tiempo": "04:47:31.50",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 463,
+     "nombre": "German Fernando Padilla Rozo",
+     "equipo": null,
+     "posicion": 68,
+     "tiempo": "04:48:14.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 133,
+     "nombre": "Leonardo Copado Mateoz",
+     "equipo": null,
+     "posicion": 69,
+     "tiempo": "04:48:56.38",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 910,
+     "nombre": "FELIPE OLGUIN",
+     "equipo": null,
+     "posicion": 70,
+     "tiempo": "04:51:52.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 912,
+     "nombre": "URIEL DE JESUS",
+     "equipo": null,
+     "posicion": 71,
+     "tiempo": "04:55:30.14",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 913,
+     "nombre": "ALEXIS DE JESUS",
+     "equipo": null,
+     "posicion": 72,
+     "tiempo": "04:55:31.53",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 575,
+     "nombre": "ISMAEL CANTHA ÑONTHE",
+     "equipo": null,
+     "posicion": 73,
+     "tiempo": "04:56:19.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 648,
+     "nombre": "Saúl Tapia Tejeda",
+     "equipo": null,
+     "posicion": 74,
+     "tiempo": "04:56:30.66",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 460,
+     "nombre": "Efraín Orozco Ramírez",
+     "equipo": null,
+     "posicion": 75,
+     "tiempo": "05:04:09.07",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 294,
+     "nombre": "Santiago Barrera Barrera",
+     "equipo": null,
+     "posicion": 76,
+     "tiempo": "05:05:25.03",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 401,
+     "nombre": "Ignacio trejo trje",
+     "equipo": null,
+     "posicion": 77,
+     "tiempo": "05:19:16.77",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 47,
+     "nombre": "Olaf Arriola Noriega",
+     "equipo": null,
+     "posicion": 78,
+     "tiempo": "05:19:17.70",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 402,
+     "nombre": "Israel angeles leon",
+     "equipo": null,
+     "posicion": 79,
+     "tiempo": "05:19:53.33",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 201,
+     "nombre": "Arsenio Almanza Gutierrez",
+     "equipo": null,
+     "posicion": 80,
+     "tiempo": "05:20:00.37",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 2,
+     "nombre": "Ehecatl Lugo Castillo",
+     "equipo": null,
+     "posicion": 81,
+     "tiempo": "05:21:08.42",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 502,
+     "nombre": "Omar Hernández Landeros",
+     "equipo": null,
+     "posicion": 82,
+     "tiempo": "05:21:42.34",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 418,
+     "nombre": "José Antonio Leonardo Blas",
+     "equipo": null,
+     "posicion": 83,
+     "tiempo": "05:21:45.40",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 322,
+     "nombre": "Uziel Hernandez",
+     "equipo": null,
+     "posicion": 84,
+     "tiempo": "05:21:47.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 431,
+     "nombre": "José Geovany Chavarría Villeda",
+     "equipo": null,
+     "posicion": 85,
+     "tiempo": "05:22:07.72",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 430,
+     "nombre": "Marly Alvarez García",
+     "equipo": null,
+     "posicion": 86,
+     "tiempo": "05:22:09.59",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 342,
+     "nombre": "Gerardo oropeza olguin",
+     "equipo": null,
+     "posicion": 87,
+     "tiempo": "05:25:30.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 349,
+     "nombre": "Jesus Abrego Martínez",
+     "equipo": null,
+     "posicion": 88,
+     "tiempo": "05:25:35.65",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 366,
+     "nombre": "José Israel Olguin torres",
+     "equipo": null,
+     "posicion": 89,
+     "tiempo": "05:27:45.98",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 364,
+     "nombre": "Fernando Javier Olguin torres",
+     "equipo": null,
+     "posicion": 90,
+     "tiempo": "05:30:45.75",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 599,
+     "nombre": "Pedro Hernandez Moreno",
+     "equipo": null,
+     "posicion": 91,
+     "tiempo": "05:35:35.85",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 427,
+     "nombre": "Luis Gerardo Hernández de la Cruz",
+     "equipo": null,
+     "posicion": 92,
+     "tiempo": "05:37:45.68",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 426,
+     "nombre": "Miguel Ángel Hernández de la Cruz",
+     "equipo": null,
+     "posicion": 93,
+     "tiempo": "05:40:23.45",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 465,
+     "nombre": "David Telles Damian",
+     "equipo": null,
+     "posicion": 94,
+     "tiempo": "05:40:25.56",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 871,
+     "nombre": "ALEJANDRO MUÑOS",
+     "equipo": null,
+     "posicion": 95,
+     "tiempo": "05:42:35.47",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 872,
+     "nombre": "HILARIO FLORES",
+     "equipo": null,
+     "posicion": 96,
+     "tiempo": "05:42:38.25",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 403,
+     "nombre": "Darío contreras",
+     "equipo": null,
+     "posicion": 97,
+     "tiempo": "05:43:02.12",
+     "vueltas_hechas": 1,
+     "vueltas_totales": 1,
+     "estado": "OK"
+    },
+    {
+     "dorsal": 132,
+     "nombre": "Leonardo Copado Rivera.",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 183,
+     "nombre": "Rodolfo Esparza Mota",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 184,
+     "nombre": "Eberaldo López Gutiérrez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 211,
+     "nombre": "Roberto Portillo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 225,
+     "nombre": "SAUL ROMULO",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 309,
+     "nombre": "Luis Javier Hernández Mejia",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 368,
+     "nombre": "JOHAN EMIR HERNÁNDEZ CEVEDEO",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 419,
+     "nombre": "Gustavo Núñez Sánchez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 423,
+     "nombre": "Francisco Javier Cruz de la Cruz",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 425,
+     "nombre": "Gerardo Hernández Hernández",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 429,
+     "nombre": "Juan Carlos Sánchez Andrade",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 436,
+     "nombre": "Marco Trejo",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 455,
+     "nombre": "Sagrario Cano Rodriguez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 485,
+     "nombre": "Norberto Ulises Corona Morales",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 660,
+     "nombre": "Abner Jaramillo Hernandez",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": null,
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "DNF"
+    },
+    {
+     "dorsal": 668,
+     "nombre": "Cesar de Jesús López",
+     "equipo": null,
+     "posicion": null,
+     "tiempo": "03:27:15.37",
+     "vueltas_hechas": 0,
+     "vueltas_totales": 1,
+     "estado": "REVISION",
+     "nota": "Registra 0/1 vueltas pero tiene tiempo."
+    }
+   ]
+  }
+ ]
+}

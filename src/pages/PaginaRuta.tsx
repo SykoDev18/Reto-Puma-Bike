@@ -8,6 +8,7 @@ import { useHitoActivo } from '../hooks/useHitoActivo'
 import { Cabecera } from '../components/Cabecera'
 import { Riel } from '../components/Riel'
 import { BarraKm } from '../components/BarraKm'
+import { PieSitio } from '../components/PieSitio'
 import { Nota } from '../components/Nota'
 import { PlacaDorsal } from '../components/PlacaDorsal'
 import { TituloAncho } from '../components/TituloAncho'
@@ -87,7 +88,7 @@ export function PaginaRuta() {
 
       <Riel ruta={ruta} kmRef={kmRielRef} />
       <BarraKm kmRef={barraKmRef} desnivelRef={desnivelRef} proxRef={proxRef} />
-      <Cabecera />
+      <Cabecera paginaActual="ruta" />
 
       <main id="contenido" className="superficie">
         {/* Hero */}
@@ -230,69 +231,7 @@ export function PaginaRuta() {
         </section>
       </main>
 
-      <footer className="pie">
-        <div className="contenedor">
-          <div className="pie__grid">
-            <div>
-              <h2>Reto Puma Bike</h2>
-              <p>
-                Más que una competencia: un desafío, una conexión y una celebración de cada
-                kilómetro del Valle del Mezquital.
-              </p>
-            </div>
-            <div>
-              <h3>Navega</h3>
-              <ul>
-                <li>
-                  <a href="/">Ruta</a>
-                </li>
-                <li>
-                  <a href="categorias.html">Categorías</a>
-                </li>
-                <li>
-                  <a href="inscripciones.html">Inscripciones</a>
-                </li>
-                <li>
-                  <a href="resultados.html">Resultados</a>
-                </li>
-                <li>
-                  <a href="coleccion.html">Colección</a>
-                </li>
-                <li>
-                  <a href="hoteles.html">Hoteles</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3>Contacto</h3>
-              <ul>
-                <li>
-                  <a href="mailto:retopumabike@gmail.com">retopumabike@gmail.com</a>
-                </li>
-                <li className="medida">Libertad 1, Aviación, 42506 Actopan, Hgo.</li>
-                <li>
-                  <a href="https://www.instagram.com/reto_puma_bike_/" target="_blank" rel="noreferrer">
-                    Instagram
-                  </a>{' '}
-                  ·{' '}
-                  <a
-                    href="https://www.facebook.com/people/RETO-PUMA-BIKE/100092370199634/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Facebook
-                  </a>{' '}
-                  ·{' '}
-                  <a href="https://www.youtube.com/@RetoPumaBike-v8h" target="_blank" rel="noreferrer">
-                    YouTube
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p className="pie__final">© {new Date().getFullYear()} Reto Puma Bike. Actopan, Hidalgo.</p>
-        </div>
-      </footer>
+      <PieSitio />
     </div>
   )
 }

@@ -44,6 +44,36 @@ export function construirPathVertical(
     .join(' ')
 }
 
+export interface OpcionesPerfilHorizontal {
+  ancho: number
+  alto: number
+  /** Margen superior/inferior para que la cresta no toque el borde del SVG. */
+  margen?: number
+}
+
+/**
+ * Path SVG horizontal del perfil: x = kilómetro, y = altitud invertida (0 arriba).
+ * Se usa en los mini-perfiles de las tarjetas de ruta. Pura y testeable.
+ */
+export function construirPathHorizontal(
+  perfil: PuntoPerfil[],
+  kmTotal: number,
+  opts: OpcionesPerfilHorizontal,
+): string {
+  if (perfil.length === 0 || kmTotal <= 0) return ''
+  const margen = opts.margen ?? 0
+  const utilizable = Math.max(0, opts.alto - margen * 2)
+  const { min, max } = rangoAltitud(perfil)
+  const span = max - min || 1
+  return perfil
+    .map((p, i) => {
+      const x = (p.km / kmTotal) * opts.ancho
+      const y = margen + (1 - (p.altitud - min) / span) * utilizable
+      return `${i === 0 ? 'M' : 'L'}${x.toFixed(2)} ${y.toFixed(2)}`
+    })
+    .join(' ')
+}
+
 /** Ascenso positivo acumulado (m) hasta cierto km. */
 export function desnivelAcumulado(perfil: PuntoPerfil[], kmObjetivo: number): number {
   let acc = 0

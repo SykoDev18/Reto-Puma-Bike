@@ -3,12 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Roadbook del Reto Puma Bike: perfil de elevación, poblados hñähñu y abastecimientos de las rutas de 80 y 40 km en el Valle del Mezquital, Actopan." />
+
+    <title>Reto Puma Bike · Cuarta edición · Actopan, Hidalgo</title>
+    <meta
+      name="description"
+      content="Reto Puma Bike, cuarta edición: 5 de julio de 2026, 8:00 a. m. desde el Pabellón Gastronómico de Actopan. Rutas de 80 y 40 km por el Valle del Mezquital, 100% camino ancho y rodable."
+    />
     <meta name="theme-color" content="#12100D" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!--
+      SEO/OG estáticos: no hay SSR, así que los metadatos viven aquí y no en un
+      componente. Los crawlers de WhatsApp y Facebook no ejecutan JavaScript.
+
+      PENDIENTE ANTES DE PUBLICAR: og:url y og:image deben ser URL ABSOLUTAS con
+      el dominio real, y og:image debería ser JPEG o PNG de 1200x630 (no todos los
+      clientes renderizan WebP). Hoy el único material disponible es .webp.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Reto Puma Bike" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Reto Puma Bike · Cuarta edición" />
+    <meta
+      property="og:description"
+      content="5 de julio de 2026, 8:00 a. m. · Pabellón Gastronómico, Actopan. Rutas de 80 y 40 km por el Valle del Mezquital."
+    />
+    <meta property="og:image" content="/img/og-inicio.webp" />
+    <meta property="og:image:width" content="1440" />
+    <meta property="og:image:height" content="1024" />
+    <meta
+      property="og:image:alt"
+      content="Camino de terracería del Valle del Mezquital al amanecer."
+    />
+    <meta property="og:url" content="/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Reto Puma Bike · Cuarta edición" />
+    <meta
+      name="twitter:description"
+      content="5 de julio de 2026, 8:00 a. m. · Pabellón Gastronómico, Actopan. Rutas de 80 y 40 km."
+    />
+    <meta name="twitter:image" content="/img/og-inicio.webp" />
+
+    <!-- Fuentes autohospedadas: cero peticiones a fonts.googleapis.com.
+         Solo se precargan la display y la de datos; la serif carga después. -->
     <link rel="preload" href="/fonts/anybody-var.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/source-serif-4-var.woff2" as="font" type="font/woff2" crossorigin />
-    <title>Rutas · Reto Puma Bike</title>
+    <link rel="preload" href="/fonts/martian-mono-var.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": "Reto Puma Bike · Cuarta Edición",
+        "description": "Reto de ciclismo de montaña por el Valle del Mezquital: rutas de 74.48 km y 48.98 km, 100% camino ancho y rodable.",
+        "sport": "Mountain biking",
+        "startDate": "2026-07-05T08:00:00-06:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Pabellón Gastronómico de Actopan",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Libertad 1, Aviación",
+            "postalCode": "42506",
+            "addressLocality": "Actopan",
+            "addressRegion": "Hidalgo",
+            "addressCountry": "MX"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Reto Puma Bike",
+          "email": "retopumabike@gmail.com"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Kit Huellita",
+            "price": "350",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock",
+            "category": "Inscripción"
+          },
+          {
+            "@type": "Offer",
+            "name": "Kit Puma",
+            "price": "750",
+            "priceCurrency": "MXN",
+            "availability": "https://schema.org/InStock",
+            "category": "Inscripción"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
