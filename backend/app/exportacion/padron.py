@@ -72,3 +72,44 @@ def a_csv(registros: list[Registro]) -> str:
 
 def a_bytes(registros: list[Registro]) -> bytes:
     return a_csv(registros).encode("utf-8")
+
+
+# Columnas del export para el SERVICIO MÉDICO. Va aparte del padrón general
+# porque el tipo de sangre es dato sensible y no tiene por qué viajar en el
+# archivo que se lleva al host de cronometraje.
+COLUMNAS_MEDICO = (
+    "folio",
+    "nombre",
+    "apellido_paterno",
+    "apellido_materno",
+    "categoria_clave",
+    "ruta",
+    "tipo_sangre",
+    "emergencia_nombre",
+    "emergencia_telefono",
+)
+
+
+def a_csv_medico(registros: list[Registro]) -> str:
+    buffer = io.StringIO(newline="")
+    escritor = csv.writer(buffer, lineterminator="\r\n")
+    escritor.writerow(COLUMNAS_MEDICO)
+    for r in registros:
+        escritor.writerow(
+            [
+                r.folio,
+                r.nombre,
+                r.apellido_paterno,
+                r.apellido_materno or "",
+                r.categoria_clave,
+                r.ruta,
+                r.tipo_sangre or "",
+                r.emergencia_nombre,
+                r.emergencia_telefono,
+            ]
+        )
+    return BOM + buffer.getvalue()
+
+
+def a_bytes_medico(registros: list[Registro]) -> bytes:
+    return a_csv_medico(registros).encode("utf-8")

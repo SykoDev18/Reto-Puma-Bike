@@ -52,3 +52,8 @@ PREFIJO_FOLIO = "RPB"
 # Sin 0/O ni 1/I: un folio se dicta por teléfono y se teclea desde una captura.
 ALFABETO_FOLIO = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ"
 LARGO_SUFIJO_FOLIO = 4
+
+# --- Panel de administración ----------------------------------------------
+# `Secure` en la cookie exige HTTPS. Se apaga solo para desarrollo local, donde
+# no hay certificado; en producción NUNCA debe quedar en False.
+COOKIES_SEGURAS = os.getenv("RPB_COOKIES_SEGURAS", "1") == "1"

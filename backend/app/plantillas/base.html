@@ -1,0 +1,90 @@
+{# Panel del comité. HTML plano, sin build step y sin framework de CSS: son
+   cinco pantallas que usan tres personas desde una laptop y a veces desde el
+   celular en la entrega de kits. #}
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titulo %}Panel{% endblock %} · Reto Puma Bike</title>
+<style>
+  :root {
+    --noche:#12100D; --carbon:#1C1915; --borde:#2B2620; --cal:#F4EFE5;
+    --tepetate:#C9B392; --oro:#D4A02A; --crono:#4EC3D9; --alerta:#B4472A;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--noche); color:var(--cal);
+    font:16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color:var(--cal); }
+  header.barra {
+    display:flex; flex-wrap:wrap; gap:1rem; align-items:center;
+    padding:.7rem 1.2rem; background:var(--carbon);
+    border-bottom:1px solid var(--borde);
+  }
+  header.barra .marca { font-weight:700; letter-spacing:.02em; }
+  header.barra nav { display:flex; gap:.9rem; margin-left:auto; flex-wrap:wrap; }
+  header.barra nav a { text-decoration:none; padding:.35rem .1rem; }
+  header.barra nav a[aria-current="page"] { border-bottom:2px solid var(--oro); }
+  main { padding:1.2rem; max-width:1200px; margin-inline:auto; }
+  h1 { font-size:1.35rem; margin:0 0 .3rem; }
+  .sub { color:var(--tepetate); margin:0 0 1.4rem; font-size:.95rem; }
+
+  .conteos { display:flex; flex-wrap:wrap; gap:1.4rem; margin-bottom:1.4rem;
+             padding:.9rem 1.1rem; background:var(--carbon);
+             border:1px solid var(--borde); border-radius:2px; }
+  .conteo b { font-size:1.5rem; font-variant-numeric:tabular-nums; display:block; }
+  .conteo span { color:var(--tepetate); font-size:.8rem; text-transform:uppercase;
+                 letter-spacing:.1em; }
+
+  table { width:100%; border-collapse:collapse; }
+  th, td { padding:.55rem .6rem; text-align:left; border-bottom:1px solid var(--borde);
+           vertical-align:top; }
+  thead th { color:var(--tepetate); font-size:.75rem; text-transform:uppercase;
+             letter-spacing:.1em; }
+  tbody tr[data-urgente="si"] { background:rgba(180,71,42,.14); }
+  .mono { font-family:ui-monospace, "Cascadia Mono", Consolas, monospace;
+          font-variant-numeric:tabular-nums; }
+  .dato { color:var(--crono); }
+  .dias { font-weight:700; }
+  .dias[data-urgente="si"] { color:var(--alerta); }
+
+  form.linea { display:flex; gap:.4rem; align-items:center; flex-wrap:wrap; }
+  input, select, button {
+    font:inherit; padding:.4rem .55rem; border-radius:2px;
+    border:1px solid var(--borde); background:var(--noche); color:var(--cal);
+  }
+  button { cursor:pointer; border-color:var(--tepetate); }
+  button.principal { background:var(--oro); color:var(--noche); border-color:var(--oro);
+                     font-weight:700; }
+  button.peligro { border-color:var(--alerta); color:var(--alerta); background:transparent; }
+  .filtros { display:flex; gap:.6rem; flex-wrap:wrap; margin-bottom:1rem; }
+  .error { background:rgba(180,71,42,.18); border:1px solid var(--alerta);
+           padding:.7rem .9rem; border-radius:2px; margin-bottom:1rem; }
+  .vacio { color:var(--tepetate); padding:2rem 0; }
+  .etiqueta { font-size:.72rem; text-transform:uppercase; letter-spacing:.1em;
+              padding:.12rem .4rem; border:1px solid var(--borde); border-radius:2px;
+              color:var(--tepetate); }
+</style>
+</head>
+<body>
+{% if usuario %}
+<header class="barra">
+  <span class="marca">Reto Puma Bike · {{ edicion }}</span>
+  <nav>
+    <a href="/admin/" {% if request.url.path == '/admin/' %}aria-current="page"{% endif %}>Pagos</a>
+    <a href="/admin/padron" {% if request.url.path == '/admin/padron' %}aria-current="page"{% endif %}>Padrón</a>
+    <a href="/admin/bitacora" {% if request.url.path == '/admin/bitacora' %}aria-current="page"{% endif %}>Bitácora</a>
+    <form method="post" action="/admin/salir" style="display:inline">
+      <input type="hidden" name="csrf" value="{{ csrf }}">
+      <button type="submit">Salir ({{ usuario.nombre }})</button>
+    </form>
+  </nav>
+</header>
+{% endif %}
+<main>
+{% block contenido %}{% endblock %}
+</main>
+</body>
+</html>

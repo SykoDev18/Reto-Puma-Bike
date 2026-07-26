@@ -41,8 +41,12 @@ def cliente(motor) -> Iterator[TestClient]:
         with Session(motor) as sesion:
             yield sesion
 
+    from app.admin import rutas as admin_rutas
+
     app.dependency_overrides[api_registros.obtener_sesion] = sesion_de_prueba
-    with TestClient(app) as c:
+    app.dependency_overrides[admin_rutas.obtener_sesion] = sesion_de_prueba
+    # El panel exige HTTPS en la cookie; el cliente de pruebas usa http.
+    with TestClient(app, base_url="https://pruebas") as c:
         yield c
     app.dependency_overrides.clear()
 

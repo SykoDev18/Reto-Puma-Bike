@@ -16,6 +16,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import config
+from .admin.rutas import router as router_admin
 from .api.registros import router as router_registros
 from .bd import crear_tablas
 
@@ -51,6 +52,7 @@ app.add_middleware(
 )
 
 app.include_router(router_registros)
+app.include_router(router_admin)
 
 
 @app.get("/")

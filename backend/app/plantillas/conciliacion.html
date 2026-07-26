@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block titulo %}Pagos por verificar{% endblock %}
+{% block contenido %}
+
+{# Esta NO es la lista de inscritos: es lo que hay que hacer hoy. Quien se
+   inscribió y ya pagó no necesita atención; quien lleva ocho días esperando
+   que alguien revise su comprobante, sí. #}
+<h1>Pagos por verificar</h1>
+<p class="sub">
+  Se inscribe · transfiere · manda comprobante por WhatsApp · alguien verifica.
+  Hasta ese último paso la inscripción no vale.
+</p>
+
+<div class="conteos">
+  <span class="conteo"><b>{{ conteos.pagados }}</b><span>pagados</span></span>
+  <span class="conteo"><b>{{ conteos.pendientes }}</b><span>pendientes</span></span>
+  <span class="conteo"><b>{{ conteos.cancelados }}</b><span>cancelados</span></span>
+  <span class="conteo"><b class="mono">${{ "{:,}".format(dinero) }}</b><span>por cobrar</span></span>
+</div>
+
+{% if not pendientes %}
+  <p class="vacio">No hay nada pendiente por verificar. Todo al corriente.</p>
+{% else %}
+<table>
+  <caption class="sub" style="text-align:left; caption-side:top">
+    Los que llevan más tiempo esperando van arriba.
+    A partir de {{ dias_urgente }} días se resaltan.
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Espera</th>
+      <th scope="col">Folio</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Categoría</th>
+      <th scope="col">Kit</th>
+      <th scope="col">Monto</th>
+      <th scope="col">Verificar</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for p in pendientes %}
+    <tr data-urgente="{{ 'si' if p.urgente else 'no' }}">
+      <td class="mono dias" data-urgente="{{ 'si' if p.urgente else 'no' }}">
+        {{ p.dias_esperando }}d
+      </td>
+      <td class="mono">{{ p.registro.folio }}</td>
+      <td>
+        {{ p.registro.nombre }} {{ p.registro.apellido_paterno }}
+        {{ p.registro.apellido_materno or '' }}
+        {% if p.registro.es_menor %}<span class="etiqueta">menor</span>{% endif %}
+      </td>
+      <td>
+        <span class="mono">{{ p.registro.categoria_clave }}</span> ·
+        <span class="mono dato">{{ p.registro.ruta }}</span> km
+      </td>
+      <td>{{ p.registro.kit_nombre }}</td>
+      <td class="mono">${{ "{:,}".format(p.registro.kit_precio) }}</td>
+      <td>
+        <form class="linea" method="post"
+              action="/admin/registros/{{ p.registro.folio }}/pagar">
+          <input type="hidden" name="csrf" value="{{ csrf }}">
+          <input name="referencia" placeholder="Referencia (opcional)" size="16">
+          <button class="principal" type="submit">Marcar pagado</button>
+        </form>
+        <form class="linea" method="post" style="margin-top:.35rem"
+              action="/admin/registros/{{ p.registro.folio }}/cancelar">
+          <input type="hidden" name="csrf" value="{{ csrf }}">
+          <button class="peligro" type="submit">Cancelar</button>
+        </form>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<p class="sub" style="margin-top:1.5rem">
+  Toda acción queda en la <a href="/admin/bitacora">bitácora</a> con usuario y
+  hora.
+</p>
+{% endblock %}

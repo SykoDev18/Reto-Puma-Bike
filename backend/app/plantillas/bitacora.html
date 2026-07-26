@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block titulo %}Bitácora{% endblock %}
+{% block contenido %}
+<h1>Bitácora</h1>
+<p class="sub">
+  Últimas 300 acciones. En un evento con dinero de por medio y varias personas
+  del comité tocando el sistema, esto resuelve discusiones.
+  No guarda datos personales: folio y categoría sí, nombre y teléfono no.
+</p>
+
+{% if not entradas %}
+  <p class="vacio">Todavía no hay nada registrado.</p>
+{% else %}
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Cuándo</th>
+      <th scope="col">Quién</th>
+      <th scope="col">Acción</th>
+      <th scope="col">Sobre</th>
+      <th scope="col">Detalle</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for e in entradas %}
+    <tr>
+      <td class="mono">{{ e.ocurrido_en.strftime('%d/%m/%Y %H:%M') }}</td>
+      <td>{{ e.usuario }}</td>
+      <td class="mono">{{ e.accion }}</td>
+      <td class="mono">{{ e.entidad_id }}</td>
+      <td class="sub" style="margin:0">{{ e.detalle or '' }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}
