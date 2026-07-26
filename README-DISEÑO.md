@@ -50,7 +50,10 @@ esa sección. `index.html` se queda porque es el punto de entrada de Vite.
 
 El flyer del comité trae impreso un **número de tarjeta de débito**. **No está
 en el repo y no debe entrar nunca**, ni en un componente, ni en un JSON, ni en
-un comentario. Verificable con `grep -rn "4169" .` → sin resultados.
+un comentario. Verificable buscando en el repo los primeros cuatro dígitos que
+aparecen impresos en el flyer bancario: no deben dar ningún resultado. (El
+número no se escribe aquí a propósito: un documento que lo cite deja de servir
+como verificación, porque la búsqueda se encuentra a sí misma.)
 
 - Para recibir un depósito **basta la CLABE**. Una tarjeta publicada en una
   página indexable habilita cargos en comercios que solo piden número y
