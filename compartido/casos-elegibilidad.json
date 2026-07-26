@@ -1,0 +1,495 @@
+{
+  "_generado_por": "backend/scripts/exportar_casos.ts",
+  "_fuente": "src/lib/categorias.ts (el motor del front es la verdad)",
+  "_nota": "NO editar a mano. Lo consumen el test de TS y el de Python.",
+  "anio_evento": 2026,
+  "casos": [
+    {
+      "nombre": "Máster 30 Varonil por edad nominal 34",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": {
+          "id": 26,
+          "clave": "N",
+          "nombre": "Máster 30 Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          },
+          {
+            "id": 23,
+            "clave": "X",
+            "nombre": "Elite Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Infantil C Femenil por edad nominal 11",
+      "entrada": {
+        "fecha_nacimiento": "10/05/2015",
+        "sexo": "F",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 11,
+        "recomendada": {
+          "id": 10,
+          "clave": "CF",
+          "nombre": "Infantil C Femenil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "HUECO: mujer de 17 nominales no tiene categoría por edad",
+      "entrada": {
+        "fecha_nacimiento": "03/03/2009",
+        "sexo": "F",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 17,
+        "recomendada": null,
+        "alternativas": [
+          {
+            "id": 20,
+            "clave": "RF",
+            "nombre": "Rodadores Femenil"
+          },
+          {
+            "id": 28,
+            "clave": "Y",
+            "nombre": "Elite Femenil"
+          }
+        ],
+        "sin_coincidencia": true,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "E-Bike varonil: solo categorías E-Bike",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "M",
+        "tipo_bicicleta": "E-Bike",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": null,
+        "alternativas": [
+          {
+            "id": 21,
+            "clave": "EBV",
+            "nombre": "E-Bike Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": true
+      }
+    },
+    {
+      "nombre": "E-Bike femenil: solo categorías E-Bike",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "F",
+        "tipo_bicicleta": "E-Bike",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": null,
+        "alternativas": [
+          {
+            "id": 22,
+            "clave": "EBF",
+            "nombre": "E-Bike Femenil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": true
+      }
+    },
+    {
+      "nombre": "Mamut's NO aparece sin peso 90+",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": {
+          "id": 26,
+          "clave": "N",
+          "nombre": "Máster 30 Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          },
+          {
+            "id": 23,
+            "clave": "X",
+            "nombre": "Elite Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Mamut's SÍ aparece con peso 90+",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": true
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": {
+          "id": 26,
+          "clave": "N",
+          "nombre": "Máster 30 Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 12,
+            "clave": "M",
+            "nombre": "Mamut's Varonil"
+          },
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          },
+          {
+            "id": 23,
+            "clave": "X",
+            "nombre": "Elite Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Mamut's NUNCA en rama femenil, ni con peso 90+",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "F",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": true
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": {
+          "id": 17,
+          "clave": "H",
+          "nombre": "Máster 30 Femenil"
+        },
+        "alternativas": [
+          {
+            "id": 20,
+            "clave": "RF",
+            "nombre": "Rodadores Femenil"
+          },
+          {
+            "id": 28,
+            "clave": "Y",
+            "nombre": "Elite Femenil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Borde inferior: 3 años nominales sí entra",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2023",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 3,
+        "recomendada": {
+          "id": 1,
+          "clave": "Pv",
+          "nombre": "Infantil Pañales Varonil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Fuera de rango: 2 años nominales queda sin categoría",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2024",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 2,
+        "recomendada": null,
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Borde superior: 99 años nominales sí entra",
+      "entrada": {
+        "fecha_nacimiento": "01/01/1927",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 99,
+        "recomendada": {
+          "id": 15,
+          "clave": "U",
+          "nombre": "Máster 60 Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          },
+          {
+            "id": 23,
+            "clave": "X",
+            "nombre": "Elite Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Fuera de rango: 100 años nominales queda sin categoría",
+      "entrada": {
+        "fecha_nacimiento": "01/01/1926",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 100,
+        "recomendada": null,
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Pañales femenil (4 y menos), sin alternativas",
+      "entrada": {
+        "fecha_nacimiento": "20/06/2022",
+        "sexo": "F",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 4,
+        "recomendada": {
+          "id": 2,
+          "clave": "Pf",
+          "nombre": "Infantil Pañales Femenil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Frontera infantil/menor: 12 nominales sigue siendo infantil",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2014",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 12,
+        "recomendada": {
+          "id": 9,
+          "clave": "CV",
+          "nombre": "Infantil C Varonil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Frontera infantil/menor: 13 nominales ya NO es infantil",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2013",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 13,
+        "recomendada": {
+          "id": 11,
+          "clave": "O",
+          "nombre": "Juvenil Menor Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Infantil en E-Bike: manda el corte infantil, no el de bicicleta",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2016",
+        "sexo": "M",
+        "tipo_bicicleta": "E-Bike",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 10,
+        "recomendada": {
+          "id": 7,
+          "clave": "BV",
+          "nombre": "Infantil B Varonil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Elite no se ofrece antes de los 16",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2011",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 15,
+        "recomendada": {
+          "id": 11,
+          "clave": "O",
+          "nombre": "Juvenil Menor Varonil"
+        },
+        "alternativas": [
+          {
+            "id": 19,
+            "clave": "RV",
+            "nombre": "Rodadores Varonil"
+          }
+        ],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "A los 12 no hay abiertas: manda el corte infantil",
+      "entrada": {
+        "fecha_nacimiento": "01/01/2014",
+        "sexo": "F",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 12,
+        "recomendada": {
+          "id": 10,
+          "clave": "CF",
+          "nombre": "Infantil C Femenil"
+        },
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": true,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Sexo vacío: sin categoría",
+      "entrada": {
+        "fecha_nacimiento": "14/08/1992",
+        "sexo": "",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": 34,
+        "recomendada": null,
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    },
+    {
+      "nombre": "Fecha inválida: sin categoría",
+      "entrada": {
+        "fecha_nacimiento": "99/99/9999",
+        "sexo": "M",
+        "tipo_bicicleta": "MTB",
+        "peso_90_mas": false
+      },
+      "esperado": {
+        "edad_nominal": null,
+        "recomendada": null,
+        "alternativas": [],
+        "sin_coincidencia": false,
+        "infantiles": false,
+        "solo_ebike": false
+      }
+    }
+  ]
+}
