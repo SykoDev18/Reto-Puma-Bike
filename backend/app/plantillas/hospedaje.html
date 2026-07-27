@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block titulo %}Hospedaje{% endblock %}
+{% block contenido %}
+{% set b = borrador or {} %}
+<h1>Hospedaje y comida</h1>
+<p class="sub">
+  Al guardar se regenera <span class="mono">hospedaje.json</span>.
+</p>
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<form method="post" action="/admin/hospedaje"
+      style="border:1px solid var(--borde); padding:1rem; border-radius:2px; margin-bottom:2rem">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <input type="hidden" name="id" value="{{ actual.id if actual else '' }}">
+
+  <div class="filtros">
+    <label>Tipo<br>
+      <select name="tipo">
+        {% for t in tipos %}
+          <option value="{{ t }}"
+            {% if (actual and actual.tipo == t) or b.get('tipo') == t %}selected{% endif %}>{{ t }}</option>
+        {% endfor %}
+      </select></label>
+    <label>Nombre<br><input name="nombre" size="28" required
+      value="{{ actual.nombre if actual else b.get('nombre','') }}"></label>
+    <label>Orden<br><input name="orden" type="number" size="4" class="mono"
+      value="{{ actual.orden if actual else b.get('orden', 0) }}"></label>
+  </div>
+
+  <p><label>Descripción <b>(obligatoria)</b><br>
+    <textarea name="descripcion" rows="3" style="width:100%" required
+      >{{ actual.descripcion if actual else b.get('descripcion','') }}</textarea></label>
+    <span class="sub">Sin ella la tarjeta queda vacía y no le sirve a nadie.</span>
+  </p>
+
+  <div class="filtros">
+    <label>Dirección<br><input name="direccion" size="34"
+      value="{{ actual.direccion or '' if actual else b.get('direccion','') }}"></label>
+    <label>Teléfono<br><input name="telefono" class="mono" size="14"
+      value="{{ actual.telefono or '' if actual else b.get('telefono','') }}"></label>
+  </div>
+
+  <div class="filtros">
+    <label>Mapa (URL)<br><input name="mapa_url" class="mono" size="34"
+      value="{{ actual.mapa_url or '' if actual else b.get('mapa_url','') }}"></label>
+    <label>Convenio<br><input name="convenio" size="28" placeholder="Tarifa acordada"
+      value="{{ actual.convenio or '' if actual else b.get('convenio','') }}"></label>
+  </div>
+
+  <div class="filtros">
+    <label>Imagen (ruta)<br><input name="imagen" class="mono" size="30"
+      value="{{ actual.imagen or '' if actual else b.get('imagen','') }}"></label>
+    <label>Descripción de la imagen<br><input name="imagen_alt" size="36"
+      value="{{ actual.imagen_alt or '' if actual else b.get('imagen_alt','') }}"
+      placeholder="Obligatoria si hay imagen"></label>
+  </div>
+
+  <p>
+    <label><input type="checkbox" name="patrocinador" value="true"
+      {% if actual and actual.patrocinador %}checked{% endif %}> Patrocinador</label>
+    <label style="margin-left:1.2rem"><input type="checkbox" name="publicado" value="true"
+      {% if not actual or actual.publicado %}checked{% endif %}> Publicado</label>
+  </p>
+
+  <button class="principal" type="submit">
+    {{ 'Guardar cambios' if actual else 'Agregar lugar' }}
+  </button>
+  {% if actual %}<a href="/admin/hospedaje" style="margin-left:1rem">Cancelar</a>{% endif %}
+</form>
+
+<h2>Lugares</h2>
+{% if not lugares %}
+  <p class="vacio">Todavía no hay lugares.</p>
+{% else %}
+<table>
+  <thead>
+    <tr><th scope="col">Orden</th><th scope="col">Tipo</th><th scope="col">Nombre</th>
+        <th scope="col">Convenio</th><th scope="col">Estado</th><th scope="col"></th></tr>
+  </thead>
+  <tbody>
+  {% for l in lugares %}
+    <tr>
+      <td class="mono">{{ l.orden }}</td>
+      <td>{{ l.tipo }}</td>
+      <td>{{ l.nombre }}</td>
+      <td>{{ l.convenio or '—' }}</td>
+      <td>
+        {% if l.patrocinador %}<span class="etiqueta">patrocinador</span>{% endif %}
+        {% if not l.publicado %}<span class="etiqueta">oculto</span>{% endif %}
+      </td>
+      <td><a href="/admin/hospedaje?editar_id={{ l.id }}">Editar</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}

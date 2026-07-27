@@ -102,6 +102,7 @@ def marcar_pagado(
     *,
     verificado_por: str,
     referencia: str | None = None,
+    monto_recibido: int | None = None,
 ) -> Registro:
     r = s.exec(select(Registro).where(Registro.folio == folio)).first()
     if r is None:
@@ -117,12 +118,126 @@ def marcar_pagado(
 
     r.estado = "pagado"
     r.pago_referencia = (referencia or "").strip() or None
+    r.monto_recibido = monto_recibido if monto_recibido is not None else r.kit_precio
     r.pago_verificado_por = verificado_por
     r.pago_verificado_en = ahora()
     s.add(r)
     s.commit()
     s.refresh(r)
     return r
+
+
+def marcar_pagados(
+    s: Session,
+    folios: list[str],
+    *,
+    verificado_por: str,
+    referencia: str | None = None,
+    monto_recibido: int | None = None,
+) -> list[Registro]:
+    """Un depósito, varios inscritos.
+
+    Es el caso común de un evento local: alguien de un club transfiere por
+    ocho corredores en un solo movimiento. Sin esto son ocho clics y ocho
+    capturas de la misma referencia.
+
+    `monto_recibido` es el TOTAL del depósito y se reparte: a cada registro se
+    le asigna lo que le toca según su kit, y el sobrante (o faltante) queda en
+    el último para que la suma cuadre exactamente contra el estado de cuenta.
+    """
+    registros: list[Registro] = []
+    for folio in folios:
+        r = s.exec(select(Registro).where(Registro.folio == folio)).first()
+        if r is None:
+            raise ErrorConciliacion(f"No existe el folio {folio}.")
+        if r.estado == "cancelado":
+            raise ErrorConciliacion(f"El folio {folio} está cancelado.")
+        registros.append(r)
+
+    por_verificar = [r for r in registros if r.estado != "pagado"]
+    if not por_verificar:
+        return registros
+
+    momento = ahora()
+    ref = (referencia or "").strip() or None
+    asignados = 0
+    for i, r in enumerate(por_verificar):
+        r.estado = "pagado"
+        r.pago_referencia = ref
+        if monto_recibido is None:
+            r.monto_recibido = r.kit_precio
+        elif i < len(por_verificar) - 1:
+            r.monto_recibido = r.kit_precio
+            asignados += r.kit_precio
+        else:
+            # Al último le toca el resto: así la suma de `monto_recibido`
+            # cuadra con el depósito aunque traiga comisión o venga de más.
+            r.monto_recibido = monto_recibido - asignados
+        r.pago_verificado_por = verificado_por
+        r.pago_verificado_en = momento
+        s.add(r)
+    s.commit()
+    for r in registros:
+        s.refresh(r)
+    return registros
+
+
+@dataclass(frozen=True, slots=True)
+class Deposito:
+    """Los registros que comparten una referencia, para cuadrar contra el
+    estado de cuenta."""
+
+    referencia: str
+    registros: list[Registro]
+
+    @property
+    def esperado(self) -> int:
+        return sum(r.kit_precio for r in self.registros)
+
+    @property
+    def recibido(self) -> int:
+        return sum(r.monto_recibido or 0 for r in self.registros)
+
+    @property
+    def cuadra(self) -> bool:
+        return self.recibido == self.esperado
+
+
+def por_referencia(s: Session, edicion: int, referencia: str) -> Deposito | None:
+    """Quiénes comparten esa referencia y cuánto suman.
+
+    Es lo que permite cuadrar: si el depósito fue de $2,250 y los tres
+    seleccionados suman $2,250, cuadra.
+    """
+    ref = referencia.strip()
+    if not ref:
+        return None
+    registros = list(
+        s.exec(
+            select(Registro)
+            .where(Registro.edicion == edicion)
+            .where(Registro.pago_referencia == ref)
+            .order_by(Registro.folio)
+        ).all()
+    )
+    return Deposito(referencia=ref, registros=registros) if registros else None
+
+
+def depositos_compartidos(s: Session, edicion: int) -> list[Deposito]:
+    """Todas las referencias usadas por más de un registro."""
+    registros = s.exec(
+        select(Registro)
+        .where(Registro.edicion == edicion)
+        .where(Registro.pago_referencia.is_not(None))
+    ).all()
+    por_ref: dict[str, list[Registro]] = {}
+    for r in registros:
+        por_ref.setdefault(r.pago_referencia or "", []).append(r)
+    return [
+        Deposito(referencia=ref, registros=sorted(rs, key=lambda x: x.folio))
+        for ref, rs in sorted(por_ref.items())
+        if len(rs) > 1
+    ]
 
 
 def cancelar(s: Session, folio: str, *, motivo: str | None = None) -> Registro:

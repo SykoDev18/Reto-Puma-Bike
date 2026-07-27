@@ -83,6 +83,13 @@ def crear_registro(
     peticion: Request,
     s: Session = Depends(obtener_sesion),
 ) -> RespuestaRegistro:
+    # El cierre se controla por configuración: apagar el servidor no puede ser
+    # la forma de dejar de recibir inscripciones.
+    if not config.INSCRIPCIONES_ABIERTAS:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail={"codigo": "inscripciones_cerradas", "detalle": config.MENSAJE_CERRADO},
+        )
     try:
         registro = servicio.crear(s, payload)
     except ErrorRegistro as e:
@@ -161,3 +168,13 @@ def consultar_registro(
 @router.get("/salud")
 def salud() -> dict:
     return {"estado": "ok", "edicion": config.EDICION}
+
+
+@router.get("/inscripciones/estado")
+def estado_inscripciones() -> dict:
+    """Para que el front sepa si mostrar el formulario o el aviso de cerrado,
+    sin tener que intentar un envío y comerse un 403."""
+    return {
+        "abiertas": config.INSCRIPCIONES_ABIERTAS,
+        "mensaje": None if config.INSCRIPCIONES_ABIERTAS else config.MENSAJE_CERRADO,
+    }

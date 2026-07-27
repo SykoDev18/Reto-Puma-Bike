@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block titulo %}Resultados{% endblock %}
+{% block contenido %}
+<h1>Publicación de resultados</h1>
+
+{# El host de cronometraje vive en un router SIN internet: no puede hacer POST.
+   El flujo real es host → USB → alguien con señal lo sube desde aquí, y
+   probablemente desde un celular en el Pabellón. #}
+<p class="sub">
+  Sube el archivo que exportó el sistema de cronometraje, revisa el reporte y
+  entonces publica. Nada se publica sin que alguien haya visto el reporte.
+</p>
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<form method="post" action="/admin/resultados/subir" enctype="multipart/form-data"
+      class="filtros" style="align-items:center">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <input type="file" name="archivo" accept=".json,application/json" required>
+  <button class="principal" type="submit">Subir y validar</button>
+</form>
+
+{% if pendiente and reporte %}
+  <h2 style="margin-top:2rem">Reporte de {{ pendiente.nombre_archivo }}</h2>
+  <div class="conteos">
+    <span class="conteo"><b>{{ pendiente.total_corredores }}</b><span>corredores</span></span>
+    <span class="conteo"><b>{{ pendiente.total_marcados }}</b><span>marcados</span></span>
+    <span class="conteo"><b>{{ reporte.resumen.avisos }}</b><span>avisos</span></span>
+  </div>
+
+  {% if reporte.resumen.por_regla %}
+    <p><b>Por regla:</b>
+      {% for regla, n in reporte.resumen.por_regla.items() %}
+        <span class="etiqueta">R{{ regla }}: {{ n }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% set avisos = reporte.hallazgos | selectattr('severidad', 'equalto', 'aviso') | list %}
+  {% if avisos %}
+    <h3>Observaciones</h3>
+    <ul>
+      {% for h in avisos %}
+        <li><span class="mono">{{ h.categoria_id }}</span> — {{ h.mensaje }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <details style="margin:1rem 0">
+    <summary>Ver las {{ pendiente.total_marcados }} marcas</summary>
+    <table>
+      <thead>
+        <tr><th scope="col">Regla</th><th scope="col">Categoría</th>
+            <th scope="col">Dorsal</th><th scope="col">Queda como</th>
+            <th scope="col">Motivo</th></tr>
+      </thead>
+      <tbody>
+      {% for h in reporte.hallazgos if h.severidad == 'marca' %}
+        <tr>
+          <td class="mono">R{{ h.regla }}</td>
+          <td class="mono">{{ h.categoria_id }}</td>
+          <td class="mono">{{ h.dorsal or '—' }}</td>
+          <td>{{ h.accion }}</td>
+          <td>{{ h.mensaje }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </details>
+
+  <form method="post" action="/admin/resultados/{{ pendiente.id }}/publicar"
+        style="border:1px solid var(--borde); padding:.9rem; border-radius:2px">
+    <input type="hidden" name="csrf" value="{{ csrf }}">
+    {# El día del evento el 40 y el 80 km terminan con horas de diferencia: se
+       publica lo que hay y se dice que falta el resto. #}
+    <p><label><input type="checkbox" name="parcial" value="true"> Publicación parcial
+      (todavía falta alguna ruta o categoría)</label></p>
+    <p><label>Qué falta<br>
+      <input name="nota_parcial" style="width:100%; max-width:34rem"
+             placeholder="Faltan las categorías infantiles."></label></p>
+    <button class="principal" type="submit">Publicar</button>
+  </form>
+
+  <form method="post" action="/admin/resultados/{{ pendiente.id }}/descartar"
+        class="filtros" style="margin-top:.6rem">
+    <input type="hidden" name="csrf" value="{{ csrf }}">
+    <input name="motivo" placeholder="Motivo del descarte" size="30">
+    <button class="peligro" type="submit">Descartar</button>
+  </form>
+{% endif %}
+
+<h2 style="margin-top:2rem">Versiones publicadas</h2>
+{% if not historial %}
+  <p class="vacio">Todavía no se ha publicado nada.</p>
+{% else %}
+<table>
+  <thead>
+    <tr><th scope="col">v</th><th scope="col">Publicó</th><th scope="col">Cuándo</th>
+        <th scope="col">Corredores</th><th scope="col">Marcados</th>
+        <th scope="col">Estado</th><th scope="col">Acciones</th></tr>
+  </thead>
+  <tbody>
+  {% for p in historial %}
+    <tr>
+      <td class="mono">{{ p.version }}{% if p.origen_version %}
+        <span class="etiqueta">revalidada de v{{ p.origen_version }}</span>{% endif %}</td>
+      <td>{{ p.publicado_por }}</td>
+      <td class="mono">{{ p.publicado_en.strftime('%d/%m/%Y %H:%M') }}</td>
+      <td class="mono">{{ p.total_corredores }}</td>
+      <td class="mono">{{ p.total_marcados }}</td>
+      <td>
+        {% if p.activa %}<span class="etiqueta">activa</span>{% endif %}
+        {% if p.parcial %}<span class="etiqueta">parcial</span>{% endif %}
+        {% if desactualizada(p) %}
+          <span class="etiqueta">validador {{ p.validador_version }}</span>
+        {% endif %}
+      </td>
+      <td>
+        {% if not p.activa %}
+          {# Revertir sirve EXACTAMENTE lo que estuvo publicado, sin revalidar:
+             quien tenga una captura donde sale en 3º sigue en 3º. #}
+          <form method="post" action="/admin/resultados/revertir/{{ p.version }}"
+                style="display:inline">
+            <input type="hidden" name="csrf" value="{{ csrf }}">
+            <button type="submit">Revertir a esta</button>
+          </form>
+        {% endif %}
+        <form method="post" action="/admin/resultados/revalidar/{{ p.version }}"
+              style="display:inline">
+          <input type="hidden" name="csrf" value="{{ csrf }}">
+          <button type="submit">Revalidar</button>
+        </form>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="sub">
+  <b>Revertir</b> restaura exactamente lo que se sirvió esa vez.
+  <b>Revalidar</b> reprocesa el archivo original con las reglas actuales y crea
+  una versión nueva; nunca sobrescribe.
+</p>
+{% endif %}
+
+<h2 style="margin-top:2rem">Archivos subidos</h2>
+{% if not subidas %}
+  <p class="vacio">Ninguno todavía.</p>
+{% else %}
+<table>
+  <thead>
+    <tr><th scope="col">Archivo</th><th scope="col">Subió</th><th scope="col">Cuándo</th>
+        <th scope="col">Resultado</th></tr>
+  </thead>
+  <tbody>
+  {% for x in subidas %}
+    <tr>
+      <td class="mono">{{ x.nombre_archivo }}</td>
+      <td>{{ x.subido_por }}</td>
+      <td class="mono">{{ x.subido_en.strftime('%d/%m/%Y %H:%M') }}</td>
+      <td>
+        {{ x.resultado }}
+        {% if x.resultado == 'pendiente' %}
+          <a href="/admin/resultados?subida={{ x.id }}">revisar</a>
+        {% endif %}
+        {% if x.motivo_descarte %}<br><span class="sub">{{ x.motivo_descarte }}</span>{% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}

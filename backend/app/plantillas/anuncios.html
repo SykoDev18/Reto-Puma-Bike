@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block titulo %}Anuncios{% endblock %}
+{% block contenido %}
+{% set b = borrador or {} %}
+<h1>Anuncios</h1>
+<p class="sub">
+  Al guardar se regenera <span class="mono">anuncios.json</span>. El sitio lee
+  ese archivo, nunca la base.
+</p>
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<form method="post" action="/admin/anuncios"
+      style="border:1px solid var(--borde); padding:1rem; border-radius:2px; margin-bottom:2rem">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <input type="hidden" name="id" value="{{ actual.id if actual else '' }}">
+
+  <div class="filtros">
+    <label>Clave<br><input name="clave" value="{{ actual.clave if actual else b.get('clave','') }}"
+      placeholder="012" size="6" required class="mono"></label>
+    <label>Fecha<br><input name="fecha" value="{{ actual.fecha if actual else b.get('fecha','') }}"
+      placeholder="2026-07-18" required class="mono"></label>
+    <label>Tipo<br>
+      <select name="tipo">
+        {% for t in tipos %}
+          <option value="{{ t }}"
+            {% if (actual and actual.tipo == t) or b.get('tipo') == t %}selected{% endif %}>{{ t }}</option>
+        {% endfor %}
+      </select></label>
+    <label>Vigente hasta<br><input name="vigente_hasta" class="mono"
+      value="{{ actual.vigente_hasta or '' if actual else b.get('vigente_hasta','') }}"
+      placeholder="opcional"></label>
+  </div>
+
+  <p><label>Título<br><input name="titulo" style="width:100%"
+    value="{{ actual.titulo if actual else b.get('titulo','') }}" required></label></p>
+
+  {# LA REGLA: sin texto no se publica, aunque traiga imagen. #}
+  <p><label>Cuerpo <b>(obligatorio)</b><br>
+    <textarea name="cuerpo" rows="5" style="width:100%" required
+      {% if campo_error == 'cuerpo' %}autofocus{% endif %}
+      >{{ actual.cuerpo if actual else b.get('cuerpo','') }}</textarea></label>
+    <span class="sub">
+      Un flyer acompaña, nunca sustituye: Google no lo lee, un lector de
+      pantalla tampoco, y a 360px se lee mal.
+    </span>
+  </p>
+
+  <div class="filtros">
+    <label>Imagen (ruta)<br><input name="imagen" class="mono" size="30"
+      value="{{ actual.imagen or '' if actual else b.get('imagen','') }}"
+      placeholder="/img/avisos/algo.webp"></label>
+    <label>Descripción de la imagen<br><input name="imagen_alt" size="40"
+      value="{{ actual.imagen_alt or '' if actual else b.get('imagen_alt','') }}"
+      placeholder="Obligatoria si hay imagen"></label>
+  </div>
+
+  <div class="filtros">
+    <label>Texto del enlace<br><input name="enlace_texto" size="22"
+      value="{{ actual.enlace_texto or '' if actual else b.get('enlace_texto','') }}"></label>
+    <label>Dirección<br><input name="enlace_url" class="mono" size="26"
+      value="{{ actual.enlace_url or '' if actual else b.get('enlace_url','') }}"
+      placeholder="#/resultados"></label>
+  </div>
+
+  <p>
+    <label><input type="checkbox" name="fijado" value="true"
+      {% if actual and actual.fijado %}checked{% endif %}> Fijado</label>
+    <label style="margin-left:1.2rem"><input type="checkbox" name="publicado" value="true"
+      {% if not actual or actual.publicado %}checked{% endif %}> Publicado</label>
+  </p>
+
+  <button class="principal" type="submit">
+    {{ 'Guardar cambios' if actual else 'Crear aviso' }}
+  </button>
+  {% if actual %}<a href="/admin/anuncios" style="margin-left:1rem">Cancelar</a>{% endif %}
+</form>
+
+<h2>Publicados</h2>
+{% if not avisos %}
+  <p class="vacio">Todavía no hay avisos.</p>
+{% else %}
+<table>
+  <thead>
+    <tr><th scope="col">Clave</th><th scope="col">Fecha</th><th scope="col">Tipo</th>
+        <th scope="col">Título</th><th scope="col">Estado</th><th scope="col"></th></tr>
+  </thead>
+  <tbody>
+  {% for a in avisos %}
+    <tr>
+      <td class="mono">{{ a.clave }}</td>
+      <td class="mono">{{ a.fecha }}</td>
+      <td>{{ a.tipo }}</td>
+      <td>{{ a.titulo }}</td>
+      <td>
+        {% if a.fijado %}<span class="etiqueta">fijado</span>{% endif %}
+        {% if not a.publicado %}<span class="etiqueta">oculto</span>{% endif %}
+      </td>
+      <td><a href="/admin/anuncios?editar_id={{ a.id }}">Editar</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}

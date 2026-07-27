@@ -61,7 +61,14 @@ class Registro(SQLModel, table=True):
 
     # ---- estado administrativo ---------------------------------------------
     estado: str = Field(default="pendiente", index=True)
-    pago_referencia: str | None = None
+    # La MISMA referencia puede repetirse en varios registros: en eventos
+    # locales es común que alguien de un club transfiera por ocho corredores en
+    # un solo movimiento, o que un papá pague por él y sus dos hijos.
+    pago_referencia: str | None = Field(default=None, index=True)
+    # Lo que de verdad entró, separado del precio del kit. Sin esto, el «dinero
+    # por cobrar» asume que todos pagan exactamente el precio, y eso no
+    # sobrevive al primer depósito con comisión ni al que transfirió de más.
+    monto_recibido: int | None = None
     pago_verificado_por: str | None = None
     pago_verificado_en: datetime | None = None
     notas: str | None = None
@@ -121,6 +128,78 @@ class PublicacionResultados(SQLModel, table=True):
     total_marcados: int = 0
     # Si vino de revalidar, de qué versión salió. `None` si es una subida.
     origen_version: int | None = None
+
+
+class Aviso(SQLModel, table=True):
+    """Comunicado del comité. Alimenta `public/data/anuncios.json`.
+
+    REGLA QUE SE HACE CUMPLIR AQUÍ: `cuerpo` con texto real es obligatorio,
+    aunque el aviso traiga imagen. Google no lee un flyer, un lector de
+    pantalla tampoco, y a 360px un flyer cuadrado se lee mal. Y si hay
+    `imagen`, `imagen_alt` es obligatorio.
+    """
+
+    __tablename__ = "aviso"
+
+    id: int | None = Field(default=None, primary_key=True)
+    clave: str = Field(unique=True, index=True)  # "012", el folio visible
+    fecha: str  # ISO YYYY-MM-DD
+    tipo: str  # convocatoria | logistica | resultados | patrocinadores
+    titulo: str
+    cuerpo: str
+    imagen: str | None = None
+    imagen_alt: str | None = None
+    enlace_texto: str | None = None
+    enlace_url: str | None = None
+    fijado: bool = False
+    vigente_hasta: str | None = None
+    publicado: bool = True
+    actualizado_en: datetime | None = None
+
+
+class Lugar(SQLModel, table=True):
+    """Hospedaje y comida. Alimenta `public/data/hospedaje.json`."""
+
+    __tablename__ = "lugar"
+
+    id: int | None = Field(default=None, primary_key=True)
+    tipo: str = Field(default="hotel", index=True)  # 'hotel' | 'comida'
+    nombre: str
+    descripcion: str
+    direccion: str | None = None
+    telefono: str | None = None
+    mapa_url: str | None = None
+    imagen: str | None = None
+    imagen_alt: str | None = None
+    convenio: str | None = None  # tarifa acordada con el evento
+    patrocinador: bool = False
+    orden: int = 0
+    publicado: bool = True
+
+
+class SubidaResultados(SQLModel, table=True):
+    """Un archivo de resultados subido al panel, antes de decidir qué hacer.
+
+    Existe porque **nada se publica sin que alguien haya visto el reporte**:
+    primero se sube y se valida, después se publica o se descarta. El crudo se
+    guarda en LOS DOS casos — si alguien sube un archivo malo y lo descarta,
+    queremos saber que pasó.
+    """
+
+    __tablename__ = "subida_resultados"
+
+    id: int | None = Field(default=None, primary_key=True)
+    edicion: int = Field(index=True)
+    subido_por: str
+    subido_en: datetime
+    nombre_archivo: str
+    json_crudo: str
+    reporte_validacion: str
+    total_corredores: int = 0
+    total_marcados: int = 0
+    resultado: str = Field(default="pendiente", index=True)  # pendiente|publicada|descartada
+    publicacion_id: int | None = None
+    motivo_descarte: str | None = None
 
 
 class Usuario(SQLModel, table=True):

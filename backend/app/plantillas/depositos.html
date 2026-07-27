@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block titulo %}Depósitos{% endblock %}
+{% block contenido %}
+<h1>Depósitos compartidos</h1>
+<p class="sub">
+  Un club transfiere por ocho corredores en un solo movimiento, o un papá paga
+  por él y sus dos hijos. Aquí se cuadra contra el estado de cuenta.
+</p>
+
+<form class="filtros" method="get" action="/admin/depositos">
+  <input name="ref" value="{{ ref }}" placeholder="Referencia del depósito" size="26">
+  <button type="submit">Buscar</button>
+</form>
+
+{% if ref and not buscado %}
+  <p class="vacio">Ningún registro tiene la referencia «{{ ref }}».</p>
+{% endif %}
+
+{% macro tabla_deposito(d) %}
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Folio</th><th scope="col">Nombre</th>
+        <th scope="col">Kit</th><th scope="col">Esperado</th>
+        <th scope="col">Recibido</th><th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for r in d.registros %}
+      <tr>
+        <td class="mono">{{ r.folio }}</td>
+        <td>{{ r.nombre }} {{ r.apellido_paterno }}</td>
+        <td>{{ r.kit_nombre }}</td>
+        <td class="mono">${{ "{:,}".format(r.kit_precio) }}</td>
+        <td class="mono">{% if r.monto_recibido is not none %}${{ "{:,}".format(r.monto_recibido) }}{% else %}—{% endif %}</td>
+        <td>{{ r.estado }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3" scope="row">
+          {{ d.registros|length }} registros
+          {% if d.cuadra %}
+            <span class="etiqueta">cuadra</span>
+          {% else %}
+            <span class="etiqueta" style="border-color:var(--alerta); color:var(--alerta)">
+              descuadre de ${{ "{:,}".format(d.recibido - d.esperado) }}
+            </span>
+          {% endif %}
+        </th>
+        <td class="mono">${{ "{:,}".format(d.esperado) }}</td>
+        <td class="mono">${{ "{:,}".format(d.recibido) }}</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+{% endmacro %}
+
+{% if buscado %}
+  <h2>Referencia {{ buscado.referencia }}</h2>
+  {{ tabla_deposito(buscado) }}
+{% endif %}
+
+<h2 style="margin-top:2rem">Todas las referencias con más de un registro</h2>
+{% if not compartidos %}
+  <p class="vacio">Todavía no hay depósitos compartidos.</p>
+{% else %}
+  {% for d in compartidos %}
+    <h3 class="mono" style="margin-bottom:.3rem">{{ d.referencia }}</h3>
+    {{ tabla_deposito(d) }}
+  {% endfor %}
+{% endif %}
+{% endblock %}

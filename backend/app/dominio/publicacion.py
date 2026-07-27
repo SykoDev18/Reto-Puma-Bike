@@ -21,7 +21,7 @@ from typing import Any
 from sqlmodel import Session, select
 
 from .. import config
-from ..modelos import PublicacionResultados
+from ..modelos import PublicacionResultados, SubidaResultados
 from .validador import VALIDADOR_VERSION, Reporte, validar
 
 
@@ -179,6 +179,131 @@ def publicar(
         base_estatica=base_estatica,
     )
     return publicacion, reporte
+
+
+# ===========================================================================
+# Subida manual — el camino PRINCIPAL, no el respaldo
+# ===========================================================================
+#
+# El día del evento el host de cronometraje vive en un router dedicado SIN
+# internet: no puede hacer `POST /api/resultados`. El flujo real es
+#
+#     host (sin señal) → exporta JSON a USB → alguien con señal lo sube
+#
+# y probablemente desde un celular en el Pabellón, no desde una laptop. Por eso
+# la subida de archivo es el camino de la meta y el endpoint autenticado queda
+# para las correcciones posteriores, cuando ya hay conectividad.
+
+
+class ErrorSubida(Exception):
+    pass
+
+
+def registrar_subida(
+    s: Session,
+    contenido: bytes,
+    *,
+    edicion: int,
+    subido_por: str,
+    nombre_archivo: str,
+) -> tuple[SubidaResultados, Reporte]:
+    """Valida un archivo subido y lo guarda SIN publicar.
+
+    Nada se publica sin que alguien haya visto el reporte. El crudo se guarda
+    aquí mismo: si el archivo resulta malo y se descarta, queremos saber que
+    pasó y con qué.
+    """
+    try:
+        crudo = json.loads(contenido.decode("utf-8-sig"))
+    except UnicodeDecodeError as e:
+        raise ErrorSubida("El archivo no está en UTF-8.") from e
+    except json.JSONDecodeError as e:
+        raise ErrorSubida(f"El archivo no es un JSON válido: {e.msg} (línea {e.lineno}).") from e
+
+    if not isinstance(crudo, dict) or not isinstance(crudo.get("categorias"), list):
+        raise ErrorSubida("El JSON no trae una lista de `categorias`: no parece un export de resultados.")
+
+    normalizado, reporte = validar(crudo)
+    subida = SubidaResultados(
+        edicion=edicion,
+        subido_por=subido_por,
+        subido_en=datetime.now(timezone.utc),
+        nombre_archivo=nombre_archivo[:120],
+        json_crudo=_serializar(crudo),
+        reporte_validacion=json.dumps(_reporte_a_dict(reporte), ensure_ascii=False),
+        total_corredores=reporte.total_corredores,
+        total_marcados=len(reporte.marcas),
+        resultado="pendiente",
+    )
+    s.add(subida)
+    s.commit()
+    s.refresh(subida)
+    # `normalizado` no se persiste todavía: se recalcula al publicar.
+    del normalizado
+    return subida, reporte
+
+
+def publicar_subida(
+    s: Session,
+    subida_id: int,
+    *,
+    publicado_por: str,
+    parcial: bool | None = None,
+    nota_parcial: str | None = None,
+    base_estatica: Path | None = None,
+) -> tuple[PublicacionResultados, Reporte]:
+    """Publica una subida que ya se revisó."""
+    subida = s.get(SubidaResultados, subida_id)
+    if subida is None:
+        raise ErrorSubida("Esa subida no existe.")
+    if subida.resultado != "pendiente":
+        raise ErrorSubida(f"Esa subida ya está {subida.resultado}.")
+
+    crudo = json.loads(subida.json_crudo)
+    # El operador puede marcar parcial para publicar el 40 km sin esperar al
+    # 80: el día del evento las rutas terminan con horas de diferencia.
+    if parcial is not None:
+        crudo["parcial"] = parcial
+    if nota_parcial is not None:
+        crudo["nota_parcial"] = nota_parcial.strip() or None
+
+    publicacion, reporte = publicar(
+        s,
+        crudo,
+        edicion=subida.edicion,
+        publicado_por=publicado_por,
+        base_estatica=base_estatica,
+    )
+    subida.resultado = "publicada"
+    subida.publicacion_id = publicacion.id
+    s.add(subida)
+    s.commit()
+    return publicacion, reporte
+
+
+def descartar_subida(s: Session, subida_id: int, *, motivo: str = "") -> SubidaResultados:
+    """Descarta sin publicar. El crudo se conserva a propósito."""
+    subida = s.get(SubidaResultados, subida_id)
+    if subida is None:
+        raise ErrorSubida("Esa subida no existe.")
+    if subida.resultado != "pendiente":
+        raise ErrorSubida(f"Esa subida ya está {subida.resultado}.")
+    subida.resultado = "descartada"
+    subida.motivo_descarte = motivo.strip() or None
+    s.add(subida)
+    s.commit()
+    s.refresh(subida)
+    return subida
+
+
+def subidas(s: Session, edicion: int) -> list[SubidaResultados]:
+    return list(
+        s.exec(
+            select(SubidaResultados)
+            .where(SubidaResultados.edicion == edicion)
+            .order_by(SubidaResultados.subido_en.desc())
+        ).all()
+    )
 
 
 def revertir(

@@ -63,6 +63,18 @@
   .error { background:rgba(180,71,42,.18); border:1px solid var(--alerta);
            padding:.7rem .9rem; border-radius:2px; margin-bottom:1rem; }
   .vacio { color:var(--tepetate); padding:2rem 0; }
+  @media (max-width:720px) {
+    thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+    table, tbody, tr, td, th { display:block; width:100%; }
+    tr { border:1px solid var(--borde); border-radius:2px; padding:.6rem; margin-bottom:.6rem; }
+    td, tbody th { display:flex; justify-content:space-between; gap:1rem;
+                   border:0; padding:.2rem 0; text-align:right; }
+    td::before, tbody th::before { content:attr(data-rot); color:var(--tepetate);
+                                   font-size:.72rem; text-transform:uppercase;
+                                   letter-spacing:.08em; text-align:left; }
+    input, select, button { width:100%; }
+    form.linea { flex-direction:column; align-items:stretch; }
+  }
   .etiqueta { font-size:.72rem; text-transform:uppercase; letter-spacing:.1em;
               padding:.12rem .4rem; border:1px solid var(--borde); border-radius:2px;
               color:var(--tepetate); }
@@ -75,6 +87,10 @@
   <nav>
     <a href="/admin/" {% if request.url.path == '/admin/' %}aria-current="page"{% endif %}>Pagos</a>
     <a href="/admin/padron" {% if request.url.path == '/admin/padron' %}aria-current="page"{% endif %}>Padrón</a>
+    <a href="/admin/depositos" {% if request.url.path == '/admin/depositos' %}aria-current="page"{% endif %}>Depósitos</a>
+    <a href="/admin/resultados" {% if request.url.path == '/admin/resultados' %}aria-current="page"{% endif %}>Resultados</a>
+    <a href="/admin/anuncios" {% if request.url.path == '/admin/anuncios' %}aria-current="page"{% endif %}>Anuncios</a>
+    <a href="/admin/hospedaje" {% if request.url.path == '/admin/hospedaje' %}aria-current="page"{% endif %}>Hospedaje</a>
     <a href="/admin/bitacora" {% if request.url.path == '/admin/bitacora' %}aria-current="page"{% endif %}>Bitácora</a>
     <form method="post" action="/admin/salir" style="display:inline">
       <input type="hidden" name="csrf" value="{{ csrf }}">

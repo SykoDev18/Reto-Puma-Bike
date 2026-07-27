@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block titulo %}Editar {{ registro.folio }}{% endblock %}
+{% block contenido %}
+<h1>Editar registro</h1>
+<p class="sub">
+  <span class="mono">{{ registro.folio }}</span> · alta del
+  {{ registro.creado_en.strftime('%d/%m/%Y') }}.
+  El folio y la fecha de alta no se editan.
+</p>
+
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+<p class="sub">
+  La categoría la decide el motor de elegibilidad: solo aparecen las que
+  corresponden a la edad, la rama y el tipo de bicicleta capturados. Si cambias
+  alguno de esos tres, guarda y vuelve a abrir para ver las nuevas opciones.
+</p>
+
+<form method="post" action="/admin/registros/{{ registro.folio }}/editar">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+
+  <fieldset style="border:1px solid var(--borde); border-radius:2px; margin-bottom:1rem">
+    <legend>Quién</legend>
+    <p><label>Nombre<br><input name="nombre" value="{{ registro.nombre }}" required></label></p>
+    <p><label>Apellido paterno<br><input name="apellido_paterno" value="{{ registro.apellido_paterno }}" required></label></p>
+    <p><label>Apellido materno<br><input name="apellido_materno" value="{{ registro.apellido_materno or '' }}"></label></p>
+    <p><label>Fecha de nacimiento (DD/MM/AAAA)<br>
+      <input name="fecha_nacimiento" value="{{ registro.fecha_nacimiento }}" required class="mono"></label></p>
+    <p><label>Sexo<br>
+      <select name="sexo">
+        <option value="M" {% if registro.sexo == 'M' %}selected{% endif %}>M</option>
+        <option value="F" {% if registro.sexo == 'F' %}selected{% endif %}>F</option>
+      </select></label></p>
+    <p><label>Equipo<br><input name="equipo" value="{{ registro.equipo or '' }}"></label></p>
+  </fieldset>
+
+  <fieldset style="border:1px solid var(--borde); border-radius:2px; margin-bottom:1rem">
+    <legend>Cómo compite</legend>
+    <p><label>Tipo de bicicleta<br>
+      <select name="tipo_bicicleta">
+        <option value="MTB" {% if registro.tipo_bicicleta == 'MTB' %}selected{% endif %}>MTB</option>
+        <option value="E-Bike" {% if registro.tipo_bicicleta == 'E-Bike' %}selected{% endif %}>E-Bike</option>
+      </select></label></p>
+    <p><label><input type="checkbox" name="peso_90_mas" value="true"
+      {% if registro.peso_90_mas %}checked{% endif %}> Declara 90 kg o más (habilita Mamut's)</label></p>
+    <p><label>Categoría<br>
+      <select name="categoria_id" required>
+        {% for c in opciones %}
+          <option value="{{ c.id }}" {% if c.id == registro.categoria_id %}selected{% endif %}>
+            {{ c.clave }} · {{ c.nombre }}
+          </option>
+        {% endfor %}
+      </select></label>
+      {% if not opciones %}
+        <br><span class="error">Con esos datos el motor no ofrece ninguna categoría.</span>
+      {% endif %}
+    </p>
+    <p><label>Ruta<br>
+      <select name="ruta">
+        {% for r in ('infantil', '40', '80') %}
+          <option value="{{ r }}" {% if registro.ruta == r %}selected{% endif %}>{{ r }}</option>
+        {% endfor %}
+      </select></label></p>
+  </fieldset>
+
+  <fieldset style="border:1px solid var(--borde); border-radius:2px; margin-bottom:1rem">
+    <legend>Kit</legend>
+    <p><label>Kit<br>
+      <select name="kit_nombre">
+        {% for nombre, precio in kits.items() %}
+          <option value="{{ nombre }}" {% if registro.kit_nombre == nombre %}selected{% endif %}>
+            {{ nombre }} (${{ precio }})
+          </option>
+        {% endfor %}
+      </select></label></p>
+    <p><label>Precio<br><input name="kit_precio" type="number" value="{{ registro.kit_precio }}" class="mono"></label></p>
+    <p><label>Talla<br>
+      <select name="talla_jersey">
+        <option value="">Sin talla</option>
+        {% for codigo, etiqueta in tallas.items() %}
+          <option value="{{ codigo }}" {% if registro.talla_jersey == codigo %}selected{% endif %}>
+            {{ codigo }} — {{ etiqueta }}
+          </option>
+        {% endfor %}
+      </select></label></p>
+  </fieldset>
+
+  <fieldset style="border:1px solid var(--borde); border-radius:2px; margin-bottom:1rem">
+    <legend>Emergencia</legend>
+    <p><label>Contacto<br><input name="emergencia_nombre" value="{{ registro.emergencia_nombre }}" required></label></p>
+    <p><label>Teléfono<br><input name="emergencia_telefono" value="{{ registro.emergencia_telefono }}" class="mono" required></label></p>
+    <p><label>Tipo de sangre (opcional)<br><input name="tipo_sangre" value="{{ registro.tipo_sangre or '' }}"></label></p>
+  </fieldset>
+
+  <p><label>Notas internas<br>
+    <textarea name="notas" rows="2" style="width:100%">{{ registro.notas or '' }}</textarea></label></p>
+
+  <button class="principal" type="submit">Guardar cambios</button>
+  <a href="/admin/padron" style="margin-left:1rem">Volver al padrón</a>
+</form>
+
+<p class="sub" style="margin-top:1.5rem">
+  Cada cambio queda en la <a href="/admin/bitacora">bitácora</a> con el valor
+  anterior y el nuevo.
+</p>
+{% endblock %}

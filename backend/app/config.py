@@ -57,3 +57,17 @@ LARGO_SUFIJO_FOLIO = 4
 # `Secure` en la cookie exige HTTPS. Se apaga solo para desarrollo local, donde
 # no hay certificado; en producción NUNCA debe quedar en False.
 COOKIES_SEGURAS = os.getenv("RPB_COOKIES_SEGURAS", "1") == "1"
+
+# --- Cierre de inscripciones ----------------------------------------------
+# Sin esto, la única forma de detener las inscripciones el día que el comité
+# cierre sería apagar el servidor.
+INSCRIPCIONES_ABIERTAS = os.getenv("RPB_INSCRIPCIONES", "1") == "1"
+MENSAJE_CERRADO = os.getenv(
+    "RPB_MENSAJE_CERRADO",
+    "Las inscripciones en línea están cerradas. Escríbenos por WhatsApp para "
+    "confirmar si quedan lugares.",
+)
+
+# Kits de la edición. Espejo de `CONFIG.kits` del front; el panel los ofrece al
+# editar un registro para no escribir precios a mano.
+KITS: dict[str, int] = {"Kit Huellita": 350, "Kit Puma": 750}

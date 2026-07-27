@@ -21,6 +21,24 @@
 {% if not pendientes %}
   <p class="vacio">No hay nada pendiente por verificar. Todo al corriente.</p>
 {% else %}
+
+{# Un depósito, varios inscritos: un club transfiere por ocho corredores en un
+   solo movimiento. Sin esto son ocho clics y ocho capturas de la misma
+   referencia. #}
+<form method="post" action="/admin/registros/pagar-varios" id="lote">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <div class="filtros" style="align-items:flex-end">
+    <label>Referencia del depósito<br><input name="referencia" size="20"></label>
+    <label>Monto recibido<br><input name="monto" type="number" size="10" class="mono"
+      placeholder="Total"></label>
+    <button class="principal" type="submit">Marcar seleccionados como pagados</button>
+    <span class="sub" style="margin:0; align-self:center">
+      Si el depósito fue de $2,250 y los seleccionados suman $2,250, cuadra.
+      <a href="/admin/depositos">Ver depósitos</a>
+    </span>
+  </div>
+</form>
+
 <table>
   <caption class="sub" style="text-align:left; caption-side:top">
     Los que llevan más tiempo esperando van arriba.
@@ -28,6 +46,7 @@
   </caption>
   <thead>
     <tr>
+      <th scope="col">Sel.</th>
       <th scope="col">Espera</th>
       <th scope="col">Folio</th>
       <th scope="col">Nombre</th>
@@ -40,21 +59,26 @@
   <tbody>
   {% for p in pendientes %}
     <tr data-urgente="{{ 'si' if p.urgente else 'no' }}">
-      <td class="mono dias" data-urgente="{{ 'si' if p.urgente else 'no' }}">
+      <td data-rot="Seleccionar">
+        <input type="checkbox" form="lote" name="folios" value="{{ p.registro.folio }}"
+               aria-label="Seleccionar {{ p.registro.folio }}">
+      </td>
+      <td class="mono dias" data-rot="Espera" data-urgente="{{ 'si' if p.urgente else 'no' }}">
         {{ p.dias_esperando }}d
       </td>
-      <td class="mono">{{ p.registro.folio }}</td>
+      <td class="mono" data-rot="Folio">{{ p.registro.folio }}</td>
       <td>
         {{ p.registro.nombre }} {{ p.registro.apellido_paterno }}
         {{ p.registro.apellido_materno or '' }}
         {% if p.registro.es_menor %}<span class="etiqueta">menor</span>{% endif %}
+        <a href="/admin/registros/{{ p.registro.folio }}/editar" class="sub">editar</a>
       </td>
       <td>
         <span class="mono">{{ p.registro.categoria_clave }}</span> ·
         <span class="mono dato">{{ p.registro.ruta }}</span> km
       </td>
-      <td>{{ p.registro.kit_nombre }}</td>
-      <td class="mono">${{ "{:,}".format(p.registro.kit_precio) }}</td>
+      <td data-rot="Kit">{{ p.registro.kit_nombre }}</td>
+      <td class="mono" data-rot="Monto">${{ "{:,}".format(p.registro.kit_precio) }}</td>
       <td>
         <form class="linea" method="post"
               action="/admin/registros/{{ p.registro.folio }}/pagar">

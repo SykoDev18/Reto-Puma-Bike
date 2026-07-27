@@ -62,6 +62,7 @@
       <td>
         {{ r.nombre }} {{ r.apellido_paterno }} {{ r.apellido_materno or '' }}
         {% if r.es_menor %}<span class="etiqueta">menor</span>{% endif %}
+        <a href="/admin/registros/{{ r.folio }}/editar" class="sub">editar</a>
       </td>
       <td><span class="mono">{{ r.categoria_clave }}</span></td>
       <td><span class="mono dato">{{ r.ruta }}</span></td>
